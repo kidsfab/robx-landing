@@ -2,7 +2,7 @@
 			<div class = "videos">
 				<div class = "names">
 					<h1>
-						Проекты, которые делают дети
+						Проекты наших учеников
 					</h1>
 					<div link = "http://www.youtube.com/embed/8tjduZiy1-w?rel=0&showinfo=0" >
 						<h2>
