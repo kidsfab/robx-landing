@@ -1,6 +1,6 @@
 <footer>
 	<div class = "vk-widget">
-		Больше детских проектов , видео, фото в группе VK, подписывайтесь.
+		Проекты наших учеников, видео, фото с занятий в группе VK , подписывайтесь.
 		<script type="text/javascript" src="http://vk.com/js/api/openapi.js?136"></script>
 		<div id="vk_groups"></div>
 		<script type="text/javascript">
