@@ -1,7 +1,7 @@
 			<a name = "about"></a>
 			<div class = "about">
 				<h1>
-					Чему учатся дети на наших занятиях?
+					Чему мы учим?
 				</h1>
 				<div class = "list">
 					<div>
