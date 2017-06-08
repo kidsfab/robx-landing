@@ -70,8 +70,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			<div>
 				<img src = "icons/arrows.png">
 				<div>
-					Запишите ребенка
-					на первое бесплатное занятие в Кружке Робототехники!
+					Запись на первое бесплатное занятие в Кружке Робототехники!
 				</div>
 			</div>
 			<div class = "information">
