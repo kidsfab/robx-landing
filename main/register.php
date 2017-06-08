@@ -94,10 +94,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 		<div class = "form">
 			<form action="http://robx.org/" target="_self" method='post'>
 				<div class = 'entry required'>
-					<input name = 'name' type = 'text' placeholder="ФИО Родителя" required>
+					<input name = 'name' type = 'text' placeholder="Имя" required>
 				</div>
 				<div class = 'entry date'>
-					<input name = 'birthday' type = 'text' placeholder="Дата рождения ребенка">
+					<input name = 'birthday' type = 'text' placeholder="Дата рождения ученика">
 				</div>
 				<div class = 'entry required mobile-phone'>
 					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
