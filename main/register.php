@@ -94,7 +94,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 		<div class = "form">
 			<form action="http://robx.org/" target="_self" method='post'>
 				<div class = 'entry required'>
-					<input name = 'name' type = 'text' placeholder="Имя" required>
+					<input name = 'name' type = 'text' placeholder="Как к Вам обращаться?" required>
 				</div>
 				<div class = 'entry date'>
 					<input name = 'birthday' type = 'text' placeholder="Дата рождения ученика">
