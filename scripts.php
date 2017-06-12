@@ -37,3 +37,6 @@
 	        } else { f(); }
 	})(document, window, "yandex_metrika_callbacks");
 </script>
+<script>
+	(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-54290-dfcGU';
+</script>
