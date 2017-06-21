@@ -92,7 +92,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			</div>
 		</div>
 		<div class = "form">
-			<form action="http://robx.org/" target="_self" method='post'>
+			<form action="http://robx.org/" target="_self" method='post' onsubmit="yaCounter39897755.reachGoal('ORDER');">
 				<div class = 'entry required'>
 					<input name = 'name' type = 'text' placeholder="Как к Вам обращаться?" required>
 				</div>
