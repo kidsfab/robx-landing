@@ -77,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				<div class = "next">
 					Ближайшие занятия:
 					<div>
-						10 - 16 Июля
+						17 - 23 Июля
 					</div>
 				</div>
 				<div class = "free">
