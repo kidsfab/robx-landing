@@ -12,8 +12,8 @@ function initMap() {
         lat: 60.0607,
         lng: 30.304
     }, {
-        lat: 60.030,
-        lng: 30.415
+        lat: 60.038,
+        lng: 30.266
     }, {
         lat: 59.851,
         lng: 30.3014
