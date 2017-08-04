@@ -71,5 +71,11 @@ function initMap() {
         icon: 'icons/location-small.png',
         title: 'Класс на Ленинском проспекте'
     });
+    var marker5 = new google.maps.Marker({
+        position: locations[6],
+        map: map,
+        icon: 'icons/location-small.png',
+        title: 'Класс на Комендантском проспекте'
+    });
 
 }
