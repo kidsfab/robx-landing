@@ -19,7 +19,7 @@ function initMap() {
         lng: 30.3014
     }, {
         lat: 60.009,
-        lng: 30.254
+        lng: 30.248
     }];
 
     var map = new google.maps.Map(document.getElementById('map'), {
