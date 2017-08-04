@@ -111,6 +111,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 						<option value="Пр. Медиков, д. 5">Пр. Медиков, д. 5 (ст. м. Петроградская)</option>
 						<option value="Гражданский пр., д. 111">Гражданский пр., д. 111 (ст. м. Гражданский проспект)</option>
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
+						<option value="Авиаконструкторов пр., д. 2">Проспект Авиаконструкторов , д. 2 (ст. м. Комендантский проспект) </option>
 					</select>
 				</div>
         <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE"></div>
