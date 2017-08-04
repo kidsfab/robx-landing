@@ -18,8 +18,8 @@ function initMap() {
         lat: 59.851,
         lng: 30.3014
     }, {
-        lat: 60.015,
-        lng: 30.245
+        lat: 60.009,
+        lng: 30.244
     }];
 
     var map = new google.maps.Map(document.getElementById('map'), {
