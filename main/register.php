@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 	$api_response = json_decode($api_response, true);
 
 
-	if (!empty($_POST && $api_response["success"] === true)) {
+	if (!empty($_POST)) {
 		$url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
 
 		$options = array(
@@ -117,7 +117,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 						<option value="Заневский пр., д.53, к.2">Заневский пр., д.53, к.2 (ст. м. Новочеркасская) </option>
 					</select>
 				</div>
-        <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE"></div>
+        <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" style="display: none"></div>
 				<input type='submit' name='submit' class='submit'  value = 'записаться' disabled>
 			</form>
 			<div class = 'notification'>
