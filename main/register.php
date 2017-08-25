@@ -5,23 +5,39 @@
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
-	$google_recaptcha_secret = getenv('RECAPTCHA');
-	$api_response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$google_recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
+	//$google_recaptcha_secret = getenv('RECAPTCHA');
+	//$api_response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$google_recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
 
-	$api_response = json_decode($api_response, true);
+	//$api_response = json_decode($api_response, true);
 
+    $content_f = file_get_contents("blocked_users.txt");
+    if ($content_f){
+        $blocked = unserialize($content_f);
+    }else{
+        $blocked = array();
+    }
+    $time_block = 60*60*24; // Время на которое блокируется пользователь
+    if (array_key_exists($_SERVER['REMOTE_ADDR'], $blocked) && time() - $blocked[$_SERVER['REMOTE_ADDR']] < $time_block){
+        unset($blocked[$_SERVER['REMOTE_ADDR']]);
+    }
 
-	if (!empty($_POST)) {
-		$url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
+	if (!empty($_POST) &&
+        !(empty($_POST['name']) || empty($_POST['birthday']) || empty($_POST['phone']) || empty($_POST['email']) || empty($_POST['address'])) &&
+        !array_key_exists($_SERVER['REMOTE_ADDR'], $blocked)
+    ) {
 
-		$options = array(
+        $blocked[ $_SERVER['REMOTE_ADDR'] ] = time();
+
+	    $url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
+
+	    $options = array(
 			'http' => array(
 				'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
 				'method'  => 'POST',
 				'content' => http_build_query(array(
-	                        	'entry_598421956' => $_POST['name'],
+					'entry_598421956' => $_POST['name'],
 					'entry_706895143' => $_POST['phone'],
-	                        	'entry_30508999' => $_POST['date'],
+					'entry_30508999' => $_POST['date'],
 					'entry_1552661339' => $_POST['address'],
 					'entry_2103816587' => date_diff(date_create_from_format('Y-n-j', $_POST['birthday']), date_create())->y . '',
 					'entry.800485612' => $_POST['email']
@@ -58,6 +74,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 	else{
 		echo "<script>console.log( 'failure' );</script>";
 	}
+	file_put_contents("blocked_users.txt", serialize($blocked));
 }
 
 ?>
@@ -77,7 +94,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				<div class = "next">
 					Ближайшие занятия:
 					<div>
-						26 - 27 Августа 
+						26 - 27 Августа
 					</div>
 				</div>
 				<div class = "free">
