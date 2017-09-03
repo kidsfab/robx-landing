@@ -72,7 +72,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 		 echo "<script>console.log('POST', " .  $api_response["success"]  .   " );</script>";
 	}
 	else{
-		echo "<script>console.log( 'failure' );</script>";
+		echo "<script>alert( 'Ваши данные не были отправлены, позвоните по телефону 9398748 чтобы подтвердить запись.' );</script>";
 	}
 	file_put_contents("blocked_users.txt", serialize($blocked));
 }
