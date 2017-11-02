@@ -20,10 +20,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     if (array_key_exists($_SERVER['REMOTE_ADDR'], $blocked) && time() - $blocked[$_SERVER['REMOTE_ADDR']] < $time_block){
         unset($blocked[$_SERVER['REMOTE_ADDR']]);
     }
-
-	if (!empty($_POST) &&
-        !(empty($_POST['name']) || empty($_POST['birthday']) || empty($_POST['phone']) || empty($_POST['email']) || empty($_POST['address'])) &&
-        !array_key_exists($_SERVER['REMOTE_ADDR'], $blocked)
+    if (!empty($_POST) &&
+        !(empty($_POST['name']) || empty($_POST['birthday']) || empty($_POST['phone']) || empty($_POST['email']) || empty($_POST['address'])) )
+//	&& !array_key_exists($_SERVER['REMOTE_ADDR'], $blocked)
     ) {
 
         $blocked[ $_SERVER['REMOTE_ADDR'] ] = time();
