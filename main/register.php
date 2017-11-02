@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     }
     if (!empty($_POST) &&
         !(empty($_POST['name']) || empty($_POST['birthday']) || empty($_POST['phone']) || empty($_POST['email']) || empty($_POST['address'])) 
-	&& !array_key_exists($_SERVER['REMOTE_ADDR'], $blocked)
+	//&& !array_key_exists($_SERVER['REMOTE_ADDR'], $blocked)
     ) {
 
         $blocked[ $_SERVER['REMOTE_ADDR'] ] = time();
