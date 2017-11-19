@@ -11,7 +11,6 @@
 <script src="scripts/register.js"></script>
 <script src="scripts/events.js"></script>
 <script src="scripts/map.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <script>
 	(function (d, w, c) {
 	        (w[c] = w[c] || []).push(function() {
