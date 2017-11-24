@@ -12,7 +12,7 @@
 			<img src = "icons/phone.svg">
 		</div>
 		<div>
-			<a href = 'tel:+78129398748'>+7 (812) 939-87-48</a>
+			<a href = 'tel:+78123177074 '>+7 (812) 317-70-74 </a>
 		</div>
 	</div>
 	<div class = "email">
@@ -25,7 +25,7 @@
 	</div>
 	<div class = "info">
 		<div>
-			Copyright © 2016 Fab Kids. 
+			Copyright © 2016 Fab Kids.
 			<br>
 			All rights reserved.
 			<br>
