@@ -21,9 +21,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         unset($blocked[$_SERVER['REMOTE_ADDR']]);
     }
     if (!empty($_POST) &&
-        !(empty($_POST['name']) || empty($_POST['birthday']) || empty($_POST['phone']) || empty($_POST['email']) 
-        
-	//|| empty($_POST['address']))  && !array_key_exists($_SERVER['REMOTE_ADDR'], $blocked)
+        !(empty($_POST['name']) || empty($_POST['birthday']) || empty($_POST['phone']) || empty($_POST['email']) || empty($_POST['address']))
+	//  && !array_key_exists($_SERVER['REMOTE_ADDR'], $blocked)
     ) {
 
         $blocked[ $_SERVER['REMOTE_ADDR'] ] = time();
@@ -124,8 +123,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				</div>
 				<div class = 'entry select' style="display: none">
 					<select name='address'>
-						<option disabled="" selected="">Адрес класса</option>
-						<option value="Пр. Медиков, д. 5">Пр. Медиков, д. 5 (ст. м. Петроградская)</option>
+						<option disabled=""="">Адрес класса</option>
+						<option selected value="Пр. Медиков, д. 5">Пр. Медиков, д. 5 (ст. м. Петроградская)</option>
 						<option value="Гражданский пр., д. 111">Гражданский пр., д. 111 (ст. м. Гражданский проспект)</option>
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 						<option value="Авиаконструкторов пр., д. 2">Проспект Авиаконструкторов , д. 2 (ст. м. Комендантский проспект) </option>
