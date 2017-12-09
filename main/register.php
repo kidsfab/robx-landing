@@ -121,7 +121,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				<div class = 'entry required'>
 					<input name='email' type='email' placeholder="Email адрес" required>
 				</div>
-				<div class = 'entry select'>
+				<div class = 'entry select' style="display: none">
 					<select name='address'>
 						<option disabled="" selected="">Адрес класса</option>
 						<option value="Пр. Медиков, д. 5">Пр. Медиков, д. 5 (ст. м. Петроградская)</option>
