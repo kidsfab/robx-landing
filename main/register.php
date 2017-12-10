@@ -21,8 +21,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         unset($blocked[$_SERVER['REMOTE_ADDR']]);
     }
     if (!empty($_POST) &&
-        !(empty($_POST['name']) || empty($_POST['birthday']) || empty($_POST['phone']) || empty($_POST['email']) || empty($_POST['address']))
-	//  && !array_key_exists($_SERVER['REMOTE_ADDR'], $blocked)
+        !(empty($_POST['name'])  || empty($_POST['phone']) || empty($_POST['email']) 
+	//  && || empty($_POST['birthday']) || empty($_POST['address'])) !array_key_exists($_SERVER['REMOTE_ADDR'], $blocked)
     ) {
 
         $blocked[ $_SERVER['REMOTE_ADDR'] ] = time();
@@ -37,8 +37,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 					'entry_598421956' => $_POST['name'],
 					'entry_706895143' => $_POST['phone'],
 					'entry_30508999' => $_POST['date'],
-					'entry_1552661339' => $_POST['address'],
-					'entry_2103816587' => date_diff(date_create_from_format('Y-n-j', $_POST['birthday']), date_create())->y . '',
+					//'entry_1552661339' => $_POST['address'],
+					//'entry_2103816587' => date_diff(date_create_from_format('Y-n-j', $_POST['birthday']), date_create())->y . '',
 					'entry.800485612' => $_POST['email']
 				))
 			)
@@ -60,12 +60,12 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			'utm_term' => $_POST['term'],
 			'utm_source' => $_POST['source'],
 			'utm_campaign' => $_POST['campaign'],
-			'birthdate' => $_POST['birthday']
+			//'birthdate' => $_POST['birthday']
 		);
 
-		if(array_key_exists('address', $_POST) && $_POST['address'] !== '') {
-			$data['filial'] = array($_POST['address']);
-		}
+	//	if(array_key_exists('address', $_POST) && $_POST['address'] !== '') {
+	//		$data['filial'] = array($_POST['address']);
+	//	}
 
 		$resultAccount = senderToTallanto('Contact',$data);
 		 echo "<script>console.log('POST', " .  $api_response["success"]  .   " );</script>";
@@ -112,7 +112,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				<div class = 'entry required'>
 					<input name = 'name' type = 'text' placeholder="Как к Вам обращаться?" required>
 				</div>
-				<div class = 'entry date'>
+				<div class = 'entry date' style="display: none">
 					<input name = 'birthday' type = 'text' placeholder="Дата рождения ученика">
 				</div>
 				<div class = 'entry required mobile-phone'>
