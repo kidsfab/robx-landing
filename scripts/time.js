@@ -18,7 +18,19 @@ $(function() {
 		if(seconds < 10) {
 			seconds = "0" + seconds;
 		}
+		var day_string;
+		switch(days_left){
+			case 0: day_string = "всего ничего"; break;
+			case 1: day_string = "1 день"; break;
+			case 2: 
+			case 3: 
+			case 4: day_string = "4 дня"; break;
+			case 5:
+			case 6: day_string = "6 дней"; break;
+			case 7: day_string = "неделя"; break;
+			default: day_string = hours + ':' + minutes + ':' + seconds
+		}		
 
-                $('.rest div').text(hours + ':' + minutes + ':' + seconds);
-        }, 500);
+                $('.rest div').text(day_string);
+        }, 60000*60*12);
 });
