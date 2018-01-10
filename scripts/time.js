@@ -1,5 +1,5 @@
 $(function() {
-        setInterval(function() {
+      
                 var today = new Date();
                 var sunday = new Date();
                 var days_left = 7 - today.getDay();
@@ -32,5 +32,5 @@ $(function() {
 		}		
 
                 $('.rest div').text(day_string);
-        }, 60000*60*12);
+        
 });
