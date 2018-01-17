@@ -116,7 +116,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				<div class = 'entry required mobile-phone'>
 					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
 				</div>
-				<div class = 'entry required' style="display: none">
+				<div class = 'entry' style="display: none">
 					<input name='email' type='email' placeholder="Email адрес">
 				</div>
 				<div class = 'entry select' style="display: none">
