@@ -132,7 +132,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 					</select>
 				</div>
         <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" style="display: none"></div>
-				<input type='submit' name='submit' class='submit'  value = 'записаться' disabled>
+				<input type='submit' name='submit' class='submit'  value = 'записаться' >
 			</form>
 			<div class = 'notification'>
 				Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
