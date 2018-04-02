@@ -1,0 +1,8 @@
+<mj-section border-top="5px solid #4667FF">
+  <mj-column  >
+    <mj-image src="http://robx.org/icons/email-logo.png" alt="RobX"></mj-image>    
+  </mj-column>
+   <mj-column >
+     <mj-text align="right" color="4667FF" > т. 939 87 48</mj-text>
+  </mj-column>
+</mj-section>

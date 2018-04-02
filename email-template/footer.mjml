@@ -1,0 +1,42 @@
+<mj-section>
+
+  <mj-column border-bottom="5px solid #4667FF">
+    <mj-text>
+      Узнать подробнее: т. 939 87 48
+    </mj-text>
+  </mj-column>
+ 
+
+</mj-section>
+<mj-section>
+ <mj-column border-bottom="5px solid #4667FF">
+    <mj-text>
+     Забыли адрес класса и заблудились? Сомневаетесь, где припарковать автомобиль? Переходите по ссылке и смотрите подробное описание расположения каждого класса по всему городу.
+    </mj-text>
+   	 <mj-button font-family="Helvetica" font-weight="bold" background-color="#fff" border="3px solid #EA7627" border-radius="20px" color="#EA7627">
+            Don't click me!
+          </mj-button>
+  </mj-column>
+
+
+</mj-section>
+
+<mj-section>
+ <mj-column border-bottom="5px solid #4667FF">
+    <mj-text>
+     Интересно, над каким роботом сейчас работает Ваш юный изобретатель? Хотите делиться с семьей и друзьями интересными фотографиями Вашего ребенка или даже интервью?
+    </mj-text>
+   	 <mj-button font-family="Helvetica" font-weight="bold" background-color="#fff" border="3px solid #EA7627" border-radius="20px" color="#EA7627">
+            vk.com/robx
+          </mj-button>
+  </mj-column>
+
+</mj-section>
+<mj-section>
+<mj-column>
+<mj-text align="center">
+    © 2018 RobX
+</mj-text>
+  </mj-column>
+
+</mj-section>
