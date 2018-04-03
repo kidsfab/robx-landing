@@ -1,14 +1,14 @@
 <mjml>
 
   <mj-head>
-
+    <mj-font name="OpenSans" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" />
     <mj-attributes>
       <mj-text align="center" color="#EA7627" />
     </mj-attributes>
 
   </mj-head>
 
-  <mj-body background-color="#fff">
+  <mj-body background-color="#fff" font-family="OpenSans, sans-serif;">
 
     <mj-include path="./header.mjml" />
     <mj-section background-color="#fff">
