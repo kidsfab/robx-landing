@@ -12,7 +12,7 @@
 			<img src = "icons/phone.svg">
 		</div>
 		<div>
-			<a href = 'tel:+78123177074 '>+7 (812) 317-70-74 </a>
+			<a class="mgo-number-12398" href="tel:+78123177074">+7 (812) 317-70-74</a>			
 		</div>
 	</div>
 	<div class = "email">
@@ -29,12 +29,12 @@
 			<br>
 			All rights reserved.
 			<br>
-			Tel. (812) 939-87-48
+			Tel. <a class="mgo-number-12398" href="tel:+78123177074">+7 (812) 317-70-74</a>
 		</div>
 		<div>
 			Услуги оказывает: ООО "Робикс"
 			<br>
-			Тел.: (812) 939-87-48,
+			Тел.: <a class="mgo-number-12398" href="tel:+78123177074">+7 (812) 317-70-74</a>,
 			<br>
 			ИНН 7804455018, ОГРН 1117847052289
 		</div>

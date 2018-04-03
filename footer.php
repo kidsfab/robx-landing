@@ -12,7 +12,7 @@
 			<img src = "icons/phone.svg">
 		</div>
 		<div>
-			<a href = 'tel:+78123177074 '>+7 (812) 317-70-74 </a>
+			<a class="mgo-number-12398" href="tel:+78123177074">+7 (812) 317-70-74</a>
 		</div>
 	</div>
 	<div class = "email">
