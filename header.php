@@ -25,7 +25,7 @@
 				<a href = "https://vk.com/robxorg" class = 'circled' target='_blank'>VK</a>
 			</div>
 			<div class = "phone">
-				<a class = 'circled' href = "tel:=+78123177074 ">т. 317 70 74 </a>
+				<a class="circled mgo-number-12398" href="tel:+78123177074">т. 317 70 74</a>
 			</div>
 			<div class = "register">
 				<a href = "#register" class = 'circled'>Записаться</a>
