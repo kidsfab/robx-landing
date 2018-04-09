@@ -11,34 +11,63 @@
   <mj-body background-color="#fff" font-family="OpenSans, sans-serif;">
 
     <mj-include path="./header.mjml" />
-    <mj-section background-color="#fff">
+    <mj-section background-color="#fff"  padding-bottom="0" border-top="5px solid #4667FF" border-left="5px solid #4667FF" border-right="5px solid #4667FF">
 
-      <mj-column>
-        <mj-text align="center">
-          <h2>Здравствуйте, %username%!</h2>
+      <mj-column >
+        <mj-text align="center"  font-size="32" color="#4667FF" padding-bottom="24px">
+         Здравствуйте, %username%!
         </mj-text>
       </mj-column>
 
 
     </mj-section>
-    <mj-section background-color="#fff">
+    <mj-section background-color="#fff" padding="0" border="5px solid #4667FF" >
 
-      <mj-column>
-        <mj-text align="center">
+      <mj-column border-right="5px solid #4667FF">
+        <mj-text align="left" font-size="22">
           Не пропустите очередное увлекательное занятие в Робикс.
         </mj-text>
       </mj-column>
 
       <mj-column>
-        <mj-text align="center">
-          12 марта
+        <mj-text align="left" font-size="24" font-weight="bold">
+          12 марта в 10:00
+        </mj-text>
+        <mj-text align="left" font-size="22" >
+          Lorem ipsum dolor sit amet, consectetuer
         </mj-text>
       </mj-column>
 
     </mj-section>
     <mj-section background-color="#fff">
       <mj-column>
-        <mj-image width="200" src="http://placehold.it/200x200"></mj-image>
+         <mj-text align="left" font-size="28" font-weight="bold" padding-left="0">
+          Тема урока
+        </mj-text>
+         <mj-text align="left" font-size="22" color="#4667FF" padding-left="0">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+        </mj-text>
+				
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" border-top="5px solid #4667FF" padding="0">
+    	<mj-column padding="0">
+        	<mj-image padding="0"  src="http://placehold.it/200x100"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff"  padding="0">
+    	<mj-column padding="0">
+        	<mj-text align="left" padding-left="0" font-size="28" font-weight="bold" color="#555">
+          Собрать робота-вездехода за 21 день?
+        	</mj-text>
+        	<mj-text align="left" font-size="20" color="#555" padding-left="0">
+          Летний робо-лагерь в Ленобласти для детей 8- 13 лет.
+В течение нескольких недель на природе ребята
+будут проектировать электронику, программировать,
+создавать корпус на 3D принтере. Например, этим
+летом мы собираем робота-вездехода на пульте
+управления и участвуем в соревнованиях.
+        	</mj-text>
       </mj-column>
     </mj-section>
     <mj-include path="./footer.mjml" />
