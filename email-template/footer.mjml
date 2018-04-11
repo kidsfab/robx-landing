@@ -9,7 +9,7 @@
 
   </mj-column>
   <mj-column>
-    <mj-button align="center" font-weight="bold" background-color="#fff" font-size="20px" border="3px solid #EA7627" border-radius="30px" color="#EA7627">
+    <mj-button align="center" font-weight="bold" background-color="#fff" font-size="20px" border="3px solid #ee5930" border-radius="30px" color="#ee5930">
       т. 939 87 48</mj-button>
   </mj-column>
 
@@ -28,7 +28,7 @@
       %address%
     </mj-text>
 
-    <mj-button font-weight="bold" background-color="#fff" border="3px solid #EA7627" border-radius="20px" color="#EA7627">
+    <mj-button font-weight="bold" background-color="#fff" border="3px solid #ee5930" border-radius="20px" color="#ee5930">
       goo.gl/f5NaAD
     </mj-button>
   </mj-column>
@@ -42,7 +42,7 @@
     <mj-text font-size="20px" align="center">
       Интересно, над каким роботом сейчас работает Ваш юный изобретатель? Хотите делиться с семьей и друзьями интересными фотографиями Вашего ребенка или даже интервью?
     </mj-text>
-    <mj-button font-weight="bold" background-color="#fff" border="3px solid #EA7627" border-radius="20px" color="#EA7627">
+    <mj-button font-weight="bold" background-color="#fff" border="3px solid #ee5930" border-radius="20px" color="#ee5930">
       vk.com/robx
     </mj-button>
   </mj-column>
