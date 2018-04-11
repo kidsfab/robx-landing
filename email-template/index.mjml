@@ -1,11 +1,18 @@
 <mjml>
-
+	
   <mj-head>
     <mj-font name="OpenSans" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" />
-    <mj-attributes>
-      <mj-text align="center" color="#EA7627" />
-    </mj-attributes>
 
+		<mj-style>
+      .divider{ 
+      	border-right: 5px solid #4667FF;
+      }
+      @media all and (max-width: 480px) {
+        .divider { 
+           border-right: none;
+        }
+      }
+    </mj-style>
   </mj-head>
 
   <mj-body background-color="#fff" font-family="OpenSans, sans-serif;">
@@ -23,17 +30,17 @@
     </mj-section>
     <mj-section background-color="#fff" padding="0" border="5px solid #4667FF" >
 
-      <mj-column border-right="5px solid #4667FF">
-        <mj-text align="left" font-size="22">
+      <mj-column class="divider">
+        <mj-text  font-size="22" align="center" color="#EA7627">
           Не пропустите очередное увлекательное занятие в Робикс.
         </mj-text>
       </mj-column>
 
       <mj-column>
-        <mj-text align="left" font-size="24" font-weight="bold">
+        <mj-text  font-size="22" font-weight="bold" align="center" color="#EA7627">
           12 марта в 10:00
         </mj-text>
-        <mj-text align="left" font-size="22" >
+        <mj-text align="center" color="#EA7627" font-size="22" >
           Lorem ipsum dolor sit amet, consectetuer
         </mj-text>
       </mj-column>

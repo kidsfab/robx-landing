@@ -1,21 +1,22 @@
-<mj-section>
+<mj-section  border-bottom="5px solid #4667FF">
 
-  <mj-column border-bottom="5px solid #4667FF">
-    <mj-text color="#555" font-size="28" padding-bottom="20px"  padding-right="0" >
+  <mj-column>
+    <mj-text color="#555" font-size="22" padding-bottom="20px"  align="center" >
       Узнать подробнее:  
      
 
     </mj-text>
        
   </mj-column>
-  <mj-column border-bottom="5px solid #4667FF">
-     <mj-button  align="left" padding-left="0" font-weight="bold" background-color="#fff" border="3px solid #EA7627" border-radius="20px" color="#EA7627">
+  <mj-column >
+     <mj-button  align="center"  font-weight="bold" background-color="#fff" font-size="20" border="3px solid #EA7627" border-radius="30px" color="#EA7627">
             т. 939 87 48</mj-button>
   </mj-column>
 
 </mj-section>
 <mj-section>
  <mj-column border-bottom="5px solid #4667FF" >
+   <mj-image width="257px"  src="http://robx.org/icons/email-pointer.png"></mj-image>
     <mj-text font-size="20px" align="center">
      Забыли адрес класса и заблудились? Сомневаетесь, где припарковать автомобиль? Переходите по ссылке и смотрите подробное описание расположения каждого класса по всему городу.
     </mj-text>
@@ -37,6 +38,7 @@
 
 <mj-section>
  <mj-column border-bottom="5px solid #4667FF">
+   <mj-image width="257px"  src="http://robx.org/icons/email-vk.png"></mj-image>
     <mj-text  font-size="20px" align="center">
      Интересно, над каким роботом сейчас работает Ваш юный изобретатель? Хотите делиться с семьей и друзьями интересными фотографиями Вашего ребенка или даже интервью?
     </mj-text>
