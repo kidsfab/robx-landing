@@ -1,84 +1,58 @@
 <mjml>
-	
   <mj-head>
-    <mj-font name="OpenSans" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" />
-
-		<mj-style>
-      .divider{ 
-      	border-right: 5px solid #4667FF;
-      }
-      @media all and (max-width: 480px) {
-        .divider { 
-           border-right: none;
-        }
-      }
-    </mj-style>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" />
   </mj-head>
-
-  <mj-body background-color="#fff" font-family="OpenSans, sans-serif;">
-
+  <mj-body background-color="#fff" font-family="'Open Sans', Helvetica, Arial, sans-serif;">
     <mj-include path="./header.mjml" />
-    <mj-section background-color="#fff"  padding-bottom="0" border-top="5px solid #4667FF" border-left="5px solid #4667FF" border-right="5px solid #4667FF">
-
-      <mj-column >
-        <mj-text align="center"  font-size="32" color="#4667FF" padding-bottom="24px">
-         Здравствуйте, %username%!
+    <mj-section background-color="#fff" padding-bottom="0" border-top="5px solid #4667FF" border-left="5px solid #4667FF" border-right="5px solid #4667FF">
+      <mj-column>
+        <mj-text align="center" font-size="32px" color="#4667FF" padding-bottom="24px">
+          Здравствуйте, %username%!
         </mj-text>
       </mj-column>
-
-
     </mj-section>
-    <mj-section background-color="#fff" padding="0" border="5px solid #4667FF" >
-
-      <mj-column class="divider">
-        <mj-text  font-size="22" align="center" color="#EA7627">
+    <mj-section background-color="#fff" padding="0" border="5px solid #4667FF">
+      <mj-column>
+        <mj-text font-size="22px" align="center" color="#EA7627">
           Не пропустите очередное увлекательное занятие в Робикс.
         </mj-text>
       </mj-column>
-
       <mj-column>
-        <mj-text  font-size="22" font-weight="bold" align="center" color="#EA7627">
+        <mj-text font-size="22px" font-weight="bold" align="center" color="#EA7627">
           12 марта в 10:00
         </mj-text>
-        <mj-text align="center" color="#EA7627" font-size="22" >
+        <mj-text align="center" color="#EA7627" font-size="22px">
           Lorem ipsum dolor sit amet, consectetuer
         </mj-text>
       </mj-column>
-
     </mj-section>
     <mj-section background-color="#fff">
       <mj-column>
-         <mj-text align="left" font-size="28" font-weight="bold" padding-left="0">
+        <mj-text align="left" font-size="28px" font-weight="bold" padding-left="0">
           Тема урока
         </mj-text>
-         <mj-text align="left" font-size="22" color="#4667FF" padding-left="0">
-           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+        <mj-text align="left" font-size="22px" color="#4667FF" padding-left="0">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+          ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
         </mj-text>
-				
       </mj-column>
     </mj-section>
     <mj-section background-color="#fff" border-top="5px solid #4667FF" padding="0">
-    	<mj-column padding="0">
-        	<mj-image padding="0"  src="http://placehold.it/200x100"></mj-image>
+      <mj-column padding="0">
+        <mj-image padding="0" src="http://placehold.it/200x100"></mj-image>
       </mj-column>
     </mj-section>
-    <mj-section background-color="#fff"  padding="0">
-    	<mj-column padding="0">
-        	<mj-text align="left" padding-left="0" font-size="28" font-weight="bold" color="#555">
+    <mj-section background-color="#fff" padding="0">
+      <mj-column padding="0">
+        <mj-text align="left" padding-left="0" font-size="28px" font-weight="bold" color="#555">
           Собрать робота-вездехода за 21 день?
-        	</mj-text>
-        	<mj-text align="left" font-size="20" color="#555" padding-left="0">
-          Летний робо-лагерь в Ленобласти для детей 8- 13 лет.
-В течение нескольких недель на природе ребята
-будут проектировать электронику, программировать,
-создавать корпус на 3D принтере. Например, этим
-летом мы собираем робота-вездехода на пульте
-управления и участвуем в соревнованиях.
-        	</mj-text>
+        </mj-text>
+        <mj-text align="left" font-size="20px" color="#555" padding-left="0">
+          Летний робо-лагерь в Ленобласти для детей 8- 13 лет. В течение нескольких недель на природе ребята будут проектировать электронику, программировать, создавать корпус на 3D принтере. Например, этим летом мы собираем робота-вездехода на пульте управления
+          и участвуем в соревнованиях.
+        </mj-text>
       </mj-column>
     </mj-section>
-    <mj-include path="./footer.mjml" />
-
+    <mj-include path="./footer.mjml" />    
   </mj-body>
-
 </mjml>

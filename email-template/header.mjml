@@ -1,10 +1,10 @@
 <mj-section border-top="5px solid #4667FF">
-  <mj-column  >
-    <mj-image src="http://robx.org/icons/email-logo.png" alt="RobX"></mj-image>    
+  <mj-column>
+    <mj-image src="http://robx.org/icons/email-logo.png" alt="RobX"></mj-image>
   </mj-column>
-   <mj-column >
-      <mj-button  align="center"  font-weight="bold" background-color="#fff" font-size="20" border="3px solid #4667FF" border-radius="30px" color="#4667FF">
-            т. 939 87 48</mj-button>
- 
+  <mj-column>
+    <mj-button align="center" font-weight="bold" background-color="#fff" font-size="20px" border="3px solid #4667FF" border-radius="30px" color="#4667FF">
+      т. 939 87 48</mj-button>
+
   </mj-column>
 </mj-section>
