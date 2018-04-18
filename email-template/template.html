@@ -257,7 +257,7 @@
       <div
          style="font-family: 'Open Sans' , Helvetica, Arial, sans-serif;;font-size:32px;line-height:1;text-align:center;color:#4667FF;"
       >
-        Здравствуйте, %username%!
+        Здравствуйте, {$Contacts.first_name}!
       </div>
 
               </td>
@@ -365,7 +365,7 @@
       <div
          style="font-family: 'Open Sans' , Helvetica, Arial, sans-serif;;font-size:22px;font-weight:bold;line-height:1;text-align:center;color:#ee5930;"
       >
-        12 марта в 10:00
+      {$date_start}
       </div>
 
               </td>
@@ -824,7 +824,7 @@
       <div  style="Margin:0px auto;max-width:600px;">
 
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-bottom:5px solid #4667FF;vertical-align:bottom; width:100%;"
         >
           <tbody>
             <tr>
@@ -841,12 +841,12 @@
             >
           <![endif]-->
 
-      <div
+      <div 
          class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;"
       >
 
       <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-bottom:5px solid #4667FF;vertical-align:bottom;" width="100%"
+         border="0" cellpadding="0" cellspacing="0" role="presentation"  width="100%"
       >
 
             <tr>
@@ -909,7 +909,7 @@
       <div
          style="font-family: 'Open Sans' , Helvetica, Arial, sans-serif;;font-size:20px;line-height:1;text-align:center;color:#000000;"
       >
-        %address%
+      {$audience_multi_to_str}
       </div>
 
               </td>
@@ -974,7 +974,7 @@
       <div  style="Margin:0px auto;max-width:600px;">
 
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"  style="border-bottom:5px solid #4667FF;vertical-align:bottom; width:100%;"
         >
           <tbody>
             <tr>
@@ -996,7 +996,7 @@
       >
 
       <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-bottom:5px solid #4667FF;vertical-align:bottom;" width="100%"
+         border="0" cellpadding="0" cellspacing="0" role="presentation"  width="100%"
       >
 
             <tr>

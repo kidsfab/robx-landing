@@ -14,8 +14,8 @@
   </mj-column>
 
 </mj-section>
-<mj-section>
-  <mj-column border-bottom="5px solid #4667FF">
+<mj-section border-bottom="5px solid #4667FF">
+  <mj-column >
     <mj-image width="257px" src="http://robx.org/icons/email-pointer.png"></mj-image>
     <mj-text font-size="20px" align="center">
       Забыли адрес класса и заблудились? Сомневаетесь, где припарковать автомобиль? Переходите по ссылке и смотрите подробное описание расположения каждого класса по всему городу.
@@ -36,8 +36,8 @@
 
 </mj-section>
 
-<mj-section>
-  <mj-column border-bottom="5px solid #4667FF">
+<mj-section border-bottom="5px solid #4667FF">
+  <mj-column >
     <mj-image width="257px" src="http://robx.org/icons/email-vk.png"></mj-image>
     <mj-text font-size="20px" align="center">
       Интересно, над каким роботом сейчас работает Ваш юный изобретатель? Хотите делиться с семьей и друзьями интересными фотографиями Вашего ребенка или даже интервью?
