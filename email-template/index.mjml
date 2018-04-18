@@ -28,7 +28,7 @@
     </mj-section>
     <mj-section background-color="#fff">
       <mj-column>
-        <mj-text align="left" font-size="28px" font-weight="bold" padding-left="0">
+        <mj-text align="left" font-size="28px" font-weight="bold" color="#EA7627" padding-left="0">
           Тема урока
         </mj-text>
         <mj-text align="left" font-size="22px" color="#4667FF" padding-left="0">
