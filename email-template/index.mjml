@@ -26,8 +26,8 @@
         </mj-text>
       </mj-column>
     </mj-section>
-    <mj-section background-color="#fff">
-      <mj-column>
+    <mj-section background-color="#fff"  padding-top="20px">
+      <mj-column padding="0">
         <mj-text align="left" font-size="28px" font-weight="bold" color="#EA7627" padding-left="0">
           Тема урока
         </mj-text>
@@ -35,11 +35,7 @@
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
           ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
         </mj-text>
-      </mj-column>
-    </mj-section>
-    <mj-section background-color="#fff" border-top="5px solid #4667FF" padding="0">
-      <mj-column padding="0">
-        <mj-image padding="0" src="http://placehold.it/200x100"></mj-image>
+        <mj-image border-top="5px solid #4667FF" padding="0" src="http://placehold.it/200x100"></mj-image>
       </mj-column>
     </mj-section>
     <mj-section background-color="#fff" padding="0">
@@ -53,6 +49,6 @@
         </mj-text>
       </mj-column>
     </mj-section>
-    <mj-include path="./footer.mjml" />    
+    <mj-include path="./footer.mjml" />
   </mj-body>
 </mjml>
