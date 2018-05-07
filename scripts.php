@@ -10,7 +10,6 @@
 <script src="scripts/reviews.js"></script>
 <script src="scripts/register.js"></script>
 <script src="scripts/events.js"></script>
-<script src="scripts/map.js"></script>
 <script src="scripts/mango.js"></script>
 <script src="scripts/yandex_metrika.js"></script>
 <script src="scripts/vk.js"></script>

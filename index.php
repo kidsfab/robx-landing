@@ -24,14 +24,14 @@
 		<link rel="manifest" href="manifest.json">
 
 		<title>Робикс | ROBX — кружок робототехники для детей</title>
-		<?php include("styles.php"); ?>	
+		<?php include("styles.php"); ?>
 		<?php include("scripts.php"); ?>
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7c6f77246f97ed6ad2efb0e8998b0d03db975a7bd4e4bc9c3416ce361f3ecc9b&amp;width=929&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+
 	</head>
 	<body>
-
+		
 		<?php include("header.php"); ?>
-	
+
 		<?php include("main.php"); ?>
 
 		<?php include("footer.php"); ?>
