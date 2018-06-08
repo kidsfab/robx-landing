@@ -7,7 +7,7 @@
 <link rel = "stylesheet" href = "styles/css/header-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/register-computer.css" media = "all and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/register-phone.css" media = "all and (max-width: 480px)">
-<link rel = "stylesheet" href = "styles/css/about-computer.css" media = "all and (min-width: 481x)">
+<link rel = "stylesheet" href = "styles/css/about-computer.css" media = "all and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/about-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/videos-computer.css"  media = "all and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/videos-phone.css" media = "all and (max-width: 480px)">
