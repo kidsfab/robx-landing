@@ -6,7 +6,7 @@
 <link rel = "stylesheet" href = "styles/css/header-computer.css" media = "screen and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/header-phone.css" media = "handheld, (min-width: 480px), (orientation: portrait)">
 <link rel = "stylesheet" href = "styles/css/register-computer.css" media = "screen and (min-width: 481px)">
-<link rel = "stylesheet" href = "styles/css/register-phone.css" media = handheld, (min-width: 480px), (orientation: portrait)">
+<link rel = "stylesheet" href = "styles/css/register-phone.css" media = "handheld, (min-width: 480px), (orientation: portrait)">
 <link rel = "stylesheet" href = "styles/css/about-computer.css" media = "screen and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/about-phone.css" media = "handheld, (min-width: 480px), (orientation: portrait)">
 <link rel = "stylesheet" href = "styles/css/videos-computer.css"  media = "screen and (min-width: 481px)">
