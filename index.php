@@ -26,6 +26,7 @@
 		<title>Робикс | ROBX — кружок робототехники для детей</title>
 		<?php include("styles.php"); ?>
 		<?php include("scripts.php"); ?>
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?158"></script> 
 
 	</head>
 	<body>
@@ -35,8 +36,15 @@
 		<?php include("main.php"); ?>
 
 		<?php include("footer.php"); ?>
+		<!— VK Widget —> 
+		<div id="vk_community_messages"></div> 
 	</body>
-
+	
+ 
+	
+	<script type="text/javascript"> 
+	VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {expanded: "1",tooltipButtonText: "Есть вопрос?"}); 
+	</script> 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdON7rtEjNA84pctrH2T6yeR1OXyk0cpo&callback=initMap" async defer></script>
 	<script> (function(w, d, u, i, o, s, p) { if (d.getElementById(i)) { return; } w['MangoObject'] = o; w[o] = w[o] || function() { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date(); s = d.createElement('script'); s.async = 1; s.id = i; s.src = u; s.charset = 'utf-8'; p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p); }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo')); mgo({multichannel: {id: 1345}}); </script>
 </html>
