@@ -8,7 +8,7 @@
   Request was
 <pre>
 <?php
-
+header("Content-type: application/json");
 print_r($_GET);
 print_r($_POST['group_id']);
 print_r($_REQUEST);
