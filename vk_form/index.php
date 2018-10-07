@@ -17,6 +17,7 @@ public function messageNew(int $group_id, ?string $secret, array $object) {
         echo 'ok';
     }
 }
+echo ('e7e13fe2');
 
 $handler = new ServerHandler();
 $data = json_decode(file_get_contents('php://input'));
