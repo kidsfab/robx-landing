@@ -1,7 +1,6 @@
 
 
 <?php
-$data = $_REQUEST;
+$data = $_POST;
 print_r($data);
-print_r(file_get_contents("php://input"),true);
 ?>
