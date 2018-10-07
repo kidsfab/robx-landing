@@ -1,4 +1,4 @@
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
 <link rel = "stylesheet" href = "styles/css/main-computer.css" media = "all and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/main-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/inter-computer.css" media = "all and (min-width: 481px)">

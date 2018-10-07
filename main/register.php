@@ -106,7 +106,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			</div>
 		</div>
 		<div class = "form">
-			<form action="http://robx.org/" target="_self" method='post' onsubmit="yaCounter39897755.reachGoal('ORDER');">
+			<form action="https://robx.org/" target="_self" method='post' onsubmit="yaCounter39897755.reachGoal('ORDER');">
 				<div class = 'entry required'>
 					<input name = 'name' type = 'text' placeholder="Как к Вам обращаться?" required>
 				</div>
@@ -116,7 +116,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				<div class = 'entry required mobile-phone'>
 					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
 				</div>
-				
+
 				<div class = 'entry select' style="display: none">
 					<select name='address'>
 						<option disabled=""="">Адрес класса</option>
