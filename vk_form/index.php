@@ -8,8 +8,8 @@
   Request was
 <pre>
 <?php
-header('Content-Type: application/json');
-echo $_GET;
+
+print_r($_GET);
 ?>
 </pre>
 </body>
