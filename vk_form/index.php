@@ -1,52 +1,25 @@
 <?php
 
-if (!isset($_REQUEST)) {
-  return;
+use VK\CallbackApi\Server\VKCallbackApiServerHandler;
+
+class ServerHandler extends VKCallbackApiServerHandler {
+    const SECRET = getenv('VKSK');
+    const GROUP_ID = 69501379;
+    const CONFIRMATION_TOKEN = 'e7e13fe2';
+
+function confirmation(int $group_id, ?string $secret) {
+        if ($secret === static::MY_SECRET && $group_id === static::GROUP_ID) {
+            echo static::CONFIRMATION_TOKEN;
+        }
+    }
+
+public function messageNew(int $group_id, ?string $secret, array $object) {
+        echo 'ok';
+    }
 }
 
-//Confirmation code from Callback API settings
-$confirmation_token = 'e7e13fe2';
-
-//Community access_token
-$token = getenv('VKSK');
-
-//Receive and decode notification
+$handler = new ServerHandler();
 $data = json_decode(file_get_contents('php://input'));
+$handler->parse($data);
 
-//Check the "type" field
-switch ($data->type) {
-  //If this is a confirmation message...
-  case 'confirmation':
-    //...send confirmation code
-    echo $confirmation_token;
-    break;
-
-//If this is a new message...
-  case 'message_new':
-    //...get his author ID
-    $user_id = $data->object->user_id;
-    //then get user info via users.get method
-    $user_info = json_decode(file_get_contents("https://api.vk.com/method/users.get?user_ids={$user_id}&v=5.0"));
-
-//and get his name from the response
-    $user_name = $user_info->response[0]->first_name;
-
-//Send an answer with messages.send method and community access_token
-    $request_params = array(
-      'message' => "Hello, {$user_name}!",
-      'user_id' => $user_id,
-      'access_token' => $token,
-      'v' => '5.85'
-    );
-
-$get_params = http_build_query($request_params);
-
-file_get_contents('https://api.vk.com/method/messages.send?'. $get_params);
-
-//Your server should return the "ok" string as a response to each request.
-echo('ok');
-
-break;
-
-}
 ?>
