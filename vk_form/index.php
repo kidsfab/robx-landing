@@ -8,7 +8,7 @@
 <body style="background-color: #000000; color: #00FF00; font-family: monospace ; padding: 0 10px;">
     Response
 <pre>
-<?php echo('e7e13fe2'); ?>
+<?php $_POST["group_id"]; ?>
 </pre>
 </body>
 </html>
