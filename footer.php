@@ -29,7 +29,7 @@
 			<br>
 			All rights reserved.
 			<br>
-			Tel. <a class="mgo-number-12398" href="tel:+78123177074">+7 (812) 317-70-74</a> 
+			Tel. <a class="mgo-number-12398" href="tel:+78123177074">+7 (812) 317-70-74</a>
 		</div>
 		<div>
 			Услуги оказывает: ООО "Робикс"
@@ -40,3 +40,4 @@
 		</div>
 	</div>
 </footer>
+<div id="vk_community_messages"></div>
