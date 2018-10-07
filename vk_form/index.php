@@ -1,6 +1,3 @@
-<?php
-header('Content-Type: application/json');
-?>
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -10,7 +7,10 @@ header('Content-Type: application/json');
 <body style="background-color: #000000; color: #00FF00; font-family: monospace ; padding: 0 10px;">
   Request was
 <pre>
-<?php echo $_GET; ?>
+<?php
+header('Content-Type: application/json');
+echo $_GET;
+?>
 </pre>
 </body>
 </html>
