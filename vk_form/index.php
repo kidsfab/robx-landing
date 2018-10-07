@@ -9,11 +9,11 @@
     Response
 <pre>
 <?php
-printf ($_SERVER["REQUEST_METHOD")
-foreach ($_POST as $param_name => $param_val) {
-    printf "Param: $param_name; Value: $param_val<br />\n";
-}
+$content = trim(file_get_contents("php://input"));
 
+//Attempt to decode the incoming RAW post data from JSON.
+$decoded = json_decode($content, true);
+printf ($decoded);
 
 ?>
 </pre>
