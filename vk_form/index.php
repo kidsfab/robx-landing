@@ -8,9 +8,8 @@
   Request was
 <pre>
 <?php
-print_r($_GET);
-print_r($_POST['group_id']);
-print_r($_REQUEST);
+print_r(json_encode($_GET));
+print_r(json_encode($_POST));
 
 ?>
 </pre>
