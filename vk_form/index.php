@@ -8,7 +8,7 @@ if (!isset($_REQUEST)) {
 $confirmation_token = 'e7e13fe2';
 
 //Community access_token
-$token = 'c0223f775444cf3d58a8a1442ec76a9571c8f58e3e24616d9440f73dc43022bbead9b2e576cb41d09c0a1';
+$token = getenv('VKSK');
 
 //Receive and decode notification
 $data = json_decode(file_get_contents('php://input'));
@@ -35,7 +35,7 @@ switch ($data->type) {
     $request_params = array(
       'message' => "Hello, {$user_name}!",
       'user_id' => $user_id,
-      // 'access_token' => $token, 
+      'access_token' => $token,
       'v' => '5.85'
     );
 
