@@ -21,6 +21,7 @@ switch ($data->type) {
 
     default:
         file_put_contents('result.txt', json_encode($data), FILE_APPEND);
+        echo 'ok';
         break;
 
 }
