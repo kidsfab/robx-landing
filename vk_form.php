@@ -13,9 +13,24 @@ switch ($data->type) {
         //...отправляем строку для подтверждения
         echo $confirmation_token;
         break;
-    default:
-        file_put_contents('result.txt', json_encode($data), FILE_APPEND);
-        echo 'ok';
+    case 'lead_forms_new':
+        $first_name = NIL;
+        $phone_number = NIL;
+        foreach ($data->object->answers as $el){
+            if($el->key == 'first_name'){
+                $first_name = $el->answer;
+            }
+            if($el->key == 'phone_number'){
+                $phone_number = $el->answer;
+            }
+            if($first_name and $phone_number){
+                // отправляем данные. Пока заглушка
+                file_put_contents('result.txt', '$first_name $phone_number', FILE_APPEND);
+                
+                echo 'ok';
+                break;
+            }
+        }
         break;
 }
 ?>
