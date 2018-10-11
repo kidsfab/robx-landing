@@ -14,6 +14,7 @@ switch ($data->type) {
         echo $confirmation_token;
         break;
     case 'lead_forms_new':
+        if ($data->form_id != 1){break;}
         $first_name = NIL;
         $phone_number = NIL;
         foreach ($data->object->answers as $el){
