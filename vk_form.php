@@ -1,4 +1,6 @@
 <?php
+require 'main/tallanto.php';
+
 if (!isset($_REQUEST)) {
     return;
 }
@@ -25,8 +27,8 @@ switch ($data->type) {
                 $phone_number = $el->answer;
             }
             if($first_name and $phone_number){
-                // отправляем данные. Пока заглушка
-                file_put_contents('result.txt', "$first_name $phone_number\n", FILE_APPEND);
+                // отправляем данные.
+                enderToTallanto('Contact',$data);
                 
                 echo 'ok';
                 break;
