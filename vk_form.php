@@ -28,7 +28,13 @@ switch ($data->type) {
             }
             if($first_name and $phone_number){
                 // отправляем данные.
-                senderToTallanto('Contact', array("first_name" => $first_name, "phone_mobile" => $phone_number, "utm_medium" => "social", "utm_source"="VK"));
+                senderToTallanto('Contact', array("first_name" => $first_name, 
+                                                  "phone_mobile" => $phone_number, 
+                                                  "utm_medium" => "social", 
+                                                  "utm_source"="VK",
+                                                  "LBL_CONTACT_SOURCE"="VK target"
+                                                 )
+                                );
                 
                 echo 'ok';
                 break;
