@@ -31,8 +31,7 @@ switch ($data->type) {
                 senderToTallanto('Contact', array("first_name" => $first_name, 
                                                   "phone_mobile" => $phone_number, 
                                                   "utm_medium" => "social", 
-                                                  "utm_source"="VK",
-                                                  "LBL_CONTACT_SOURCE"="VK target"
+                                                  "utm_source"="VK"
                                                  )
                                 );
                 
