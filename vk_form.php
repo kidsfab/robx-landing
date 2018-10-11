@@ -28,7 +28,7 @@ switch ($data->type) {
             }
             if($first_name and $phone_number){
                 // отправляем данные.
-                senderToTallanto('Contact',$data);
+                senderToTallanto('Contact', array("first_name" => $first_name, "phone_number" => $phone_number));
                 
                 echo 'ok';
                 break;
