@@ -14,6 +14,7 @@ switch ($data->type) {
         echo $confirmation_token;
         break;
     case 'lead_forms_new':
+        file_put_contents('tmp.txt',json_encode($data));
         if ($data->form_id != 1){break;}
         $first_name = NIL;
         $phone_number = NIL;
