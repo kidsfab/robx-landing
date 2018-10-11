@@ -26,7 +26,7 @@ switch ($data->type) {
             }
             if($first_name and $phone_number){
                 // отправляем данные. Пока заглушка
-                file_put_contents('result.txt', `$first_name $phone_number\n`, FILE_APPEND);
+                file_put_contents('result.txt', "$first_name $phone_number\n", FILE_APPEND);
                 
                 echo 'ok';
                 break;
