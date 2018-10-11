@@ -28,7 +28,7 @@ switch ($data->type) {
             }
             if($first_name and $phone_number){
                 // отправляем данные.
-                enderToTallanto('Contact',$data);
+                senderToTallanto('Contact',$data);
                 
                 echo 'ok';
                 break;
