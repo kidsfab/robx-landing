@@ -50,7 +50,7 @@
 	</div>
 	<div class = "map-wraper">
 		<div id = "map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7c6f77246f97ed6ad2efb0e8998b0d03db975a7bd4e4bc9c3416ce361f3ecc9b&amp;lang=ru_RU&amp;scroll=true"></script>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5a7b99400e6ea782bcd3b59cf0be0539b2dc07d4dda0d6b53c3dec5bc217d223&amp;lang=ru_RU&amp;scroll=true"></script>
 		</div>
 	</div>
 </div>
