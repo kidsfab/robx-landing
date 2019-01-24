@@ -42,11 +42,6 @@
 			<div>(Фрунзенский район) </div>
 			<div>м. Международная</div>
 		</div>
-		<div class = "address">
-			<div>Большая Пороховская ул., 52 корпус 2 (школа Аристос)</div>
-			<div>(Красногвардейский район) </div>
-			<div>м. Ладожская</div>
-		</div>
 	</div>
 	<div class = "map-wraper">
 		<div id = "map">
