@@ -22,7 +22,7 @@
 				<a href = "#addresses">Контакты</a>
 			</div>
 			<div>
-				<a href = "https://lk.robx.org" align='center' target='_blank'>Личный кабинет</a>
+				<a href = "https://lk.robx.org" style='text-align: center' target='_blank'>Личный кабинет</a>
 			</div>
 			<div class = "phone">
 				<a class="circled mgo-number-12398" href="tel:+78123177074">т. 317 70 74</a>
