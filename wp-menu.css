@@ -1,0 +1,50 @@
+#menu-menyu1 > li:first-child {
+  background: rgb(73, 109, 251);
+}
+#menu-menyu1 > li:first-child a {
+  background: rgb(73, 109, 251);
+  color: white;
+  text-shadow: none;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  line-height: 26px;
+  height: 26px;
+  margin: 8px 16px;
+}
+#menu-menyu1 > li:first-child a:hover {
+  background: rgb(73, 109, 251);
+  color: white;
+  text-shadow: none;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  line-height: 26px;
+  height: 26px;
+  margin: 8px 16px;
+}
+@media screen and (max-width: 650px) {
+  #menu-menyu1 > li:first-child {
+    background: transparent !important;
+  }
+  #menu-menyu1 > li:first-child a {
+    background: rgb(73, 109, 251);
+    color: white;
+    text-shadow: none;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    line-height: 26px;
+    height: 26px;
+    margin: 8px 16px;
+    width: 42px;
+  }
+  #menu-menyu1 > li:first-child a:hover {
+    background: rgb(73, 109, 251) !important;
+    color: white !important;
+    text-shadow: none;
+    border: 2px solid #fff !important;
+    border-radius: 25px;
+    line-height: 26px;
+    height: 26px;
+    margin: 8px 16px;
+    width: 42px;
+  }
+}
