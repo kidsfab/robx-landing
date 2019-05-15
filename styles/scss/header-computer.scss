@@ -33,8 +33,7 @@ header {
 
 		border-right: 2px solid white;
 
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding: 20px;
 
 		@extend %flexbox;
 		@include justify-content(center);
