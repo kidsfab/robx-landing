@@ -7,12 +7,6 @@
 			<a class = "cross"><img src = 'icons/cross.png'></a>
 
 			<div>
-				<a href = "#about">О RobX</a>
-			</div>
-			<div>
-				<a href = "#videos">Проекты</a>
-			</div>
-			<div>
 				<a href = '#prices'>Стоимость</a>
 			</div>
 			<div>
@@ -20,6 +14,9 @@
 			</div>
 			<div>
 				<a href = "#addresses">Контакты</a>
+			</div>
+			<div>
+				<a href = "https://edu.robx.org" style='text-align: center' target='_blank'>База зананий</a>
 			</div>
 			<div>
 				<a href = "https://lk.robx.org" style='text-align: center' target='_blank'>Личный кабинет</a>
