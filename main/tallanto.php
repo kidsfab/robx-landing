@@ -29,9 +29,7 @@ function senderToTallanto($module, $params)
 	try {
 		$context = stream_context_create($options);
 		$serverRes = file_get_contents($url, false, $context);
-		$file = 'res.txt';
-
-		file_put_contents($file, $serverRes, FILE_APPEND | LOCK_EX);
+	
 		// Здесь можно произвести обработку запроса
 
 		$result = json_decode($serverRes, true);
@@ -39,6 +37,7 @@ function senderToTallanto($module, $params)
 			echo $serverRes;
 		}
 		elseif ($result['result'] == false) {
+			echo "<script>alert( 'Возникла ошибка. Ваши данные не были отправлены, позвоните по телефону 9398748 чтобы подтвердить запись.' );</script>";
 			echo $result['message'];
 		} else {
 
