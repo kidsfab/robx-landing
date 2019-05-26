@@ -66,6 +66,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 	//	}
 
 		$resultAccount = senderToTallanto('Contact',$data);
+		$file = 'requestdata.txt';
+		file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
 		 echo "<script>console.log('POST', " .  $api_response["success"]  .   " );</script>";
 	}
 	else{
