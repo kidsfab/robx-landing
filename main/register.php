@@ -19,7 +19,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     $time_block = 60*60*24; // Время на которое блокируется пользователь
     if (array_key_exists($_SERVER['REMOTE_ADDR'], $blocked) && time() - $blocked[$_SERVER['REMOTE_ADDR']] < $time_block){
         unset($blocked[$_SERVER['REMOTE_ADDR']]);
-    }
+	}
+	$file = 'post.txt';
+	file_put_contents($file, $_POST['name'], FILE_APPEND | LOCK_EX);
     if (!empty($_POST) && !( empty($_POST['name']) || empty($_POST['phone']) ) )
     {
 
@@ -50,20 +52,22 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 		$data = array(
 			'first_name' => $_POST['name'],
 			'phone_mobile' => $_POST['phone'],
-			'description' => $_POST['date'],
-			'email1' => $_POST['email'],
+			// 'description' => $_POST['date'],
+			// 'email1' => $_POST['email'],
 			'type_client_c' => 'ЛИД',
-			'utm_medium' => $_POST['medium'],
-			'utm_content' => $_POST['content'],
-			'utm_term' => $_POST['term'],
-			'utm_source' => $_POST['source'],
-			'utm_campaign' => $_POST['campaign'],
+			// 'utm_medium' => $_POST['medium'],
+			// 'utm_content' => $_POST['content'],
+			// 'utm_term' => $_POST['term'],
+			// 'utm_source' => $_POST['source'],
+			// 'utm_campaign' => $_POST['campaign'],
 			//'birthdate' => $_POST['birthday']
 		);
 
 	//	if(array_key_exists('address', $_POST) && $_POST['address'] !== '') {
 	//		$data['filial'] = array($_POST['address']);
 	//	}
+		$file = 'data.txt';
+		file_put_contents($file, $params, FILE_APPEND | LOCK_EX);
 		
 		$resultAccount = senderToTallanto('Contact',$data);
 
