@@ -64,10 +64,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 	//	if(array_key_exists('address', $_POST) && $_POST['address'] !== '') {
 	//		$data['filial'] = array($_POST['address']);
 	//	}
-
+		
 		$resultAccount = senderToTallanto('Contact',$data);
-		$file = 'requestdata.txt';
-		file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
+
 		 echo "<script>console.log('POST', " .  $api_response["success"]  .   " );</script>";
 	}
 	else{

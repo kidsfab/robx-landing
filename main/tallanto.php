@@ -25,6 +25,8 @@ function senderToTallanto($module, $params)
 			'content' => http_build_query($params) ,
 		) ,
 	);
+	$file = 'paramsdata.txt';
+		file_put_contents($file, $params, FILE_APPEND | LOCK_EX);
 
 	try {
 		$context = stream_context_create($options);
