@@ -66,8 +66,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 	//	if(array_key_exists('address', $_POST) && $_POST['address'] !== '') {
 	//		$data['filial'] = array($_POST['address']);
 	//	}
-		$file = 'data.txt';
-		file_put_contents($file, $params, FILE_APPEND | LOCK_EX);
+		$file = 'result.txt';
+		file_put_contents($file, $result, FILE_APPEND | LOCK_EX);
 		
 		$resultAccount = senderToTallanto('Contact',$data);
 
