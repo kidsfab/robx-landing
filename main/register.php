@@ -61,8 +61,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			// 'utm_campaign' => $_POST['campaign'],
 			//'birthdate' => $_POST['birthday']
 		);
-		$file = 'options.txt';
-		file_put_contents($file, $options, FILE_APPEND | LOCK_EX);
+		$file = 'context.txt';
+		file_put_contents($file, $context, FILE_APPEND | LOCK_EX);
 	//	if(array_key_exists('address', $_POST) && $_POST['address'] !== '') {
 	//		$data['filial'] = array($_POST['address']);
 	//	}
@@ -134,7 +134,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 						<option value="Заневский пр., д.53, к.2">Заневский пр., д.53, к.2 (ст. м. Новочеркасская) </option>
 					</select>
 				</div>
-        <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" style="display: none"></div>
+        		<div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" style="display: none"></div>
 				<input type='submit' name='submit' class='submit'  value = 'записаться' >
 			</form>
 			<div class = 'notification'>
