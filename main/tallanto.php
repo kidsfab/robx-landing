@@ -2,6 +2,7 @@
 
 function senderToTallanto($module, $params)
 {
+	file_put_contents("res.txt", $module, $params);
 	$crm_url = 'http://robx.tallanto.ru';
 	$url = $crm_url . '/index.php?entryPoint=dataCapture&module=' . $module;
 	$key = getenv('TALLANTO'); //ваш сгенерированный ключ для подписи(его изменять не надо)
