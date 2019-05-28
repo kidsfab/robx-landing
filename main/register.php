@@ -1,14 +1,7 @@
-<?php include("main/tallanto.php"); ?>
 
 <?php
 
 if($_SERVER["REQUEST_METHOD"] === "POST") {
-
-
-	//$google_recaptcha_secret = getenv('RECAPTCHA');
-	//$api_response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$google_recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
-
-	//$api_response = json_decode($api_response, true);
 
     $content_f = file_get_contents("blocked_users.txt");
     if ($content_f){
@@ -36,9 +29,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 					'entry_598421956' => $_POST['name'],
 					'entry_706895143' => $_POST['phone'],
 					'entry_30508999' => $_POST['date'],
-					//'entry_1552661339' => $_POST['address'],
-					//'entry_2103816587' => date_diff(date_create_from_format('Y-n-j', $_POST['birthday']), date_create())->y . '',
-					//'entry.800485612' => $_POST['email']
 				))
 			)
 		);
@@ -51,27 +41,15 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 		$data = array(
 			'first_name' => $_POST['name'],
 			'phone_mobile' => $_POST['phone'],
-			// 'description' => $_POST['date'],
-			// 'email1' => $_POST['email'],
 			'type_client_c' => 'ЛИД',
-			// 'utm_medium' => $_POST['medium'],
-			// 'utm_content' => $_POST['content'],
-			// 'utm_term' => $_POST['term'],
-			// 'utm_source' => $_POST['source'],
-			// 'utm_campaign' => $_POST['campaign'],
-			//'birthdate' => $_POST['birthday']
 		);
-		$file = 'context.txt';
-		file_put_contents($file, $context, FILE_APPEND | LOCK_EX);
-	//	if(array_key_exists('address', $_POST) && $_POST['address'] !== '') {
-	//		$data['filial'] = array($_POST['address']);
-	//	}
-		$file = 'result.txt';
-		file_put_contents($file, $result, FILE_APPEND | LOCK_EX);
-		
+	
+		$file = 'data.txt';
+		file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
+		include_once("tallanto.php");
 		$resultAccount = senderToTallanto('Contact',$data);
-
-		 echo "<script>console.log('POST', " .  $api_response["success"]  .   " );</script>";
+		
+		 echo "<script>console.log('TALLANTO', " .  $resultAccount  .   " );</script>";
 	}
 	else{
 		echo "<script>alert( 'Ваши данные не были отправлены, позвоните по телефону 9398748 чтобы подтвердить запись.' );</script>";
