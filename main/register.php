@@ -1,4 +1,3 @@
-
 <?php
 
 if($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -44,12 +43,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			'type_client_c' => 'ЛИД',
 		);
 	
-		$file = 'data.txt';
-		file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
 		include_once("tallanto.php");
 		$resultAccount = senderToTallanto('Contact',$data);
 		
-		 echo "<script>console.log('TALLANTO', " .  $resultAccount  .   " );</script>";
+		 echo "<script>console.log('senderToTallanto', " .  $resultAccount  .   " );</script>";
 	}
 	else{
 		echo "<script>alert( 'Ваши данные не были отправлены, позвоните по телефону 9398748 чтобы подтвердить запись.' );</script>";
