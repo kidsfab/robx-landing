@@ -1,40 +1,59 @@
 @import 'common.scss';
+@import 'typography.scss';
 
 main>.about {
-	@include flex-direction(column);
-	@include justify-content(center);
+	@extend %flexbox;
+	@include flex-direction(row);
+	// @include justify-content(flex-start);
+	// align-items: stretch;
+	// flex-wrap: wrap;
+	padding: 2em;
+	@extend %red;
 
-	h2 {
+	.moto {
 		@extend %flexbox;
 		@include flex-direction(column);
 
-		font-size: 25pt;
-		border: 5px solid white;
-		margin: 2em;
-		padding: 2em;
+		h2 {
+			@extend %h2;
+			border: 5px solid white;
+			margin-right: 2em;
+			margin-left: 2em;
+			margin-bottom: 2em;
+			padding: 2em;
+
+		}
+
 	}
 
 	.list {
 		@extend %flexbox;
 		@include flex-direction(column);
 
+
 		h3 {
 			@extend %flexbox;
-			font-size: 16pt;
+			@extend %h3;
+			margin: 1.5em;
+
 		}
 
 		ul {
 			@extend %flexbox;
 			list-style: none;
 
+
 			li {
+				padding: 1em;
 				width: 25%;
+				border-right: 1px dashed white;
+				text-align: center;
 
-
-				&>div:last-child {
+				&:last-child {
+					border-right: none;
 					padding-top: 5px;
 					margin-top: 5px;
-					text-align: center;
+
 				}
 
 				.image {
@@ -66,5 +85,6 @@ main>.about {
 
 	}
 
-	@extend %red,
+
+
 }

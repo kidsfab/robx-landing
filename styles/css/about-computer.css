@@ -1,4 +1,4 @@
-main > .about h2, main > .about .list, main > .about .list h3, main > .about .list ul, main > .about .list ul li .image {
+main > .about, main > .about .moto, main > .about .list, main > .about .list h3, main > .about .list ul, main > .about .list ul li .image {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -23,29 +23,58 @@ main > .about {
   color: white;
   background-color: #ee5930; }
 
+main > .about, main > .about .moto, main > .about .list, main > .about .list h3, main > .about .list ul, main > .about .list ul li .image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 480px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 480px) {
+    * {
+      font-size: 12pt; } }
+
+main > .about {
+  color: white;
+  background-color: #ee5930; }
+
+main > .about .moto h2 {
+  font-size: 25pt; }
+
+main > .about .list h3 {
+  font-size: 16pt; }
+
 main > .about {
   -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center; }
-  main > .about h2 {
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 2em; }
+  main > .about .moto {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
-    font-size: 25pt;
-    border: 5px solid white;
-    margin: 2em;
-    padding: 2em; }
+    flex-direction: column; }
+    main > .about .moto h2 {
+      border: 5px solid white;
+      margin-right: 2em;
+      margin-left: 2em;
+      margin-bottom: 2em;
+      padding: 2em; }
   main > .about .list {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
@@ -54,15 +83,18 @@ main > .about {
     -ms-flex-direction: column;
     flex-direction: column; }
     main > .about .list h3 {
-      font-size: 16pt; }
+      margin: 1.5em; }
     main > .about .list ul {
       list-style: none; }
       main > .about .list ul li {
-        width: 25%; }
-        main > .about .list ul li > div:last-child {
+        padding: 1em;
+        width: 25%;
+        border-right: 1px dashed white;
+        text-align: center; }
+        main > .about .list ul li:last-child {
+          border-right: none;
           padding-top: 5px;
-          margin-top: 5px;
-          text-align: center; }
+          margin-top: 5px; }
         main > .about .list ul li .image {
           -webkit-box-direction: normal;
           -webkit-box-orient: vertical;
