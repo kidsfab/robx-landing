@@ -1,21 +1,17 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 82 72" style="enable-background:new 0 0 82 72;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#4667FF;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
-<g id="Layer_4">
-</g>
 <g>
-	<g>
-		<line class="st0" x1="41" y1="43.7" x2="41" y2="54.8"/>
-		<line class="st0" x1="19.7" y1="63.8" x2="62.3" y2="63.8"/>
-		<line class="st0" x1="36.7" y1="43.7" x2="45.3" y2="43.7"/>
-		<line class="st0" x1="45.3" y1="43.7" x2="49.8" y2="19.4"/>
-		<line class="st0" x1="36.7" y1="43.7" x2="32.2" y2="19.4"/>
-		<line class="st0" x1="27.6" y1="8.2" x2="54.4" y2="8.2"/>
-		<line class="st0" x1="27.6" y1="19.4" x2="27.6" y2="8.2"/>
-		<line class="st0" x1="54.4" y1="19.4" x2="54.4" y2="8.2"/>
-		<line class="st0" x1="27.6" y1="19.4" x2="54.4" y2="19.4"/>
-	</g>
+	<line class="st0" x1="41" y1="43.7" x2="41" y2="54.8"/>
+	<line class="st0" x1="19.7" y1="63.8" x2="62.3" y2="63.8"/>
+	<line class="st0" x1="36.7" y1="43.7" x2="45.3" y2="43.7"/>
+	<line class="st0" x1="45.3" y1="43.7" x2="49.8" y2="19.4"/>
+	<line class="st0" x1="36.7" y1="43.7" x2="32.2" y2="19.4"/>
+	<line class="st0" x1="27.6" y1="8.2" x2="54.4" y2="8.2"/>
+	<line class="st0" x1="27.6" y1="19.4" x2="27.6" y2="8.2"/>
+	<line class="st0" x1="54.4" y1="19.4" x2="54.4" y2="8.2"/>
+	<line class="st0" x1="27.6" y1="19.4" x2="54.4" y2="19.4"/>
 </g>
 </svg>

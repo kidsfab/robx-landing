@@ -1,1 +1,90 @@
-main>.about,main>.about .list,main>.about .list>* .image{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex}*{font-family:'Open Sans', sans-serif;padding:0;margin:0}@media all and (min-width: 1080px){*{font-size:11pt}}@media all and (max-width: 1079px) and (min-width: 480px){*{font-size:8pt}}@media all and (max-width: 480px){*{font-size:12pt}}main>.about{color:white;background-color:#ee5930}main>.about{min-height:500px;border-bottom:2px solid white}main>.about h1{font-size:22pt;font-weight:lighter;padding-bottom:20px}main>.about>*{margin-left:auto;margin-right:auto}@media all and (min-width: 1080px){main>.about>*{width:1080px}}@media all and (max-width: 1079px){main>.about>*{width:96%}}main>.about{-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;-moz-justify-content:center;justify-content:center}main>.about h1{font-size:25pt;padding-bottom:50px}main>.about .list{-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;-moz-justify-content:space-between;justify-content:space-between}main>.about .list>*{width:16%}main>.about .list>*>div:last-child{border-top:1px solid white;padding-top:5px;margin-top:5px;text-align:center}main>.about .list>* .image{-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;-moz-justify-content:center;justify-content:center;margin-left:auto;margin-right:auto}@media all and (min-width: 1080px){main>.about .list>* .image{width:150px;height:150px}}@media all and (max-width: 1079px){main>.about .list>* .image{width:15vw;height:15vw}}main>.about .list>* .image img{width:100%;height:100%}
+main > .about h2, main > .about .list, main > .about .list h3, main > .about .list ul, main > .about .list ul li .image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 480px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 480px) {
+    * {
+      font-size: 12pt; } }
+
+main > .about {
+  color: white;
+  background-color: #ee5930; }
+
+main > .about {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+  main > .about h2 {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 25pt;
+    border: 5px solid white;
+    margin: 2em;
+    padding: 2em; }
+  main > .about .list {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    main > .about .list h3 {
+      font-size: 16pt; }
+    main > .about .list ul {
+      list-style: none; }
+      main > .about .list ul li {
+        width: 25%; }
+        main > .about .list ul li > div:last-child {
+          padding-top: 5px;
+          margin-top: 5px;
+          text-align: center; }
+        main > .about .list ul li .image {
+          -webkit-box-direction: normal;
+          -webkit-box-orient: vertical;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto; }
+          @media all and (min-width: 1080px) {
+            main > .about .list ul li .image {
+              width: 150px;
+              height: 150px; } }
+          @media all and (max-width: 1079px) {
+            main > .about .list ul li .image {
+              width: 15vw;
+              height: 15vw; } }
+          main > .about .list ul li .image img {
+            width: 100%;
+            height: 100%; }
