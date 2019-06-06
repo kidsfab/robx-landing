@@ -1,0 +1,6 @@
+@import 'common.scss';
+
+main>.advantages {
+    @extend %blue;
+    @extend %row;
+}

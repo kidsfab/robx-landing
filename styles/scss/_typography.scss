@@ -1,5 +1,13 @@
 @import '_common.scss';
 
+%h1 {
+    font-size: 20pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
 %h2 {
     font-size: 25pt;
 }

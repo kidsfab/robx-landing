@@ -53,24 +53,19 @@
 	.st49{opacity:0.77;clip-path:url(#SVGID_30_);fill:#4F5252;}
 	.st50{fill:none;stroke:#FFFFFF;stroke-width:4.792;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<g id="Layer_4">
-</g>
-<g id="Layer_3">
-	<g>
+
+<g>
 		<g>
-			<g>
 
-					<rect x="79.6" y="43.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 90 -37.2792)" class="st19" width="20.7" height="92.4"/>
-				<line class="st19" x1="106.6" y1="58.7" x2="114" y2="66"/>
-				<line class="st19" x1="60.2" y1="105.2" x2="68.1" y2="113.2"/>
-			</g>
-			<g>
-
-					<rect x="84.1" y="63.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 230.5294 100.6662)" class="st18" width="20.7" height="69.6"/>
-				<line class="st18" x1="119" y1="122.7" x2="69.8" y2="73.5"/>
-				<polygon class="st18" points="62.5,80.8 53.7,57.3 77.1,66.2 				"/>
-			</g>
+				<rect x="79.6" y="43.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 90 -37.2792)" class="st19" width="20.7" height="92.4"/>
+			<line class="st19" x1="106.6" y1="58.7" x2="114" y2="66"/>
+			<line class="st19" x1="60.2" y1="105.2" x2="68.1" y2="113.2"/>
 		</g>
-	</g>
+		<g>
+
+				<rect x="84.1" y="63.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 230.5294 100.6662)" class="st18" width="20.7" height="69.6"/>
+			<line class="st18" x1="119" y1="122.7" x2="69.8" y2="73.5"/>
+			<polygon class="st18" points="62.5,80.8 53.7,57.3 77.1,66.2 				"/>
+		</g>
 </g>
 </svg>

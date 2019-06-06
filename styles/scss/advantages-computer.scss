@@ -1,0 +1,30 @@
+@import 'common.scss';
+@import 'typography.scss';
+
+main>.advantages {
+    @extend %blue;
+    @extend %row;
+
+    h1 {
+        @extend %h1;
+
+    }
+
+    ul.advantage-items {
+        @extend %flexbox;
+        @include flex-direction(column);
+        list-style: none;
+
+        li {
+            img {
+                border: 1px solid #fff;
+                background: #fff;
+                border-radius: 50%;
+            }
+
+        }
+
+    }
+
+
+}

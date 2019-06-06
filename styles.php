@@ -19,6 +19,8 @@
 <link rel = "stylesheet" href = "styles/css/reviews-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/addresses-computer.css" media = "all and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/addresses-phone.css" media = "all and (max-width: 480px)">
+<link rel = "stylesheet" href = "styles/css/advantages-computer.css" media = "all and (min-width: 481px)">
+<link rel = "stylesheet" href = "styles/css/advantages-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/prices-computer.css" media = "all and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/prices-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/footer-computer.css" media = "all and (min-width: 481px)">

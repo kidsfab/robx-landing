@@ -7,8 +7,9 @@
 		<div>Запишитесь на первое бесплатное занятие</div>
 		<a href = "#register">Записаться</a>
 	</div>
+	<?php include("main/advantages.php"); ?>
 
-	<?php include("main/teachers.php"); ?>
+	
 	<?php include("main/prices.php"); ?>
 
 	<div class = 'inter'>
@@ -19,5 +20,6 @@
 	<?php include("main/photos.php"); ?>
 	<?php include("main/reviews.php"); ?>
 	<?php include("main/addresses.php"); ?>
+	<?php include("main/teachers.php"); ?>
 </main>
 
