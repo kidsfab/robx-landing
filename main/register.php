@@ -59,28 +59,28 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <a name="register"></a>
 <div class="register">
-	<div class = "content">
-		<div class = "intro">
+	<div class="content">
+		<div class="intro">
 			<h3>
-				Запись на первое бесплатное занятие в Кружке Робототехники!
+				Запись на первое<br/> бесплатное занятие<br/> в Кружке Робототехники!
 			</h3>
-			<div class = "information">
-				<div class = "next">
-					Ближайшие занятия:
-					<div>
-						3 - 9 июня 
-					</div>
-				</div>
-				<div class = "free">
-
-				</div>
-				<div class = "rest">
-					До занятия осталось:
-					<div>
-						-
-					</div>
-				</div>
-			</div>
+			<table class="information">
+				<tbody>
+					<tr class="next">
+						<th>Ближайшие занятия:</th>
+						<td>
+							3 - 9 июня 
+						</td>
+					</tr>
+					<tr class="counter">
+						<th>До занятия осталось:</th>
+						<td>
+							5 дней
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
 		</div>
 		<div class="form">
 			<form action="https://robx.org/" target="_self" method='post' onsubmit="yaCounter39897755.reachGoal('ORDER');">
@@ -107,13 +107,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 					</select>
 				</div>
         		<div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" style="display: none"></div>
-				<input type='submit' name='submit' class='submit'  value = 'записаться' >
+				<input type='submit' name='submit' class='submit'  value='Записаться' >
 			</form>
 			<div class = 'notification'>
 				Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
 			</div>
 		</div>
-		<div class = "footnote">
+		<div class="footnote">
 			* Мы уважаем вашу конфиденциальность, введенная в форму информация не будет передаваться третьим лицам.
 		</div>
 	</div>
