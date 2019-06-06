@@ -57,16 +57,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 
-<a name = "register"></a>
-<div class = "register">
+<a name="register"></a>
+<div class="register">
 	<div class = "content">
 		<div class = "intro">
-			<div>
-				<img src = "icons/arrows.png">
-				<div>
-					Запись на первое бесплатное занятие в Кружке Робототехники!
-				</div>
-			</div>
+			<h3>
+				Запись на первое бесплатное занятие в Кружке Робототехники!
+			</h3>
 			<div class = "information">
 				<div class = "next">
 					Ближайшие занятия:
@@ -85,7 +82,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				</div>
 			</div>
 		</div>
-		<div class = "form">
+		<div class="form">
 			<form action="https://robx.org/" target="_self" method='post' onsubmit="yaCounter39897755.reachGoal('ORDER');">
 				<div class = 'entry required'>
 					<input name = 'name' type = 'text' placeholder="Как к Вам обращаться?" required>
@@ -116,14 +113,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
 			</div>
 		</div>
-	</div>
-	<div class = "footnote">
-		<div>
-			*Мы уважаем вашу конфиденциальность, введенная в форму информация не будет передаваться третьим лицам.
-		</div>
-		<div>
-			Заполняя настоящую форму, в соответствии с требованиями статьи 9 Федерального закона от 27.07.2006 No 152-ФЗ «О персональных данных»,
-			Вы подтверждаете свое согласие на обработку вносимых в форму персональных данных, лицом оказывающим услуги на основании данной формы
+		<div class = "footnote">
+			* Мы уважаем вашу конфиденциальность, введенная в форму информация не будет передаваться третьим лицам.
 		</div>
 	</div>
+	
 </div>

@@ -5,7 +5,7 @@ header {
 	top: 0;
 	left: 0;
 
- 	width: 100%;
+	width: 100%;
 
 	@extend %flexbox;
 	@include justify-content(center);
@@ -22,7 +22,7 @@ header {
 		opacity: 0.5;
 	}
 
-	& > div {
+	&>div {
 		@media all and (min-width: $large) {
 			width: $large / 12 - 2;
 		}
@@ -53,6 +53,20 @@ header {
 			border-right: 0;
 		}
 
+		&.lk a {
+			display: flex;
+			align-items: center;
+			text-align: center;
+		}
+
+		&.lk img {
+			width: 2em;
+		}
+
+		&.lk span {
+			margin-left: 0.5em
+		}
+
 		* {
 			margin-bottom: auto;
 			margin-top: auto;
@@ -61,7 +75,7 @@ header {
 
 	.logo {
 		@media all and (min-width: $large) {
-			width: 2 * $large / 12  - 3;
+			width: 2 * $large / 12 - 3;
 		}
 
 		@media all and (max-width: $large - 1) {
@@ -87,12 +101,13 @@ header {
 		@media all and (max-width: $large - 1) {
 			width: 16%;
 		}
+
 		@include order(100);
 	}
 
 	.register {
 		@media all and (min-width: $large) {
-			width: 2 * $large / 12  - 2;
+			width: 2 * $large / 12 - 2;
 		}
 
 		@media all and (max-width: $large - 1) {
@@ -114,7 +129,8 @@ header {
 		font-weight: 900;
 	}
 
-	.burger, .cross {
+	.burger,
+	.cross {
 		display: none;
 	}
 }
