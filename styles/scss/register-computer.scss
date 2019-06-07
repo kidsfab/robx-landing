@@ -14,12 +14,12 @@ main>.register {
 		@include justify-content(space-between);
 		padding: 40px;
 		margin-left: 1em;
-		width: 50%;
+		width: 40%;
 		@include flex-direction(column);
 
 		.intro {
 			@media all and (min-width: $large) {
-				width: 570px;
+				width: 440px;
 			}
 
 			@media all and (max-width: $large - 1) {
@@ -214,18 +214,8 @@ main>.register {
 	.footnote {
 		font-weight: lighter;
 		padding-top: 10px;
+		width: 100%;
 
-		* {
-			font-size: 8pt;
-
-			&:first-child {
-				width: 360px;
-			}
-
-			&:last-child {
-				width: 720px;
-			}
-		}
 	}
 
 

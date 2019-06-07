@@ -35,7 +35,7 @@ main > .register {
     justify-content: space-between;
     padding: 40px;
     margin-left: 1em;
-    width: 50%;
+    width: 40%;
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
     -webkit-flex-direction: column;
@@ -44,7 +44,7 @@ main > .register {
     flex-direction: column; }
     @media all and (min-width: 1080px) {
       main > .register .content .intro {
-        width: 570px; } }
+        width: 440px; } }
     @media all and (max-width: 1079px) {
       main > .register .content .intro {
         width: 52%; } }
@@ -182,12 +182,7 @@ main > .register {
         padding-right: 18px; }
   main > .register .footnote {
     font-weight: lighter;
-    padding-top: 10px; }
-    main > .register .footnote * {
-      font-size: 8pt; }
-      main > .register .footnote *:first-child {
-        width: 360px; }
-      main > .register .footnote *:last-child {
-        width: 720px; }
+    padding-top: 10px;
+    width: 100%; }
 
 /*# sourceMappingURL=register-computer.css.map */
