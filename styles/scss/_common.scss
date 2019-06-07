@@ -10,14 +10,16 @@ $small: 480px;
 	@media all and (min-width: $large) {
 		font-size: 11pt;
 	}
+
 	@media all and (max-width: $large - 1) and (min-width: $small) {
 		font-size: 8pt;
 	}
+
 	@media all and (max-width: $small) {
 		font-size: 12pt;
 	}
 
-	
+
 	padding: 0;
 	margin: 0;
 }
@@ -39,7 +41,7 @@ $small: 480px;
 
 %row {
 	min-height: 500px;
-	
+
 	@extend %flexbox;
 
 	border-bottom: 2px solid white;
@@ -54,7 +56,7 @@ $small: 480px;
 }
 
 %double-row {
-	& > * {
+	&>* {
 		@media all and (min-width: $large) {
 			width: $large;
 		}
@@ -73,8 +75,8 @@ $small: 480px;
 %single-row {
 	@include justify-content(flex-end);
 	padding: 0;
-	
-	& > *:first-child {
+
+	&>*:first-child {
 		@media all and (min-width: $large) {
 			width: $large / 2 - 31px;
 		}
@@ -91,10 +93,30 @@ $small: 480px;
 		@include flex-direction(column);
 	}
 
-	& > *:nth-child(2) {
+	&>*:nth-child(2) {
 		width: calc(50% - 1px);
 		@extend %flexbox;
 	}
 
 	@extend %row;
+}
+
+@mixin descending-z-index($count: 30) {
+	// @include on UL class
+	position: relative;
+
+	li {
+		position: relative;
+		$target: 0;
+		$index: $count;
+
+		@while $index>0 {
+			&:nth-child(#{$target}) {
+				z-index: #{$index};
+			}
+
+			$target: $target+1;
+			$index: $index - 1;
+		}
+	}
 }
