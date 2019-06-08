@@ -1,7 +1,7 @@
 @import 'slider.scss';
 @import 'phone-common.scss';
 
-main > .teachers {
+main>.team {
 	h1 {
 		font-size: 20pt;
 		text-align: center;
@@ -12,23 +12,23 @@ main > .teachers {
 	}
 
 	.list {
-		& > div { 
+		&>div {
 			@extend %flexbox;
 			@include flex-direction(column);
 
-			& > * {
+			&>* {
 				margin-left: auto;
 				margin-right: auto;
 			}
 
 			img {
-				margin-bottom: 20px;	
+				margin-bottom: 20px;
 			}
-	
+
 			.name {
 				@extend %flexbox;
 
-	
+
 				.first::after {
 					content: ' ';
 					white-space: pre;
@@ -36,10 +36,10 @@ main > .teachers {
 
 				font-size: 15pt;
 				font-weight: bold;
-	
+
 				text-align: center;
 			}
-	
+
 			.bio {
 				text-align: center;
 			}
@@ -48,5 +48,6 @@ main > .teachers {
 		@extend %slider;
 	}
 
-	@extend %row, %blue;
+	@extend %row,
+	%blue;
 }

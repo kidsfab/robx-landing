@@ -3,7 +3,7 @@
 <script src="scripts/slider.js"></script>
 <script src="scripts/header.js"></script>
 <script src="scripts/time.js"></script>
-<script src="scripts/teachers.js"></script>
+<script src="scripts/team.js"></script>
 <script src="scripts/gallery.js"></script>
 <script src="scripts/addresses.js"></script>
 <script src="scripts/videos.js"></script>

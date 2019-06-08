@@ -20,6 +20,6 @@
 	<?php include("main/photos.php"); ?>
 	<?php include("main/reviews.php"); ?>
 	<?php include("main/addresses.php"); ?>
-	<?php include("main/teachers.php"); ?>
+	<?php include("main/team.php"); ?>
 </main>
 

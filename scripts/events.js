@@ -1,6 +1,6 @@
-$(function() {
+$(function () {
 	init_videos();
-	init_teachers();
+	init_team();
 	init_addresses();
 	init_gallery();
 	init_header();
@@ -8,21 +8,21 @@ $(function() {
 	init_register();
 });
 
-$( window ).on('load', function() {
+$(window).on('load', function () {
 	resize_videos();
-	resize_teachers();
+	resize_team();
 	resize_addresses();
 	resize_gallery();
-	resize_header();	
-	resize_reviews();	
+	resize_header();
+	resize_reviews();
 
 });
 
-$( window ).resize(function() {
+$(window).resize(function () {
 	resize_videos();
-	resize_teachers();
+	resize_team();
 	resize_addresses();
 	resize_gallery();
-	resize_header();	
-	resize_reviews();	
+	resize_header();
+	resize_reviews();
 });

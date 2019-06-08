@@ -11,8 +11,8 @@
 <link rel = "stylesheet" href = "styles/css/about-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/videos-computer.css"  media = "all and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/videos-phone.css" media = "all and (max-width: 480px)">
-<link rel = "stylesheet" href = "styles/css/teachers-computer.css" media = "all and (min-width: 481px)">
-<link rel = "stylesheet" href = "styles/css/teachers-phone.css" media = "all and (max-width: 480px)">
+<link rel = "stylesheet" href = "styles/css/team-computer.css" media = "all and (min-width: 481px)">
+<link rel = "stylesheet" href = "styles/css/team-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/photos-computer.css"  media = "all and (min-width: 481px)">
 <link rel = "stylesheet" href = "styles/css/photos-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/reviews-computer.css" media = "all and (min-width: 481px)">

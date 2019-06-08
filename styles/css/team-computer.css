@@ -1,4 +1,4 @@
-main > .teachers, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .team, main > .team .list, main > .team .list .info, main > .team .list .info .name {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -19,29 +19,29 @@ main > .teachers, main > .teachers .list, main > .teachers .list .info, main > .
     * {
       font-size: 12pt; } }
 
-main > .teachers {
+main > .team {
   color: white;
   background-color: #4667FF; }
 
-main > .teachers {
+main > .team {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .teachers h1 {
+  main > .team h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
 
-main > .teachers > * {
+main > .team > * {
   margin-left: auto;
   margin-right: auto; }
   @media all and (min-width: 1080px) {
-    main > .teachers > * {
+    main > .team > * {
       width: 1080px; } }
   @media all and (max-width: 1079px) {
-    main > .teachers > * {
+    main > .team > * {
       width: 96%; } }
 
-main > .teachers {
+main > .team {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -53,7 +53,7 @@ main > .teachers {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center; }
-  main > .teachers .list {
+  main > .team .list {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
@@ -61,7 +61,7 @@ main > .teachers {
     justify-content: space-between;
     padding-bottom: 20px;
     padding-top: 10px; }
-    main > .teachers .list .info {
+    main > .team .list .info {
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -70,27 +70,33 @@ main > .teachers {
       -ms-flex-pack: justify;
       -webkit-justify-content: space-between;
       -moz-justify-content: space-between;
-      justify-content: space-between; }
+      justify-content: space-between;
+      -webkit-align-content: flex-start;
+      -moz-align-content: flex-start;
+      -ms-flex-line-pack: start;
+      align-content: flex-start; }
       @media all and (min-width: 1080px) {
-        main > .teachers .list .info {
+        main > .team .list .info {
           width: 320px; } }
       @media all and (max-width: 1079px) {
-        main > .teachers .list .info {
+        main > .team .list .info {
           width: 30%; } }
-      main > .teachers .list .info img {
+      main > .team .list .info img {
         width: 80px;
         height: 80px;
         display: block;
         padding-bottom: 10px; }
-      main > .teachers .list .info .name {
+      main > .team .list .info .name {
         width: calc(100% - 100px);
         margin-top: auto;
         margin-bottom: auto;
         padding-bottom: 10px;
         flex-direction: column; }
-        main > .teachers .list .info .name * {
+        main > .team .list .info .name * {
           font-size: 15pt;
           font-weight: 600; }
-      main > .teachers .list .info .bio {
+      main > .team .list .info .title {
+        margin: 1em 0; }
+      main > .team .list .info .bio {
         width: 100%;
         font-weight: lighter; }
