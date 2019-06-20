@@ -9,9 +9,7 @@
 			<div>
 				<a href = '#prices'>Стоимость</a>
 			</div>
-			<div>
-				<a href = "#photos">Фото</a>
-			</div>
+			
 			<div>
 				<a href = "#addresses">Контакты</a>
 			</div>
