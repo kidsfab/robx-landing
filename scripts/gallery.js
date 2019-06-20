@@ -1,7 +1,7 @@
 function init_gallery() {
-	init_computer_slider('.galery');
+	init_computer_slider('.gallery');
 }
 
 function resize_gallery() {
-	update_computer_slider('.galery');
+	update_computer_slider('.gallery');
 }

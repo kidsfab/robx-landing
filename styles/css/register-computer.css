@@ -1,5 +1,5 @@
 @charset "UTF-8";
-main > .register .content {
+main > .register .gallery, main > .register .content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -27,7 +27,65 @@ main > .register .content {
 main > .register {
   padding-top: 90px;
   padding-bottom: 90px; }
+  main > .register .gallery {
+    z-index: -1;
+    height: 500px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute; }
+    main > .register .gallery img {
+      height: 100%;
+      width: auto;
+      position: relative;
+      margin-left: 0;
+      opacity: 0.2;
+      visibility: hidden; }
+      main > .register .gallery img.current {
+        opacity: 1; }
+      main > .register .gallery img.additional:first-of-type, main > .register .gallery img.additional:last-of-type {
+        opacity: 1; }
+    main > .register .gallery .slide {
+      visibility: visible; }
+    main > .register .gallery .left {
+      position: absolute;
+      z-index: 4;
+      cursor: pointer;
+      top: 221px;
+      left: 20px;
+      width: 26px;
+      height: 58px;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='58'><line x1='25' y1='1' x2='1' y2='29' stroke-width='5' stroke-linecap='round' stroke='rgb(255,255,255)'  /><line x1='1' y1='29' x2='25' y2='57' stroke-linecap='round' stroke-width='5' stroke='rgb(255,255,255)' /> </svg>") no-repeat; }
+    main > .register .gallery .right {
+      position: absolute;
+      z-index: 4;
+      cursor: pointer;
+      top: 221px;
+      right: 20px;
+      width: 26px;
+      height: 58px;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='58'><line x1='1' y1='1' x2='25' y2='29' stroke-width='5' stroke-linecap='round' stroke='rgb(255,255,255)'  /><line x1='25' y1='29' x2='1' y2='57' stroke-linecap='round' stroke-width='5' stroke='rgb(255,255,255)' /> </svg>") no-repeat; }
+  main > .register nav {
+    position: absolute;
+    bottom: 20px;
+    width: auto;
+    z-index: 4; }
+    main > .register nav div {
+      display: inline-block;
+      vertical-align: middle;
+      width: 8px;
+      height: 8px;
+      margin: 0 8px;
+      background: transparent;
+      border-radius: 8px;
+      overflow: hidden;
+      text-indent: -999em;
+      border: 3px solid white;
+      cursor: pointer; }
+      main > .register nav div.current {
+        background-color: white; }
   main > .register .content {
+    z-index: 1;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;

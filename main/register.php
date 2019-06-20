@@ -58,7 +58,17 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
 <a name="register"></a>
+
 <div class="register">
+	<div class="gallery">
+		<img src = "photos/photo1.jpg">
+		<img src = "photos/photo2.jpg">
+		<img src = "photos/photo3.jpg">
+		<img src = "photos/photo4.jpg">
+		<img src = "photos/photo5.jpg">
+		<img src = "photos/photo6.jpg">
+		<img src = "photos/photo7.jpg">
+	</div>
 	<div class="content">
 		<div class="intro">
 			<h3>
