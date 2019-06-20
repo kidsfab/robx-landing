@@ -1,8 +1,10 @@
 @import 'common.scss';
 
-main > .reviews {
+main>.reviews {
 	@include flex-direction(column);
 	@include justify-content(center);
+	@extend %blue;
+	@extend %double-row;
 	overflow: hidden;
 
 	.list {
@@ -10,16 +12,16 @@ main > .reviews {
 		@include flex-direction(row);
 
 		overflow: hidden;
-		
+
 		width: 100%;
 		padding-left: calc(50% - 540px);
 
 		position: relative;
 
-		.current + div > img {
+		.current+div>img {
 			left: calc(547px - 100%);
 			position: relative;
-		}	
+		}
 
 		div {
 			img:first-child {
@@ -29,11 +31,11 @@ main > .reviews {
 			}
 
 			img:nth-child(2) {
-				display:none;
+				display: none;
 			}
 
 			min-width: 100%;
-			position: relative;	
+			position: relative;
 		}
 
 		.left {
@@ -41,32 +43,33 @@ main > .reviews {
 			z-index: 2;
 			cursor: pointer;
 
-			top: calc(50% - 29px);;
+			top: calc(50% - 29px);
+			;
 			left: 20px;
 
 			width: 26px;
 			height: 58px;
 
-			background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='58'><line x1='25' y1='1' x2='1' y2='29' stroke-width='5' stroke-linecap='round' stroke='rgb(255,255,255)'  /><line x1='1' y1='29' x2='25' y2='57' stroke-linecap='round' stroke-width='5' stroke='rgb(255,255,255)' /> </svg>")  no-repeat;
+			background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='58'><line x1='25' y1='1' x2='1' y2='29' stroke-width='5' stroke-linecap='round' stroke='rgb(255,255,255)'  /><line x1='1' y1='29' x2='25' y2='57' stroke-linecap='round' stroke-width='5' stroke='rgb(255,255,255)' /> </svg>") no-repeat;
 		}
 
-		 .right {
+		.right {
 			position: absolute;
 			z-index: 2;
 			cursor: pointer;
 
-			top: calc(50% - 29px);;
+			top: calc(50% - 29px);
+			;
 			left: calc(100vw - 46px);
 
 			width: 26px;
 			height: 58px;
 
-			background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='58'><line x1='1' y1='1' x2='25' y2='29' stroke-width='5' stroke-linecap='round' stroke='rgb(255,255,255)'  /><line x1='25' y1='29' x2='1' y2='57' stroke-linecap='round' stroke-width='5' stroke='rgb(255,255,255)' /> </svg>")  no-repeat;
+			background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='58'><line x1='1' y1='1' x2='25' y2='29' stroke-width='5' stroke-linecap='round' stroke='rgb(255,255,255)'  /><line x1='25' y1='29' x2='1' y2='57' stroke-linecap='round' stroke-width='5' stroke='rgb(255,255,255)' /> </svg>") no-repeat;
 		}
 
 
 	}
 
-	@extend %blue, %double-row;
 
 }

@@ -1,63 +1,81 @@
 @import 'phone-common.scss';
 
-main > .about {	
-	h1 {
-		width: 80vw;
-		margin-left: auto;
-		margin-right: auto;
+main>.about {
+	@extend %row;
+	@extend %red;
 
-		font-size: 20pt;
-		text-align: center;
-		padding-bottom: 30px;
-	
+	.moto {
+		h2 {
+			width: 80vw;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 20pt;
+			text-align: center;
+			padding-bottom: 30px;
+		}
 	}
 
 	.list {
 		@extend %flexbox;
 		@include flex-direction(column);
 
-		& > div {
-			border-top: 1px solid rgba(255,255,255,0.5);
-			padding-top: 5px;
-			margin-top: 5px;
-			margin-left: auto;
-			margin-right: auto;
-
+		h3 {
 			@extend %flexbox;
-			@include justify-content(space-around);
-			width: 80vw;
-
-			&:first-child {
-				border: 0;
-			}
-
-			.image {
-				width: 18vw;
-				height: 18vw;
-				@extend %flexbox;
-				@include justify-content(center);
-				@include flex-direction(column);
-
-				padding-left: 1wv;
-
-				img {
-					max-width: 100%;
-					max-height: 100%;
-				}
-			}
-
-			& > div {
-				margin-top: auto;
-				margin-bottom: auto;
-				width: 50vw;
-
-				padding-right: 1vw;
-			}
-
+			margin: 1.5em;
 
 		}
+
+		ul {
+			@extend %flexbox;
+			@include flex-direction(row);
+			@include flex-flow(column wrap);
+			@include align-content(flex-start);
+			@include justify-content(center);
+			@include align-items(center);
+
+			li {
+				@extend %flexbox;
+				@include flex-direction(column);
+				width: 40%;
+
+				div {
+
+					border-top: 1px solid rgba(255, 255, 255, 0.5);
+					padding-top: 5px;
+					margin-top: 5px;
+					margin-left: auto;
+					margin-right: auto;
+					width: 40%;
+
+					&:first-child {
+						border: 0;
+					}
+
+					.image {
+						width: 1vw;
+						height: 1vw;
+						@extend %flexbox;
+						@include justify-content(center);
+						@include flex-direction(column);
+						padding-left: 1wv;
+
+						img {
+							max-width: calc(1wv/2);
+							max-height: 1wv;
+						}
+					}
+
+					&>div {
+						margin-top: auto;
+						margin-bottom: auto;
+						width: 50vw;
+						padding-right: 1vw;
+					}
+				}
+			}
+		}
+
 	}
 
-	@extend %row, %red;
-}
 
+}

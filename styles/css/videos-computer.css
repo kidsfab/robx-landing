@@ -16,7 +16,7 @@ main > .videos, main > .videos > :first-child, main > .videos > :nth-child(2) {
     * {
       font-size: 8pt; } }
   @media all and (max-width: 480px) {
-    * {
+    * body {
       font-size: 12pt; } }
 
 main > .videos {

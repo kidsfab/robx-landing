@@ -1,5 +1,3 @@
-@import '_common.scss';
-
 %h1 {
     font-size: 20pt;
     padding-top: 10px;
@@ -14,4 +12,12 @@
 
 %h3 {
     font-size: 16pt;
+}
+
+%small-p {
+    font-size: 10pt;
+}
+
+%mobile-p {
+    font-size: 12pt;
 }

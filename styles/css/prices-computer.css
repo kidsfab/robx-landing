@@ -16,7 +16,7 @@ main > .prices, main > .prices .list {
     * {
       font-size: 8pt; } }
   @media all and (max-width: 480px) {
-    * {
+    * body {
       font-size: 12pt; } }
 
 main > .prices {
@@ -110,5 +110,3 @@ main > .prices {
         padding-bottom: 30px; }
       main > .prices .list .price .value {
         color: #ee5930; }
-
-/*# sourceMappingURL=prices-computer.css.map */

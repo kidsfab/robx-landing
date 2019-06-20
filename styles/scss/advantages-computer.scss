@@ -1,5 +1,4 @@
 @import 'common.scss';
-@import 'typography.scss';
 
 main>.advantages {
     @extend %blue;
@@ -8,7 +7,7 @@ main>.advantages {
     @include flex-direction(column);
 
     h1 {
-        @extend %h1;
+        font-size: 14pt;
         @extend %flexbox;
         @include flex-direction(column);
         margin-bottom: 2em;

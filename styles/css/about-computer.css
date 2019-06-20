@@ -16,43 +16,12 @@ main > .about, main > .about .moto, main > .about .list, main > .about .list h3,
     * {
       font-size: 8pt; } }
   @media all and (max-width: 480px) {
-    * {
+    * body {
       font-size: 12pt; } }
 
 main > .about {
   color: white;
   background-color: #ee5930; }
-
-main > .about, main > .about .moto, main > .about .list, main > .about .list h3, main > .about .list ul, main > .about .list ul li .image {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-* {
-  font-family: 'Open Sans', sans-serif;
-  padding: 0;
-  margin: 0; }
-  @media all and (min-width: 1080px) {
-    * {
-      font-size: 11pt; } }
-  @media all and (max-width: 1079px) and (min-width: 480px) {
-    * {
-      font-size: 8pt; } }
-  @media all and (max-width: 480px) {
-    * {
-      font-size: 12pt; } }
-
-main > .about {
-  color: white;
-  background-color: #ee5930; }
-
-main > .about .moto h2 {
-  font-size: 25pt; }
-
-main > .about .list h3 {
-  font-size: 16pt; }
 
 main > .about {
   -webkit-box-direction: normal;
@@ -70,6 +39,7 @@ main > .about {
     -ms-flex-direction: column;
     flex-direction: column; }
     main > .about .moto h2 {
+      font-size: 18pt;
       border: 5px solid white;
       margin-right: 2em;
       margin-left: 2em;
@@ -83,6 +53,7 @@ main > .about {
     -ms-flex-direction: column;
     flex-direction: column; }
     main > .about .list h3 {
+      font-size: 16pt;
       margin: 1.5em; }
     main > .about .list ul {
       list-style: none; }

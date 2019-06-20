@@ -16,7 +16,7 @@ main > .advantages, main > .advantages h1, main > .advantages ul.advantage-items
     * {
       font-size: 8pt; } }
   @media all and (max-width: 480px) {
-    * {
+    * body {
       font-size: 12pt; } }
 
 main > .advantages {
@@ -30,46 +30,6 @@ main > .advantages {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
-
-main > .advantages, main > .advantages h1, main > .advantages ul.advantage-items, main > .advantages ul.advantage-items li {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-* {
-  font-family: 'Open Sans', sans-serif;
-  padding: 0;
-  margin: 0; }
-  @media all and (min-width: 1080px) {
-    * {
-      font-size: 11pt; } }
-  @media all and (max-width: 1079px) and (min-width: 480px) {
-    * {
-      font-size: 8pt; } }
-  @media all and (max-width: 480px) {
-    * {
-      font-size: 12pt; } }
-
-main > .advantages {
-  color: white;
-  background-color: #4667FF; }
-
-main > .advantages {
-  min-height: 500px;
-  border-bottom: 2px solid white; }
-  main > .advantages h1 {
-    font-size: 22pt;
-    font-weight: lighter;
-    padding-bottom: 20px; }
-
-main > .advantages h1 {
-  font-size: 20pt;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-right: 2em;
-  margin-left: 2em; }
 
 main > .advantages {
   -webkit-box-direction: normal;
@@ -79,6 +39,7 @@ main > .advantages {
   -ms-flex-direction: column;
   flex-direction: column; }
   main > .advantages h1 {
+    font-size: 14pt;
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
     -webkit-flex-direction: column;

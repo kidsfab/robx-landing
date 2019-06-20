@@ -1,6 +1,5 @@
 @import 'colors.scss';
 @import 'flex.scss';
-
 $large: 1080px;
 $small: 480px;
 
@@ -16,7 +15,10 @@ $small: 480px;
 	}
 
 	@media all and (max-width: $small) {
-		font-size: 12pt;
+		body {
+			// @extend %mobile-p;
+			font-size: 12pt;
+		}
 	}
 
 

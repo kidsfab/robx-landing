@@ -1,5 +1,4 @@
 @import 'common.scss';
-@import 'typography.scss';
 
 main>.about {
 	@extend %flexbox;
@@ -15,7 +14,7 @@ main>.about {
 		@include flex-direction(column);
 
 		h2 {
-			@extend %h2;
+			font-size: 18pt;
 			border: 5px solid white;
 			margin-right: 2em;
 			margin-left: 2em;
@@ -33,7 +32,7 @@ main>.about {
 
 		h3 {
 			@extend %flexbox;
-			@extend %h3;
+			font-size: 16pt;
 			margin: 1.5em;
 
 		}
