@@ -14,7 +14,7 @@
 				<a href = "#addresses">Контакты</a>
 			</div>
 			<div>
-				<a href = "https://edu.robx.org" style='text-align: center' target='_blank'>База зананий</a>
+				<a href = "https://edu.robx.org" style='text-align: center' target='_blank'>База знаний</a>
 			</div>
 			<div class="lk">
 				<a href="https://lk.robx.org"  target='_blank'>
