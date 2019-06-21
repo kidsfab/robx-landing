@@ -32,6 +32,8 @@ main>.advantages {
             margin-left: -5em;
             @include align-items(center);
             @include descending-z-index;
+            padding-bottom: 60px;
+            border-bottom: 1px dashed #fff;
 
             &:nth-child(odd) {
 
@@ -46,7 +48,7 @@ main>.advantages {
 
                 h6 {
                     position: absolute;
-                    bottom: -2em;
+                    bottom: 1em;
                 }
             }
 
@@ -74,6 +76,7 @@ main>.advantages {
 
             &.active {
                 z-index: 1;
+                border-bottom: 2px solid #fff;
 
                 p {
                     display: block;
