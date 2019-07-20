@@ -6,36 +6,69 @@ main > .addresses {
 			font-size: 22pt;
 			font-weight: lighter;
 
-			padding-bottom: 30px;
+			padding-bottom: 15px;
+            padding-top: 40px;
 		}
 
-		& > div {
-			padding-bottom: 20px;
+		& > ul {
+            & > li {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
 
-			div:nth-child(1) {
-				display: inline-block;
-			}
-			div:nth-child(2) {
-				@media all and (min-width: $large) {
-					font-size: 9pt;
-				}
+    			padding-bottom: 30px;
+                list-style: none;
 
-				@media all and (max-width: $large - 1) {
-					font-size: 6pt;
-				}
+                &:before {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 8px;
+                    height: 8px;
+                    margin: 0 8px;
+                    background: transparent;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    text-indent: -999em;
+                    border: 3px solid white;
+                    content: "";
+                }
 
-				display: inline-block;
-			}
-			div:nth-child(3) {
-				@media all and (min-width: $large) {
-					font-size: 9pt;
-				}
+                & > div {
+                    &:before {
+                        content: '';
+                        display: block;
+                        height: 0;
+                        width: 0;
+                        margin-top: -0.3em;
+                    }
 
-				@media all and (max-width: $large - 1) {
-					font-size: 6pt;
-				}
-			}
-		}
+                    & > div:nth-child(1) {
+                        line-height: 1;
+        				display: inline-block;
+        			}
+        			& > div:nth-child(2) {
+        				@media all and (min-width: $large) {
+        					font-size: 9pt;
+        				}
+
+        				@media all and (max-width: $large - 1) {
+        					font-size: 6pt;
+        				}
+
+        				display: inline-block;
+        			}
+        			& > div:nth-child(3) {
+        				@media all and (min-width: $large) {
+        					font-size: 9pt;
+        				}
+
+        				@media all and (max-width: $large - 1) {
+        					font-size: 6pt;
+        				}
+        			}
+                }
+    		}
+        }
 	}
 
 	.map-wraper {
