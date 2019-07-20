@@ -10,21 +10,18 @@
 				<a href = '#prices'>Стоимость</a>
 			</div>
 			<div>
-				<a href = "#photos">Фото</a>
-			</div>
-			<div>
 				<a href = "#addresses">Контакты</a>
 			</div>
 			<div>
-				<a href = "https://edu.robx.org" style='text-align: center' target='_blank'>База зананий</a>
+				<a href = "https://edu.robx.org" target='_blank'>База зананий</a>
 			</div>
 			<div>
-				<a href = "https://lk.robx.org" style='text-align: center' target='_blank'>Личный кабинет</a>
+				<a href = "https://lk.robx.org" target='_blank'>Вход</a>
+			</div>
+            <div class = "register">
+				<a href = "#register" class = 'circled'>Записаться</a>
 			</div>
 			<div class = "phone">
 				<a class="circled mgo-number-12398" href="tel:+78123177074">т. 317 70 74</a>
-			</div>
-			<div class = "register">
-				<a href = "#register" class = 'circled'>Записаться</a>
 			</div>
 		</header>

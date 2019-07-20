@@ -1,256 +1,157 @@
 @import 'common.scss';
 
 main > .register {
-	@include flex-direction(column);
-	@include justify-content(center);
+    & > * {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-	padding-top: 90px;
-	padding-bottom: 90px;
+        & > .block {
+            width: 30%;
 
-	& > * {
-		@extend %flexbox;
-		@include justify-content(space-between);
-	}
+            & > * {
+                margin-left: 15px;
+                margin-right: 15px;
 
-	.content {
-		padding-bottom: 40px;
+                &:first-child {
+                    padding-top: 20px;
+                }
 
+                &:last-child {
+                    padding-bottom: 20px;
+                }
+            }
 
-		.intro {
-			@media all and (min-width: $large) {
-				width: 570px;
-			}
-	
-			@media all and (max-width: $large - 1) {
-				width: 52%;
-			}
-	
-			& > *:first-child {
-				@media all and (min-width: $large) {
-					min-height: 183px
-				}
-	
-				@media all and (max-width: $large - 1) {
-				}
+            & > .intro {
+                & > *:first-child {
+                    font-size: 14pt;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    border-bottom: 1px dashed white;
+                    padding-bottom: 15px;
+                }
 
-				@extend %flexbox;
-				@include flex-direction(row-reverse);
-				@include justify-content(space-between);
+                & > .information {
+                    padding-bottom: 40px;
+                    padding-top: 10px;
+                    & > * {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+            }
 
-				padding-bottom: 20px;
-				div {
-					text-transform: uppercase;
-					font-weight: bold;
-					font-size: 20pt;
-					width: 66%;
-				}
+            & > .form  {
+                padding-bottom: 20px;
 
-				img {
-					width: 32%;
-					padding-bottom: 30px;
-				}
-			}
+    			.notification {
+    				display: none;
+    			}
 
-			.information {
-				@extend %flexbox;
-				@include justify-content(space-between);
-				
-				& > div {
-					width: 32%;
+    			&.sent > form {
+    				display: none;
+    			}
 
-					border-top: 1px solid white;
-					margin-top: 20px;
-					padding-top: 10px;
+    			&.sent > .notification {
+    				display: block;
 
-					div {
-						display: inline-block;
-			
-						font-weight: bold;
+    				border: 5px solid $red;
+    				font-size: 20pt;
 
-						border-radius: 20px;
-						border: 2px solid white;
-						padding: 0px 7px;
+    				text-align: center;
 
-						margin-top: 5px;
-					}
-				}
-			}
-		}
-		
-		.form {
-		
-			@media all and (min-width: $large) {
-				width: 440px;
-			}
-	
-			@media all and (max-width: $large - 1) {
-				width: 40%;
-			}
+    				box-sizing: border-box;
+    				-webkit-box-sizing: border-box;
+    				-moz-box-sizing: border-box;
 
-			.notification {
-				display: none;
-			}
+    				width: 100%;
+    				height: 100%;
+    				padding: 5%;
+    			}
 
-			&.sent > form {
-				display: none;
-			}
+    			span {
+    				display: none;
+    			}
 
-			&.sent > .notification {
-				display: block;
+    			input[type=text], input[type=date], input[type=email] {
 
-				border: 5px solid $red;
-				font-size: 20pt;
+                    width: 100%;
 
-				text-align: center;
+    				background-color: $blue;
+    				color: white;
 
-				box-sizing: border-box;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-			
-				width: 100%;
-				height: 100%;
-				padding: 5%;
-			} 
+    				border: 0;
+    				border-bottom: 1px solid white;
 
-			span {
-				display: none;
-			}
+    				padding-bottom: 10px;
+    				padding-top: 10px;
 
-			input[type=text], input[type=date], input[type=email] {
-				width: 100%;
-				
-				background-color: $blue;
-				color: white;
+    				margin-bottom: 20px;
 
-				border: 0;
-				border-bottom: 1px solid white;
+    				&:focus {
+    					border: 0;
+    					border-bottom: 1px solid white;
+    				}
 
-				padding-bottom: 10px;
-				padding-top: 10px;
+    				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    					color: white;
+    				}
+    				&::-moz-placeholder { /* Firefox 19+ */
+    					color: white;
+    				}
+    				&:-ms-input-placeholder { /* IE 10+ */
+    					color: white;
+    				}
+    				&:-moz-placeholder { /* Firefox 18- */
+    					color: white;
+    				}
 
-				margin-bottom: 20px;
+    			}
 
-				&:focus {
-					border: 0;
-					border-bottom: 1px solid white;
-				}
+    			.entry.required {
+    				position: relative;
 
-				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-					color: white;
-				}
-				&::-moz-placeholder { /* Firefox 19+ */
-					color: white;
-				}
-				&:-ms-input-placeholder { /* IE 10+ */
-					color: white;
-				}
-				&:-moz-placeholder { /* Firefox 18- */
-					color: white;
-				}
+    				&::after {
+    					display: block;
+    					content: "●";
+    					font-family: monospace;
+    					font-size: 22px;
+    					line-height: 43px;
+    					position: absolute;
+    					right: 0px;
+    					bottom: 16px;
+    					color: $red;
+    					z-index: 0;
+    				}
+    			}
 
-			}
+    			input[type=submit] {
+    				opacity: 0.5;
 
-			.entry.required {
-				position: relative;
-	
-				&::after {
-					display: block;
-					content: "●";
-					font-family: monospace;
- 					width: 36px;
-					height: 43px;
-					font-size: 22px;
-					line-height: 43px;
-					position: absolute;
-					right: 0px;
-					bottom: 16px;
-					color: $red;
-					z-index: 0;
-				}
-			}
+    				font-size: 15pt;
+    				font-weight: bold;
 
-			input[type=submit] {
-				opacity: 0.5;
+    				background-color: $red;
+    				color: white;
 
-				font-size: 17pt;
-				font-weight: bold;
-				
-				background-color: $red;
-				color: white;
+    				border: 0;
+    				border-radius: 60px;
+    				padding: 10px 20px;
+    				display: block;
+    			}
+            }
 
-				border: 0;
-				border-radius: 60px;
+            & > .footnote {
+                width: 75%;
+                & > div {
+                    font-size: 8pt;
+                }
+            }
 
-				margin-left: auto;
-				margin-right: auto;
-				padding: 10px 20px;
-				display: block;
-				margin-top: 20px;
-			}
+            @extend %blue;
+        }
+    }
 
-			select {
-				width: 100%;
-			
-				background-color: $blue;
-				color: white;
-
-				border: 0;
-				border-bottom: 1px solid white;
-				border-radius: 0;
-
-				-webkit-appearance: none;
-				-webkit-border-radius: 0px;
-
-				-moz-appearance:none;
-
-				padding-bottom: 10px;
-				padding-top: 10px;
-
-				margin-bottom: 20px;	
-			}
-			
-			.entry.select {
-				position: relative;
-
-				&::after {
-					display: block;
-					content: "";
-					font-family: monospace;
- 					width: 20px;
-					height: 10px;
-					position: absolute;
-					right: 0px;
-					bottom: 16px;
-					color: $red;
-					z-index: 0;
-					background-image: url(../../icons/arrow-form.png);
-					background-repeat: no-repeat;
-					background-size: contain;
-					margin-bottom: 20px;
-					padding-right: 18px;
-				}
-			}
-		}
-	}
-
-	.footnote {	
-		font-weight: lighter;
-
-		border-top: 1px solid white;
-		padding-top: 10px;
-			
-		* {
-			font-size: 8pt;
-	
-			&:first-child {
-				width: 360px;
-			}
-
-			&:last-child {
-				width: 720px;
-			}
-		}
-	}		
-
-	@extend %blue, %double-row;
+	@extend %double-row;
 }

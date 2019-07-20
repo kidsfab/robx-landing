@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     if (array_key_exists($_SERVER['REMOTE_ADDR'], $blocked) && time() - $blocked[$_SERVER['REMOTE_ADDR']] < $time_block){
         unset($blocked[$_SERVER['REMOTE_ADDR']]);
 	}
-	
+
     if (!empty($_POST) && !( empty($_POST['name']) || empty($_POST['phone']) ) )
     {
 
@@ -42,10 +42,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			'phone_mobile' => $_POST['phone'],
 			'type_client_c' => 'ЛИД',
 		);
-	
+
 		include_once("tallanto.php");
 		$resultAccount = senderToTallanto('Contact',$data);
-		
+
 		 echo "<script>console.log('senderToTallanto', " .  $resultAccount  .   " );</script>";
 	}
 	else{
@@ -59,71 +59,54 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <a name = "register"></a>
 <div class = "register">
-	<div class = "content">
-		<div class = "intro">
-			<div>
-				<img src = "icons/arrows.png">
-				<div>
-					Запись на первое бесплатное занятие в Кружке Робототехники!
-				</div>
-			</div>
-			<div class = "information">
-				<div class = "next">
-					Ближайшие занятия:
-					<div>
-						22 - 28 июля 
-					</div>
-				</div>
-				<div class = "free">
+    <div>
+        <div class = "block">
+    		<div class = "intro">
+    			<div>
+    				Запись на первое бесплатное занятие в Кружке Робототехники!
+    			</div>
+    			<div class = "information">
+    				<div class = "next">
+                        <div>
+                            Ближайшие занятия:
+                        </div>
+    					<div>
+    						22 - 28 июля
+    					</div>
+    				</div>    				
+    				<div class = "rest">
+    					До занятия осталось:
+    					<div>
+    						-
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class = "form">
+    			<form action="https://robx.org/" target="_self" method='post' onsubmit="yaCounter39897755.reachGoal('ORDER');">
+    				<div class = 'entry required'>
+    					<input name = 'name' type = 'text' placeholder="Как к Вам обращаться?" required>
+    				</div>
+    				<div class = 'entry required mobile-phone'>
+    					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
+    				</div>
 
-				</div>
-				<div class = "rest">
-					До занятия осталось:
-					<div>
-						-
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class = "form">
-			<form action="https://robx.org/" target="_self" method='post' onsubmit="yaCounter39897755.reachGoal('ORDER');">
-				<div class = 'entry required'>
-					<input name = 'name' type = 'text' placeholder="Как к Вам обращаться?" required>
-				</div>
-				<div class = 'entry date' style="display: none">
-					<input name = 'birthday' type = 'text' placeholder="Дата рождения ученика">
-				</div>
-				<div class = 'entry required mobile-phone'>
-					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
-				</div>
-
-				<div class = 'entry select' style="display: none">
-					<select name='address'>
-						<option disabled=""="">Адрес класса</option>
-						<option selected value="Пр. Медиков, д. 5">Пр. Медиков, д. 5 (ст. м. Петроградская)</option>
-						<option value="Гражданский пр., д. 111">Гражданский пр., д. 111 (ст. м. Гражданский проспект)</option>
-						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
-						<option value="Авиаконструкторов пр., д. 2">Проспект Авиаконструкторов , д. 2 (ст. м. Комендантский проспект) </option>
-						<option value="Выборгское ш., д. 13А">Выборгское ш., д. 13А (ст. м. Проспект Просвещения) </option>
-						<option value="Трамвайный пр., д. 20">Трамвайный пр., д. 20 (ст. м. Ленинский проспект) </option>
-						<option value="Заневский пр., д.53, к.2">Заневский пр., д.53, к.2 (ст. м. Новочеркасская) </option>
-					</select>
-				</div>
-        		<div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" style="display: none"></div>
-				<input type='submit' name='submit' class='submit'  value = 'записаться' >
-			</form>
-			<div class = 'notification'>
-				Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
-			</div>
-		</div>
-	</div>
-	<div class = "footnote">
-		<div>
-			*Мы уважаем вашу конфиденциальность, введенная в форму информация не будет передаваться третьим лицам.
-		</div>
-		<div>
-			Заполняя настоящую форму, в соответствии с требованиями статьи 9 Федерального закона от 27.07.2006 No 152-ФЗ «О персональных данных»,
-			Вы подтверждаете свое согласие на обработку вносимых в форму персональных данных, лицом оказывающим услуги на основании данной формы
-		</div>
-	</div>
+            		<div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" style="display: none"></div>
+    				<input type='submit' name='submit' class='submit'  value = 'Записаться' >
+    			</form>
+    			<div class = 'notification'>
+    				Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
+    			</div>
+    		</div>
+            <div class = "footnote">
+		        <div>
+                    Мы уважаем вашу конфиденциальность, введенная в форму информация не будет передаваться третьим лицам.
+                </div>
+                <!-- <div>
+                    Заполняя настоящую форму, в соответствии с требованиями статьи 9 Федерального закона от 27.07.2006 No 152-ФЗ «О персональных данных»,
+                    Вы подтверждаете свое согласие на обработку вносимых в форму персональных данных, лицом оказывающим услуги на основании данной формы
+                </div> -->
+            </div>
+        </div>
+    </div>
 </div>
