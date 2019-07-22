@@ -82,8 +82,32 @@ main > .about {
     }
 
     & > .citation {
-        padding-left: 15%;
+        padding-left: 130px;
         display: block;
+        position: relative;
+
+        &:before {
+            content: "";
+            display: inline-block;
+
+            height: 150px;
+            width: 150px;
+
+            position: absolute;
+            left: 0px;
+            top: 0;
+            z-index: 1;
+
+            background-image: url(http://localhost:8888/robx/icons/quote_mark.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top;
+        }
+
+        & > * {
+            position: relative;
+            z-index: 2;
+        }
 
         & > .text {
             font-weight: bold;

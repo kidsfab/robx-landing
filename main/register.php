@@ -73,7 +73,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     					<div>
     						22 - 28 июля
     					</div>
-    				</div>    				
+    				</div>
     				<div class = "rest">
     					До занятия осталось:
     					<div>
@@ -108,5 +108,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div> -->
             </div>
         </div>
+    </div>
+    <div class = "background-images">
+        <img src = "photos/registration-photo-1.png"/>
     </div>
 </div>
