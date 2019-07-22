@@ -3,25 +3,22 @@
 	<h1>Стоимость занятий</h1>
 	<div class = 'offer'>
 		<h2>Если более одного ученика из одной семьи посещают наши занятия:</h2>
-		стоимость абонемента при оплате за 1 месяц составляет 3000 руб. за каждого ученика. 
-		При покупке абонемента на 3 и 6 месяцев действуют те же скидки.
+		стоимость абонемента при оплате за 1 месяц составляет 3000 руб.
+        за каждого ученика. При покупке абонемента на 3 и 6 месяцев действуют
+        те же скидки.
 	</div>
-	<div class = 'list'>
-		<h2>Выберите абонемент</h2>
-		<div class = 'price'>
-			<div class = 'duration'>1 месяц</div>
+	<ul>
+		<li class = 'price'>
+			<img = src = "icons/1_month.svg"/>
 			<div class = 'value'>4 000 р.</div>
-			<div class = 'saving'>экономия 0%</div>
-		</div>
-		<div class = 'price'>
-			<div class = 'duration'>3 месяца</div>
+		</li>
+        <li class = 'price discount-10'>
+			<img = src = "icons/3_months.svg"/>
 			<div class = 'value'>10 800 р.</div>
-			<div class = 'saving'>экономия 10%</div>
-		</div>
-		<div class = 'price'>
-			<div class = 'duration'>6 месяцев</div>
+		</li>
+        <li class = 'price discount-20'>
+			<img = src = "icons/6_months.svg"/>
 			<div class = 'value'>19 200 р.</div>
-			<div class = 'saving'>экономия 20%</div>
-		</div>
-	</div>
+		</li>
+	</ul>
 </div>
