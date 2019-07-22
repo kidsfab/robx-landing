@@ -1,1 +1,11 @@
-main{margin-top:76px}main>a{display:block;height:76px;margin-top:-76px;visibility:hidden}
+main {
+  margin-top: 76px; }
+  main > a {
+    display: block;
+    height: 76px;
+    /*same height as header*/
+    margin-top: -76px;
+    /*same height as header*/
+    visibility: hidden; }
+
+/*# sourceMappingURL=main-computer.css.map */

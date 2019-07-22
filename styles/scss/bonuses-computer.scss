@@ -1,0 +1,124 @@
+@import 'common.scss';
+
+main > .bonuses {
+    @extend %flexbox;
+    @include flex-direction(column);
+
+    @media all and (min-width: $large) {
+		padding-left: calc(50% -  540px);
+		padding-right: calc(50% - 540px);
+
+	}
+
+	@media all and (max-width: $large - 1) {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+
+    h1 {
+        margin-top: 60px;
+    }
+
+    & > ul {
+        @extend %flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+
+        & > li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            position: relative;
+
+            opacity: 0.5;
+
+            width: 15%;
+
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
+
+            margin-bottom: 120px;
+
+            &:hover {
+                opacity: 1;
+                border-bottom: 4px solid white;
+                padding-bottom: 0px;
+
+                .title {
+                    font-weight: bold;
+                }
+
+                img {
+                    width: 130%;
+                    margin-top: 5.8%;
+                    margin-bottom: 5.8%;
+                }
+
+                .text {
+                    visibility: visible;
+                }
+            }
+
+            &:nth-child(even) {
+                .title {
+                    order: 2;
+                }
+
+                img {
+                    order: 1;
+                }
+                margin-top: 70px;
+            }
+
+            &:nth-child(odd) {
+                .title {
+                    order: 1;
+                }
+
+                img {
+                    order: 2;
+                }
+            }
+
+            & > .title {
+                text-align: center;
+                height: 70px;
+                font-size: 8pt;
+            }
+
+            & > img {
+                margin-top: 10%;
+                margin-bottom: 10%;
+                width: 120%;
+                background-color: white;
+                border-radius: 150px;
+            }
+
+            & > .text {
+                visibility: hidden;
+                position: absolute;
+                top: calc(100% + 20px);
+                width: 300%;
+
+                height: 70px;
+            }
+
+            &:nth-child(-n+4) {
+                & > .text {
+                    left: 0;
+                }
+            }
+            &:nth-child(n+5) {
+                & > .text {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+	@extend %blue, %row;
+}

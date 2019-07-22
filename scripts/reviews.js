@@ -52,7 +52,7 @@ function remove_elements_phone_reviews() {
 }
 
 function init_reviews() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.reviews').get(0).mobile = true;
 		add_elements_phone_reviews();
 		init_computer_slider('.reviews .list');
@@ -63,7 +63,7 @@ function init_reviews() {
 }
 
 function resize_reviews() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		if($('.reviews').get(0).mobile == false) { 
 			$('.reviews').get(0).mobile = true;
 			remove_elements_computer_reviews();

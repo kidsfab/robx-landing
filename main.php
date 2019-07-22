@@ -3,6 +3,7 @@
 	<?php include("main/about.php"); ?>
 	<?php include("main/video.php"); ?>
     <!-- bonuses -->
+    <?php include("main/bonuses.php"); ?>
 	<?php include("main/prices.php"); ?>
     <!-- blog posts -->
 	<?php include("main/reviews.php"); ?>

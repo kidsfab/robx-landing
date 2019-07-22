@@ -1,0 +1,91 @@
+main > .videos, main > .videos > :first-child, main > .videos > :nth-child(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .videos {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .videos h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .videos .names div {
+  border-top: 2px solid white; }
+  main > .videos .names div:first-of-type {
+    border-top: 0; }
+  main > .videos .names div h2 {
+    font-weight: bold;
+    font-size: 13pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer; }
+  main > .videos .names div div {
+    font-weight: lighter;
+    padding-bottom: 10px;
+    display: none; }
+  main > .videos .names div.current > div {
+    display: block; }
+main > .videos .names nav {
+  display: none; }
+main > .videos .video {
+  height: 1px;
+  min-height: 500px; }
+  main > .videos .video iframe {
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: auto;
+    margin-bottom: auto; }
+
+/*# sourceMappingURL=vides-computer.css.map */

@@ -1,0 +1,118 @@
+main > .bonuses, main > .bonuses > ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .bonuses {
+  color: white;
+  background-color: #4667FF; }
+
+main > .bonuses {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .bonuses h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .bonuses {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media all and (min-width: 1080px) {
+    main > .bonuses {
+      padding-left: calc(50% -  540px);
+      padding-right: calc(50% - 540px); } }
+  @media all and (max-width: 1079px) {
+    main > .bonuses {
+      padding-left: 2%;
+      padding-right: 2%; } }
+  main > .bonuses h1 {
+    margin-top: 60px; }
+  main > .bonuses > ul {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    padding-left: 1.5%;
+    padding-right: 1.5%; }
+    main > .bonuses > ul > li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      opacity: 0.5;
+      width: 15%;
+      border-bottom: 2px solid white;
+      padding-bottom: 2px;
+      margin-bottom: 120px; }
+      main > .bonuses > ul > li:hover {
+        opacity: 1;
+        border-bottom: 4px solid white;
+        padding-bottom: 0px; }
+        main > .bonuses > ul > li:hover .title {
+          font-weight: bold; }
+        main > .bonuses > ul > li:hover img {
+          width: 130%;
+          margin-top: 5.8%;
+          margin-bottom: 5.8%; }
+        main > .bonuses > ul > li:hover .text {
+          visibility: visible; }
+      main > .bonuses > ul > li:nth-child(even) {
+        margin-top: 70px; }
+        main > .bonuses > ul > li:nth-child(even) .title {
+          order: 2; }
+        main > .bonuses > ul > li:nth-child(even) img {
+          order: 1; }
+      main > .bonuses > ul > li:nth-child(odd) .title {
+        order: 1; }
+      main > .bonuses > ul > li:nth-child(odd) img {
+        order: 2; }
+      main > .bonuses > ul > li > .title {
+        text-align: center;
+        height: 70px;
+        font-size: 8pt; }
+      main > .bonuses > ul > li > img {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 120%;
+        background-color: white;
+        border-radius: 150px; }
+      main > .bonuses > ul > li > .text {
+        visibility: hidden;
+        position: absolute;
+        top: calc(100% + 20px);
+        width: 300%;
+        height: 70px; }
+      main > .bonuses > ul > li:nth-child(-n+4) > .text {
+        left: 0; }
+      main > .bonuses > ul > li:nth-child(n+5) > .text {
+        right: 0; }
+
+/*# sourceMappingURL=bonuses-computer.css.map */

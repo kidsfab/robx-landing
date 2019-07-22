@@ -6,7 +6,7 @@ function remove_elements_teachers() {
 }
 
 function init_teachers() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.teachers').get(0).mobile = true;
 
 		add_elements_teachers();
@@ -17,7 +17,7 @@ function init_teachers() {
 }
 
 function resize_teachers() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		if($('.teachers').get(0).mobile == false) {
 			$('.teachers').get(0).mobile = true;
 			add_elements_teachers();

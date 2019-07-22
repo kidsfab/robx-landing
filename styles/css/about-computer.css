@@ -12,10 +12,10 @@ main > .about, main > .about > .steps > ul {
   @media all and (min-width: 1080px) {
     * {
       font-size: 11pt; } }
-  @media all and (max-width: 1079px) and (min-width: 480px) {
+  @media all and (max-width: 1079px) and (min-width: 800px) {
     * {
       font-size: 8pt; } }
-  @media all and (max-width: 480px) {
+  @media all and (max-width: 800px) {
     * {
       font-size: 12pt; } }
 

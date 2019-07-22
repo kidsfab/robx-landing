@@ -16,7 +16,7 @@ function init_header() {
 		node.html (node.find ('> *').detach ());
 	});
 
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('header').get(0).mobile = true;
 		add_elements_header();
 	} else {
@@ -25,7 +25,7 @@ function init_header() {
 }
 
 function resize_header() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		if(!$('header').get(0).mobile) { 
 			$('header').get(0).mobile = true;
 			add_elements_header();

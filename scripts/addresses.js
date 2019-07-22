@@ -15,7 +15,7 @@ function remove_elements_addresses() {
 }
 
 function init_addresses() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.addresses').get(0).mobile = true;
 
 		add_elements_addresses();
@@ -25,7 +25,7 @@ function init_addresses() {
 }
 
 function resize_addresses() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		if($('.addresses').get(0).mobile == false) {
 			$('.addresses').get(0).mobile = true;
 			add_elements_addresses();

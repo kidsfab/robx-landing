@@ -7,7 +7,7 @@ function remove_elements_camp() {
 
 
 function init_camp() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.camp .projects').get(0).mobile = true;
 
 		add_elements_camp();
@@ -19,7 +19,7 @@ function init_camp() {
 }
 
 function resize_camp() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		if($('.camp .projects').get(0).mobile == false) { 
 			$('.camp .projects').get(0).mobile = true;
 			add_elements_camp();
