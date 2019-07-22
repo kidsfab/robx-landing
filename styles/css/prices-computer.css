@@ -95,9 +95,9 @@ main > .prices {
       padding-top: 70px;
       position: relative; }
       main > .prices > ul > li.discount-10:before {
-        background-image: url(../../icons/discount-10.svg); }
+        background-image: url(../../icons/prices/discount-10.svg); }
       main > .prices > ul > li.discount-20:before {
-        background-image: url(../../icons/discount-20.svg); }
+        background-image: url(../../icons/prices/discount-20.svg); }
       main > .prices > ul > li.discount-10:before, main > .prices > ul > li.discount-20:before {
         content: "";
         display: block;

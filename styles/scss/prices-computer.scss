@@ -62,10 +62,10 @@ main > .prices {
             position: relative;
 
             &.discount-10:before {
-                background-image: url(../../icons/discount-10.svg);
+                background-image: url(../../icons/prices/discount-10.svg);
             }
             &.discount-20:before {
-                background-image: url(../../icons/discount-20.svg);
+                background-image: url(../../icons/prices/discount-20.svg);
             }
 
             &.discount-10:before, &.discount-20:before {
