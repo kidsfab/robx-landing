@@ -1,11 +1,11 @@
 @import 'slider.scss';
-@import 'phone-common.scss';
+@import 'common.scss';
 
 main > .videos {
 	h1 {
 		font-size: 20pt;
 		text-align: center;
-		padding-bottom: 40px; 
+		padding-bottom: 40px;
 		width: 80vw;
 		margin-left: auto;
 		margin-right: auto;
@@ -19,7 +19,7 @@ main > .videos {
 		}
 
 		@extend %slider;
-	}	
+	}
 
 	.video {
 		display: none;

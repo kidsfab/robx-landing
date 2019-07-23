@@ -1,0 +1,65 @@
+@import 'slider.scss';
+@import 'common.scss';
+
+main > .addresses {
+	.map-wraper {
+		display: none;
+	}
+
+    & > .list {
+        width: 80vw;
+
+        h2 {
+    		font-size: 20pt;
+    		text-align: center;
+    		padding-bottom: 40px;    		    		
+    	}
+
+        & > ul {
+            list-style-type: none;
+
+            & > li {
+                padding-bottom: 20px;
+                padding-top: 20px;
+
+                border-bottom: 1px dotted white;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+
+                & > div {
+                    & > div:nth-child(1) {
+                        display: inline-block;
+                        font-weight: bold;
+                    }
+
+                    & > div:nth-child(2) {
+                        display: inline-block;
+                    }
+
+                    & > div:nth-child(3) {
+                        display: block;
+                    }
+                }
+
+                & > .circled {
+                    font-size: 10pt;
+
+                    border-radius: 20px;
+                    border: 3px solid white;
+                    padding: 5px 7px;
+                    display: inline-block;
+
+                    margin-top: 10px;
+
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+	@extend %row, %red;
+}

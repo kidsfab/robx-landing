@@ -1,7 +1,9 @@
 function add_elements_addresses() {
-	$('main > .addresses > .list').before($('main > .addresses > .list > h2'));
+	$('main > .addresses > .list >  ul').before(
+        $('main > .addresses > .list > ul > h2')
+    );
 
-	$('main > .addresses > .list > div').each(function() {
+	$('main > .addresses > .list > ul > li').each(function() {
 		url = 'https://yandex.ru/maps/2/saint-petersburg/?mode=search&text=' + encodeURIComponent($(this).children('div:first-child').text()) + ',+Санкт-Петербург'
 
 		$(this).append('<a class = "circled" href = "' + url + '">Посмотреть на карте</a>');
@@ -10,8 +12,8 @@ function add_elements_addresses() {
 
 
 function remove_elements_addresses() {
-	$('main > .addresses > .list').prepend($('main > .addresses > h2'));
-	$('main > .addresses > .list > .address > a').remove();
+	$('main > .addresses > .list > ul').prepend($('main > .addresses > .list > h2'));
+	$('main > .addresses > .list > .list > ul > li > a').remove();
 }
 
 function init_addresses() {
@@ -29,9 +31,9 @@ function resize_addresses() {
 		if($('.addresses').get(0).mobile == false) {
 			$('.addresses').get(0).mobile = true;
 			add_elements_addresses();
-			init_computer_slider('.addresses .list');
+			init_computer_slider('.addresses ul');
 		} else if($('.addresses').get(0).mobile == true) {
-			update_computer_slider('.addresses .list');
+			update_computer_slider('.addresses ul');
 		}
 	} else {
 		if($('.addresses').get(0).mobile == true) {

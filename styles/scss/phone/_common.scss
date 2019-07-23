@@ -1,10 +1,16 @@
-@import 'colors.scss';
-@import 'flex.scss';
+@import '../colors.scss';
+@import '../flex.scss';
+
+body {
+    margin: 0;
+}
 
 %row {
 	@extend %flexbox;
 	@include flex-direction(column);
 	@include justify-content(center);
+
+    width: 100%;
 
 	padding-top: 70px;
 	padding-bottom: 80px;
@@ -26,4 +32,3 @@
 	color: white;
 	background-color: $blue;
 }
-

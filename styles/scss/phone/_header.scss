@@ -1,11 +1,11 @@
-@import 'phone-common.scss';
+@import 'common.scss';
 
 header {
 	position: fixed;
 	top: 0px;
 
 	width: 100%;
-	
+
 	z-index: 100;
 
 	background-color: $blue;
@@ -20,7 +20,7 @@ header {
 		vertical-align: top;
 	}
 
-	
+
 	& > * {
 		display: none;
 		border-bottom: 2px solid white;
@@ -116,7 +116,7 @@ header {
 		display: none;
 	}
 
-	
+
 
 	@extend %blue;
 }

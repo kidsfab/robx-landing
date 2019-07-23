@@ -4,7 +4,7 @@ footer {
 	background-color: $gray;
 
 	padding-left: 5vw;
-	padding-right: 5vw; 
+	padding-right: 5vw;
 
 	& > div {
 		@extend %flexbox;
@@ -33,17 +33,17 @@ footer {
 
 				font-size: 15pt;
 			}
-			
+
 			div > img:first-child {
 				width: 15vw;
 				height: 15vw;
 				@extend %flexbox;
 				@include flex-direction(column);
 				@include justify-content(center);
-			
+
 				padding-right: 5vw;
 			}
-		
+
 			img {
 				height: 70%;
 				width: 70%;
@@ -53,12 +53,12 @@ footer {
 				text-decoration: none;
 				color: $black;
 				cursor: pointer;
-			}	
+			}
 		}
 
-		&.vk-widget { 
+		&.vk-widget {
 			text-align: center;
-			
+
 			& > div {
 				margin-left: auto;
 				margin-right: auto;
