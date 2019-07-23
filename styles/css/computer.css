@@ -1,5 +1,5 @@
 @charset "UTF-8";
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -32,14 +32,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -186,7 +186,7 @@ main > .about {
     main > .about > .citation > .author > .name {
       font-weight: bold; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -219,14 +219,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -324,7 +324,7 @@ main > .addresses .map-wraper {
     width: 100%;
     height: 100%; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -357,14 +357,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -493,7 +493,7 @@ main > .bonuses {
       main > .bonuses > ul > li:nth-child(n+5) > .text {
         right: 0; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -526,14 +526,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -578,7 +578,7 @@ main > .addresses, main > .videos {
   main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
     width: calc(50% - 1px); }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -611,14 +611,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -743,7 +743,7 @@ footer {
       color: black;
       cursor: pointer; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -776,14 +776,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -931,7 +931,7 @@ main {
     /*same height as header*/
     visibility: hidden; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -964,14 +964,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -1105,7 +1105,7 @@ main > .prices {
         font-size: 20pt;
         font-weight: bold; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1138,14 +1138,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -1325,7 +1325,7 @@ main > .register {
   main > .register > .background-images {
     display: none; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1358,14 +1358,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -1479,7 +1479,7 @@ main > .reviews {
       main > .reviews > ul > li > img:last-child {
         display: none; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1512,14 +1512,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -1576,7 +1576,7 @@ main > .teachers {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center; }
-  main > .teachers .list {
+  main > .teachers > ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
@@ -1584,7 +1584,13 @@ main > .teachers {
     justify-content: space-between;
     padding-bottom: 20px;
     padding-top: 10px; }
-    main > .teachers .list .info {
+    main > .teachers > ul > li {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -1593,32 +1599,30 @@ main > .teachers {
       -ms-flex-pack: justify;
       -webkit-justify-content: space-between;
       -moz-justify-content: space-between;
-      justify-content: space-between; }
-      @media all and (min-width: 1080px) {
-        main > .teachers .list .info {
-          width: 320px; } }
-      @media all and (max-width: 1079px) {
-        main > .teachers .list .info {
-          width: 30%; } }
-      main > .teachers .list .info img {
+      justify-content: space-between;
+      width: 45%;
+      min-width: 48%;
+      height: 130px;
+      margin-right: 4%;
+      border-right: 1px dotted white; }
+      main > .teachers > ul > li:last-child {
+        border-right: 0; }
+      main > .teachers > ul > li > img {
         width: 80px;
         height: 80px;
         display: block;
-        padding-bottom: 10px; }
-      main > .teachers .list .info .name {
-        width: calc(100% - 100px);
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-bottom: 10px;
+        margin-bottom: 10px; }
+      main > .teachers > ul > li > .name {
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column; }
-        main > .teachers .list .info .name * {
-          font-size: 15pt;
-          font-weight: 600; }
-      main > .teachers .list .info .bio {
-        width: 100%;
-        font-weight: lighter; }
+      main > .teachers > ul > li > .bio {
+        width: calc(100% - 180px); }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers .list, main > .teachers .list .info, main > .teachers .list .info .name {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > *, main > .register > * > .block > .intro > .information > *, main > .register > * > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1651,14 +1655,14 @@ main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
 
-main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers {
+main > .bonuses, main > .register > * > .block, main > .reviews, main > .teachers, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews {
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
   min-height: 500px;
   border-bottom: 2px solid white; }
-  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1 {
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
     font-size: 22pt;
     font-weight: lighter;
     padding-bottom: 20px; }
@@ -1729,5 +1733,98 @@ main > .videos .video {
     min-height: 100%;
     margin-top: auto;
     margin-bottom: auto; }
+
+main > .blog {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  overflow: hidden; }
+  @media all and (min-width: 1080px) {
+    main > .blog {
+      padding-left: calc(50% -  540px);
+      padding-right: calc(50% - 540px); } }
+  @media all and (max-width: 1079px) {
+    main > .blog {
+      padding-left: 2%;
+      padding-right: 2%; } }
+  main > .blog > h1 {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    main > .blog > h1 > div {
+      visibility: hidden; }
+      main > .blog > h1 > div > .left, main > .blog > h1 > div > .right {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat; }
+      main > .blog > h1 > div > .left {
+        margin-right: 20px;
+        background-image: url(../../icons/arrow-left.svg); }
+      main > .blog > h1 > div > .right {
+        margin-right: 10px;
+        background-image: url(../../icons/arrow-right.svg); }
+      main > .blog > h1 > div > .left:active, main > .blog > h1 > div > .right:active {
+        opacity: 0.5; }
+  main > .blog > ul {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    position: relative; }
+    main > .blog > ul > li {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      justify-content: flex-end;
+      min-width: 32%;
+      width: 32%;
+      height: 230px;
+      margin-right: 2%;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom; }
+      main > .blog > ul > li > * {
+        margin-left: 15px;
+        margin-right: 15px; }
+      main > .blog > ul > li > a {
+        margin-top: 15px;
+        margin-bottom: 30px; }
+      main > .blog > ul > li a:before {
+        content: "Перейти";
+        display: inline-block;
+        border: 1px solid white;
+        border-radius: 30px;
+        color: white;
+        padding: 5px;
+        margin-top: 10px; }
 
 /*# sourceMappingURL=computer.css.map */

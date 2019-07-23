@@ -4,6 +4,7 @@ $(function() {
 	init_addresses();
 	init_gallery();
 	init_header();
+    init_blog();
 	init_reviews();
 	init_register();
 });
@@ -13,8 +14,9 @@ $( window ).on('load', function() {
 	resize_teachers();
 	resize_addresses();
 	resize_gallery();
-	resize_header();	
-	resize_reviews();	
+	resize_header();
+    resize_blog();
+	resize_reviews();
 
 });
 
@@ -23,6 +25,7 @@ $( window ).resize(function() {
 	resize_teachers();
 	resize_addresses();
 	resize_gallery();
-	resize_header();	
-	resize_reviews();	
+	resize_header();
+    resize_blog();
+	resize_reviews();
 });

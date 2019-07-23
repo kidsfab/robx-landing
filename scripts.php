@@ -7,6 +7,7 @@
 <script src="scripts/gallery.js"></script>
 <script src="scripts/addresses.js"></script>
 <script src="scripts/videos.js"></script>
+<script src="scripts/blog.js"></script>
 <script src="scripts/reviews.js"></script>
 <script src="scripts/register.js"></script>
 <script src="scripts/events.js"></script>

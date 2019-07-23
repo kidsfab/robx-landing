@@ -4,53 +4,44 @@ main > .teachers {
 	@include flex-direction(column);
 	@include justify-content(center);
 
-	.list {
+	& > ul {
 		@extend %flexbox;
 		@include justify-content(space-between);
 		padding-bottom: 20px;
 		padding-top: 10px;
 
-		.info {
+		& > li {
 			@extend %flexbox;
+            @include flex-direction(column);
 			@include flex-wrap(wrap);
 			@include justify-content(space-between);
 
-			@media all and (min-width: $large) {
-				width: 320px;
-			}
-	
-			@media all and (max-width: $large - 1) {
-				width: 30%;
-			}
+			width: 45%;
+            min-width: 48%;
+            height: 130px;
+            margin-right: 4%;
 
-			img {
+            border-right: 1px dotted white;
+
+            &:last-child {
+                border-right: 0;
+            }
+
+			& > img {
 				width: 80px;
 				height: 80px;
 				display: block;
-				padding-bottom: 10px;
+				margin-bottom: 10px;
 			}
 
-			.name {
-				width: calc(100% - 100px);
-
-				margin-top: auto;
-				margin-bottom: auto;
-
-				padding-bottom: 10px;
-
+			& > .name {
 				@extend %flexbox;
-				flex-direction: column;
-			
-				* {
-					font-size: 15pt;
-					font-weight: 600;
-				}
+				@include flex-direction(column);
 			}
 
-			.bio {
-				width: 100%;
-				font-weight: lighter;
-			}
+            & > .bio {
+                width: calc(100% - 180px);
+            }
 		}
 	}
 

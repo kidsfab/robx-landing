@@ -5,7 +5,7 @@
     <!-- bonuses -->
     <?php include("main/bonuses.php"); ?>
 	<?php include("main/prices.php"); ?>
-    <!-- blog posts -->
+    <?php include("main/blog.php"); ?>
 	<?php include("main/reviews.php"); ?>
 	<?php include("main/addresses.php"); ?>
     <?php include("main/teachers.php"); ?>
