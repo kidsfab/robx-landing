@@ -29,13 +29,13 @@ main > .reviews {
 
             & > .left, & > .right {
                 display: inline-block;
-                height: 50px;
-                width: 50px;
+                height: 30px;
+                width: 30px;
                 background-repeat: no-repeat;
             }
 
             & > .left {
-                margin-right: 10px;
+                margin-right: 20px;
                 background-image: url(../../icons/arrow-left.svg);
             }
 

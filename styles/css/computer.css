@@ -1444,19 +1444,21 @@ main > .reviews {
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     justify-content: space-between; }
-    main > .reviews > h1 > div > .left, main > .reviews > h1 > div > .right {
-      display: inline-block;
-      height: 50px;
-      width: 50px;
-      background-repeat: no-repeat; }
-    main > .reviews > h1 > div > .left {
-      margin-right: 10px;
-      background-image: url(../../icons/arrow-left.svg); }
-    main > .reviews > h1 > div > .right {
-      margin-right: 10px;
-      background-image: url(../../icons/arrow-right.svg); }
-    main > .reviews > h1 > div > .left:active, main > .reviews > h1 > div > .right:active {
-      opacity: 0.5; }
+    main > .reviews > h1 > div {
+      visibility: hidden; }
+      main > .reviews > h1 > div > .left, main > .reviews > h1 > div > .right {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat; }
+      main > .reviews > h1 > div > .left {
+        margin-right: 20px;
+        background-image: url(../../icons/arrow-left.svg); }
+      main > .reviews > h1 > div > .right {
+        margin-right: 10px;
+        background-image: url(../../icons/arrow-right.svg); }
+      main > .reviews > h1 > div > .left:active, main > .reviews > h1 > div > .right:active {
+        opacity: 0.5; }
   main > .reviews > ul {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
