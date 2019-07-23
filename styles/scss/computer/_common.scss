@@ -1,8 +1,13 @@
-@import 'colors.scss';
-@import 'flex.scss';
+@import '../colors.scss';
+@import '../flex.scss';
 
 $large: 1080px;
 $small: 800px;
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
 
 * {
 	font-family: 'Open Sans', sans-serif;
