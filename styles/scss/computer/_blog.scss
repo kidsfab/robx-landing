@@ -54,6 +54,7 @@ main > .blog {
         list-style-type: none;
 
         position: relative;
+        visibility: hidden;
 
         & > li {
             @extend %flexbox;

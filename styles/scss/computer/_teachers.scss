@@ -4,11 +4,47 @@ main > .teachers {
 	@include flex-direction(column);
 	@include justify-content(center);
 
+    overflow: hidden;
+
+    & > h1 {
+        @extend %flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+
+        & > div {
+            visibility: hidden;
+
+            & > .left, & > .right {
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                background-repeat: no-repeat;
+            }
+
+            & > .left {
+                margin-right: 20px;
+                background-image: url(../../icons/arrow-left.svg);
+            }
+
+            & > .right {
+                margin-right: 10px;
+                background-image: url(../../icons/arrow-right.svg);
+            }
+
+            & > .left:active, & > .right:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
 	& > ul {
 		@extend %flexbox;
 		@include justify-content(space-between);
 		padding-bottom: 20px;
 		padding-top: 10px;
+
+        position: relative;
+        visibility: hidden;
 
 		& > li {
 			@extend %flexbox;
@@ -22,6 +58,8 @@ main > .teachers {
             margin-right: 4%;
 
             border-right: 1px dotted white;
+
+            position: relative;
 
             &:last-child {
                 border-right: 0;
