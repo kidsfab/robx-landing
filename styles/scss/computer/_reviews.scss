@@ -6,6 +6,8 @@ main > .reviews {
 
     max-width: 100%;
 
+    overflow: hidden;
+
     @media all and (min-width: $large) {
 		padding-left: calc(50% -  540px);
 		padding-right: calc(50% - 540px);
@@ -17,31 +19,57 @@ main > .reviews {
 		padding-right: 2%;
 	}
 
+    & > h1 {
+        @extend %flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+
+        & > div {
+            visibility: hidden;
+
+            & > .left, & > .right {
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+                background-repeat: no-repeat;
+            }
+
+            & > .left {
+                margin-right: 10px;
+                background-image: url(../../icons/arrow-left.svg);
+            }
+
+            & > .right {
+                margin-right: 10px;
+                background-image: url(../../icons/arrow-right.svg);
+            }
+
+            & > .left:active, & > .right:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
     & > ul {
         @extend %flexbox;
         @include flex-direction(row);
-        max-width: 100%;
+        width: 100%;
 
         list-style-type: none;
 
+        position: relative;
+
+        visibility: hidden;
+
         & > li {
-            display: none;
             min-width: 32%;
             padding-right: 2%;
 
-            overflow: hidden;
+            position: relative;
 
-            &.current, &.current + li, &.current + li + li, &.current + li + li + li {
-                display: block;
-            }
-
-            &.current + li + li + li {
-                opacity: 0.5;
-            }
 
         	& > img:first-child {
-        		width: 531px;
-        		max-width: 100%;
+        		width: 100%;
         	}
 
         	& > img:last-child {
