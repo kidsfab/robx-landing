@@ -79,26 +79,29 @@ main > .about {
         background-repeat: no-repeat;
         background-size: 100px;
 
-        .text {
+        & > .text {
             font-weight: bold;
         }
 
-        .author {
+        & > .author {
             &:before {
                 content: "-";
                 display: inline-block;
             }
 
             margin-top: 15px;
-            font-size: 9pt;
 
-            .position, .name {
+            & > .position, .name {
                 display: inline-block;
             }
 
-            .name {
+            & > .name {
                 font-weight: bold;
             }
+        }
+
+        & > .author > .position, .from {
+            font-size: 9pt;
         }
     }
 

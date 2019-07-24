@@ -135,18 +135,19 @@ main > .about {
     background-image: url(../../icons/quote_mark.svg);
     background-repeat: no-repeat;
     background-size: 100px; }
-    main > .about .citation .text {
+    main > .about .citation > .text {
       font-weight: bold; }
-    main > .about .citation .author {
-      margin-top: 15px;
-      font-size: 9pt; }
-      main > .about .citation .author:before {
+    main > .about .citation > .author {
+      margin-top: 15px; }
+      main > .about .citation > .author:before {
         content: "-";
         display: inline-block; }
-      main > .about .citation .author .position, main > .about .citation .author .name {
+      main > .about .citation > .author > .position, main > .about .citation > .author .name {
         display: inline-block; }
-      main > .about .citation .author .name {
+      main > .about .citation > .author > .name {
         font-weight: bold; }
+    main > .about .citation > .author > .position, main > .about .citation .from {
+      font-size: 9pt; }
 
 main > .videos .names {
   overflow-x: hidden;
