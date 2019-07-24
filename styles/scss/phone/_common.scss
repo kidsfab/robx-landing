@@ -5,6 +5,30 @@ body {
     margin: 0;
 }
 
+%large-font {
+    @media all and (max-width: 800px) and (min-width: 700px) {
+		font-size: 40pt;
+	}
+    @media all and (max-width: 800px) and (min-width: 600px) {
+		font-size: 35pt;
+	}
+    @media all and (max-width: 600px) and (min-width: 500px) {
+		font-size: 30pt;
+	}
+    @media all and (max-width: 500px) and (min-width: 400px) {
+		font-size: 25pt;
+	}
+    @media all and (max-width: 400px) and (min-width: 300px) {
+		font-size: 20pt;
+	}
+	@media all and (max-width: 300px) and (min-width: 200px) {
+		font-size: 15pt;
+	}
+	@media all and (max-width: 200px) {
+		font-size: 10pt;
+	}
+}
+
 %row {
 	@extend %flexbox;
 	@include flex-direction(column);

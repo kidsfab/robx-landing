@@ -9,15 +9,15 @@
 	</div>
 	<ul>
 		<li class = 'price'>
-			<img = src = "icons/prices/1_month.svg"/>
+			<img = src = "icons/prices/1-month.svg"/>
 			<div class = 'value'>4 000 р.</div>
 		</li>
         <li class = 'price discount-10'>
-			<img = src = "icons/prices/3_months.svg"/>
+			<img = src = "icons/prices/3-months.svg"/>
 			<div class = 'value'>10 800 р.</div>
 		</li>
         <li class = 'price discount-20'>
-			<img = src = "icons/prices/6_months.svg"/>
+			<img = src = "icons/prices/6-months.svg"/>
 			<div class = 'value'>19 200 р.</div>
 		</li>
 	</ul>

@@ -12,8 +12,10 @@ function add_elements_addresses() {
 
 
 function remove_elements_addresses() {
-	$('main > .addresses > .list > ul').prepend($('main > .addresses > .list > h2'));
-	$('main > .addresses > .list > .list > ul > li > a').remove();
+	$('main > .addresses > .list > ul').prepend(
+        $('main > .addresses > .list > h2')
+);
+	$('main > .addresses > .list > ul > li > a').remove();
 }
 
 function init_addresses() {

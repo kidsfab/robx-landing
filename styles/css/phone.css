@@ -1,4 +1,4 @@
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -14,6 +14,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;
@@ -86,7 +108,7 @@ main > .videos .names {
       main > .videos .names nav div.current {
         background-color: white; }
 
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -102,6 +124,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;
@@ -135,13 +179,15 @@ header {
 main > .addresses .map-wraper {
   display: none; }
 main > .addresses > .list {
-  width: 80vw; }
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto; }
   main > .addresses > .list h2 {
     font-size: 20pt;
-    text-align: center;
     padding-bottom: 40px; }
   main > .addresses > .list > ul {
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 0; }
     main > .addresses > .list > ul > li {
       padding-bottom: 20px;
       padding-top: 20px;
@@ -169,7 +215,7 @@ main > .addresses > .list {
 main > .bonuses {
   display: none; }
 
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -185,6 +231,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;
@@ -215,7 +283,7 @@ header {
   color: white;
   background-color: #4667FF; }
 
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -231,6 +299,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;
@@ -337,7 +427,7 @@ footer {
         footer > div.info > div:first-child {
           padding-bottom: 10px; }
 
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -353,6 +443,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;
@@ -471,7 +583,7 @@ main {
     /*same height as header*/
     visibility: hidden; }
 
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -487,6 +599,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;
@@ -517,40 +651,76 @@ header {
   color: white;
   background-color: #4667FF; }
 
-main > .prices > * {
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid white;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: center; }
-main > .prices h1 {
-  font-size: 20pt; }
-main > .prices .offer {
-  order: 3;
-  border: 0; }
-main > .prices .list h2 {
-  display: none; }
-main > .prices .list .price {
-  border-bottom: 1px solid white;
-  padding-bottom: 20px;
-  padding-top: 20px; }
-  main > .prices .list .price:first-of-type {
-    padding-top: 0; }
-  main > .prices .list .price:last-of-type {
-    border: 0;
-    padding-bottom: 0; }
-  main > .prices .list .price .duration {
-    font-size: 25pt;
-    font-weight: bold;
-    padding-bottom: 5px; }
-  main > .prices .list .price .value {
-    font-weight: bold;
-    font-size: 18pt;
-    color: #ee5930; }
+main > .prices {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  main > .prices > * {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto; }
+  main > .prices > h1 {
+    font-size: 20pt;
+    order: 1; }
+  main > .prices > ul {
+    order: 2;
+    list-style-type: none;
+    padding: 0; }
+    main > .prices > ul > li {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between;
+      position: relative;
+      border-bottom: 1px dashed gray;
+      padding-bottom: 15px;
+      padding-top: 15px; }
+      main > .prices > ul > li.discount-10:before {
+        background-image: url(../../icons/prices/discount-10.svg); }
+      main > .prices > ul > li.discount-20:before {
+        background-image: url(../../icons/prices/discount-20.svg); }
+      main > .prices > ul > li.discount-10:before, main > .prices > ul > li.discount-20:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        width: 100%;
+        height: 60%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right; }
+      main > .prices > ul > li.price:first-child {
+        border-top: 1px dashed gray; }
+      main > .prices > ul > li > img {
+        max-width: 40%; }
+      main > .prices > ul > li > div {
+        font-weight: bold;
+        color: #4667FF;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: relative;
+        z-index: 2; }
+  main > .prices > div {
+    padding-top: 50px;
+    order: 3;
+    font-size: 10pt; }
+    main > .prices > div > h2 {
+      display: inline;
+      font-size: 10pt; }
 
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -566,6 +736,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;
@@ -638,7 +830,7 @@ main > .videos .names {
       main > .videos .names nav div.current {
         background-color: white; }
 
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -654,6 +846,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;
@@ -726,7 +940,7 @@ main > .videos .names {
       main > .videos .names nav div.current {
         background-color: white; }
 
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -742,6 +956,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;
@@ -814,7 +1050,7 @@ main > .videos .names {
       main > .videos .names nav div.current {
         background-color: white; }
 
-main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child {
+main > .addresses, main > .prices, main > .videos, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -830,6 +1066,28 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
 
 body {
   margin: 0; }
+
+@media all and (max-width: 800px) and (min-width: 700px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 40pt; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 35pt; } }
+@media all and (max-width: 600px) and (min-width: 500px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 30pt; } }
+@media all and (max-width: 500px) and (min-width: 400px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 25pt; } }
+@media all and (max-width: 400px) and (min-width: 300px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 20pt; } }
+@media all and (max-width: 300px) and (min-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 15pt; } }
+@media all and (max-width: 200px) {
+  main > .prices > h1, main > .prices > ul > li > div {
+    font-size: 10pt; } }
 
 main > .addresses, main > .prices, main > .videos {
   -webkit-box-direction: normal;

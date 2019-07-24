@@ -12,7 +12,7 @@
 <script src="scripts/register.js"></script>
 <script src="scripts/events.js"></script>
 <script src="scripts/mango.js"></script>
-<script src="scripts/yandex_metrika.js"></script>
+<!-- <script src="scripts/yandex_metrika.js"></script> -->
 <script src="scripts/vk.js"></script>
-<script src="https://vk.com/js/api/openapi.js?159"></script>
-<script src="scripts/vk_widget.js" defer></script>
+<!-- <script src="https://vk.com/js/api/openapi.js?159"></script> -->
+<!-- <script src="scripts/vk_widget.js" defer></script> -->
