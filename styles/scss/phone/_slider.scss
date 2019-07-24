@@ -34,16 +34,16 @@
 	nav {
 		visibility: visible;
 
-		position: absolute;
 		bottom: 0;
-		width: auto;
+        padding-left: 10vw;
+        position: absolute;
 
 		div {
 			display: inline-block;
 			vertical-align: middle;
 			width: 8px;
 			height: 8px;
-			margin: 0 8px;
+			margin-right: 8px;
 			background: transparent;
 			border-radius: 8px;
 			overflow: hidden;
@@ -57,4 +57,3 @@
 		}
 	}
 }
-

@@ -18,7 +18,7 @@ function init_computer_slider(name) {
 	}
 
 	$(name).find('> nav div:first-child').addClass('current');
-	$(name).find('> nav').css('left', ($(name).width() - $(name).children('nav').width()) / 2);
+	// $(name).find('> nav').css('left', ($(name).width() - $(name).children('nav').width()) / 2);
 
 	$(name).attr('current_number', 2);
 
@@ -45,13 +45,13 @@ function init_computer_slider(name) {
 		if (parseInt($(name).attr('current_number')) != num) {
 			$(name).attr('current_number', num);
 			go_to(name, num, true);
-		}	
+		}
 		return false;
-	}); 
+	});
 
 	$(name).on('touchstart', function(event) {
-		this.touchstartx =  event.originalEvent.touches[0].pageX;	
-		this.touchstartx =  event.originalEvent.touches[0].pageX;	
+		this.touchstartx =  event.originalEvent.touches[0].pageX;
+		this.touchstartx =  event.originalEvent.touches[0].pageX;
 	});
 
 	$(name).on('touchmove', function(event) {
@@ -63,7 +63,7 @@ function init_computer_slider(name) {
 		this.touchmovex =  event.originalEvent.touches[0].pageX;
 		var sum_width = 0;
 		for(var i = 0; i < parseInt($(name).attr('current_number')); i++) {
-			sum_width += $($(name).children('.slide')[i]).outerWidth();
+			sum_width += $($(name).children('.slide')[i]).outerWidth(true);
 		}
 		this.movex = sum_width + (this.touchstartx - this.touchmovex);
 		$(name).children('.slide').css('left', -this.movex);
@@ -71,10 +71,10 @@ function init_computer_slider(name) {
 
 	$(name).on('touchend', function(event) {
 		var absMove = Math.abs(this.touchstartx - this.touchmovex);
-		if (absMove > 3 * $(name).outerWidth() / 4 || this.longTouch === false) {
+		if (absMove > 3 * $(name).outerWidth(true) / 4 || this.longTouch === false) {
 			var sum_width = 0;
 			for(var i = 0; i < parseInt($(name).attr('current_number')); i++) {
-				sum_width += $($(name).children('.slide')[i]).outerWidth();
+				sum_width += $($(name).children('.slide')[i]).outerWidth(true);
 			}
 
 			if (this.movex > sum_width && parseInt($(name).attr('current_number')) < $(name).children('.slide').length - 3) {
@@ -98,11 +98,11 @@ function go_to(name, num, animate) {
 
 	var sum_width = 0;
 	for (var i = 0; i < num; i++) {
-		sum_width += $($(name).children('.slide')[i]).outerWidth();
+		sum_width += $($(name).children('.slide')[i]).outerWidth(true);
 	}
 
 	var width = $(name).width();
-	var shift = (width - $(name).children('.slide.current').outerWidth()) / 2 - sum_width;
+	var shift = (width - $(name).children('.slide.current').outerWidth(true)) / 2 - sum_width;
 	if (animate) {
 		left = parseInt($(name).children('.slide').css('left'));
 		$(name).children('.slide').animate({'left': '-='+ (left - shift)}, function() {});
@@ -114,7 +114,7 @@ function go_to(name, num, animate) {
 
 function update_computer_slider(name) {
 	go_to(name, $(name).attr('current_number'), false);
-	$(name).find('> nav').css('left', ($(name).width() - $(name).children('nav').width()) / 2);
+	// $(name).find('> nav').css('left', ($(name).width() - $(name).children('nav').width()) / 2);
 }
 
 function delete_slider(name) {
