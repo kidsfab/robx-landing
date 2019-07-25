@@ -7,7 +7,6 @@ function init_phone_slider(name) {
 	}
 
 	$(name).find('> nav div:first-child').addClass('current');
-	// $(name).find('> nav').css('left', ($(name).width() - $(name).children('nav').width()) / 2);
 
 	$(name).attr('current_number', 0);
 
@@ -100,13 +99,11 @@ function go_to(name, num, animate) {
 	}
 }
 
-
-function update_computer_slider(name) {
+function update_phone_slider(name) {
 	go_to(name, $(name).attr('current_number'), false);
-	// $(name).find('> nav').css('left', ($(name).width() - $(name).children('nav').width()) / 2);
 }
 
-function delete_slider(name) {
+function delete_phone_slider(name) {
 	$(name).children('nav').remove();
 	$(name).children('.left').remove();
 	$(name).children('.right').remove();
@@ -114,4 +111,85 @@ function delete_slider(name) {
 
 	$(name).children('').removeClass('slide');
 	$(name).children('').removeClass('current');
+}
+
+function init_computer_slider(name, num) {
+    $(name + ' > ul > li:first-child').addClass('current');
+
+    var current = $(name + ' > ul > li:first-child');
+    for (var i = 0; i < num; i++) {
+        current = current.next();
+    }
+    current.css("opacity", 0.5);
+
+	$(name + ' > h1').append('<div>' +
+        '<a class = "left"></a><a class = "right"></a>' +
+        '</div>');
+
+	if($(name + ' > ul > li.current').nextAll().length < num) {
+        $(name + ' > h1 a.right').css("opacity", "0.5");
+	}
+
+	if($(name + ' > ul > li.current').prevAll().length < num) {
+		$(name + ' > h1 a.left').css("opacity", "0.5");
+	}
+
+
+	$(name + ' > h1 a.right').click(function() {
+        if($(name + ' > ul > li.current').nextAll().length >= num) {
+
+            $(name + ' > ul > li').css("opacity", 1);
+
+            var current = $(name + ' > ul > li.current');
+            for (var i = 0; i < num; i++) {
+                current = current.next();
+            }
+            $(name + ' > ul > li.current').removeClass('current');
+    		current.addClass('current');
+            current.prev().css("opacity", 0.5);
+            for (var i = 0; i < num; i++) {
+                current = current.next();
+            }
+            current.css("opacity", 0.5);
+    		$(name + ' > ul li').css('left', "-=100%");
+
+    		if($(name + ' > ul > li.current').nextAll().length < num) {
+    			$(name + ' > h1 a.right').css("opacity", "0.5");
+    		}
+
+    		$(name + ' > h1 a.left').css("opacity", "1");
+        }
+	});
+
+    $(name + ' > h1 a.left').click(function() {
+        if($(name + ' > ul > li.current').prevAll().length >= num) {
+
+            $(name + ' > ul > li').css("opacity", 1);
+
+            var current = $(name + ' > ul > li.current');
+            for (var i = 0; i < num; i++) {
+                current = current.prev();
+            }
+            $(name + ' > ul > li.current').removeClass('current');
+    		current.addClass('current');
+            current.prev().css("opacity", 0.5);
+            for (var i = 0; i < num; i++) {
+                current = current.next();
+            }
+            current.css("opacity", 0.5);
+    		$(name + ' > ul li').css('left', "+=100%");
+
+    		if($(name + ' > ul > li.current').prevAll().length < num) {
+    			$(name + ' > h1 a.left').css("opacity", "0.5");
+    		}
+
+    		$(name + ' > h1 a.right').css("opacity", "1");
+        }
+	});
+
+    $(name + ' > ul, ' + name + ' > h1 div').css("visibility", "visible");
+}
+
+function delete_computer_slider(name) {
+    $(name + ' > h1 > div').remove();
 }

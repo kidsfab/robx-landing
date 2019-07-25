@@ -35,7 +35,7 @@ function resize_addresses() {
 			add_elements_addresses();
 			init_phone_slider('.addresses ul');
 		} else if($('.addresses').get(0).mobile == true) {
-			update_computer_slider('.addresses ul');
+			update_phone_slider('.addresses ul');
 		}
 	} else {
 		if($('.addresses').get(0).mobile == true) {

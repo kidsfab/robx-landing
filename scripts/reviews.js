@@ -1,6 +1,3 @@
-function update_reviews() {
-}
-
 function add_elements_computer_reviews() {
 	$('.reviews > ul > li:first-child').addClass('current');
 
@@ -76,27 +73,13 @@ function add_elements_computer_reviews() {
 	});
 };
 
-
-function remove_elements_computer_reviews() {
-    $('.reviews > h1 > div').remove();
-}
-
-function add_elements_phone_reviews() {
-}
-
-
-function remove_elements_phone_reviews() {
-}
-
 function init_reviews() {
 	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.reviews').get(0).mobile = true;
-		add_elements_phone_reviews();
 		init_phone_slider('.reviews > ul');
 	} else {
 		$('.reviews').get(0).mobile = false;
-		add_elements_computer_reviews();
-        $('.reviews ul, .reviews h1 div').css("visibility", "visible");
+		init_computer_slider('.reviews', 3);
 	}
 }
 
@@ -104,18 +87,16 @@ function resize_reviews() {
 	if(window.matchMedia('(max-width: 800px)').matches) {
 		if($('.reviews').get(0).mobile == false) {
 			$('.reviews').get(0).mobile = true;
-			remove_elements_computer_reviews();
-			add_elements_phone_reviews();
+			delete_computer_slider('.reviews');
 			init_phone_slider('.reviews > ul');
 		} else if($('.reviews').get(0).mobile == true) {
-			update_computer_slider('.reviews > ul');
+			update_phone_slider('.reviews > ul');
 		}
 	} else {
 		if($('.reviews').get(0).mobile == true) {
 			$('.reviews').get(0).mobile = false;
-			remove_elements_phone_reviews();
-			delete_slider('.reviews > ul');
-			add_elements_computer_reviews();
+			delete_phone_slider('.reviews > ul');
+			init_computer_slider('.reviews', 3);
 		}
 	}
 

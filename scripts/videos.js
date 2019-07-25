@@ -32,7 +32,7 @@ function add_elements_phone_videos() {
 
 
 function remove_elements_phone_videos() {
-	delete_slider('.videos .names');
+	delete_phone_slider('.videos .names');
 	$('main > .videos > .names').prepend($('main > .videos > h1'));
 	$('.videos > .names > div > iframe').remove();
 }
@@ -56,13 +56,13 @@ function resize_videos() {
 			add_elements_phone_videos();
 			init_phone_slider('.videos .names');
 		} else if($('.videos').get(0).mobile == true) {
-			update_computer_slider('.videos .names');
+			update_phone_slider('.videos .names');
 		}
 	} else {
 		if($('.videos').get(0).mobile == true) {
 			$('.videos').get(0).mobile = false;
 			remove_elements_phone_videos();
-			delete_slider('.videos .names');
+			delete_phone_slider('.videos .names');
 			add_elements_computer_videos();
 		}
 	}

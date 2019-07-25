@@ -26,14 +26,14 @@ function resize_camp() {
 			init_phone_slider('.camp .projects .list');
 			init_phone_slider('.camp-pros .list');
 		} else if($('.camp').get(0).mobile == true) {
-			update_computer_slider('.camp .projects .list');
-			update_computer_slider('.camp-pros .list');
+			update_phone_slider('.camp .projects .list');
+			update_phone_slider('.camp-pros .list');
 		}
 	} else {
 		if($('.camp .projects').get(0).mobile == true) { 
 			$('.camp .projects').get(0).mobile = false;
 			remove_elements_camp();
-			delete_slider('.camp-pros .list');
+			delete_phone_slider('.camp-pros .list');
 		}
 	}
 

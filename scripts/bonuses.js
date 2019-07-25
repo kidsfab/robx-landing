@@ -31,13 +31,13 @@ function resize_bonuses() {
 			add_elements_phone_bonuses();
 			init_phone_slider('.bonuses > ul');
 		} else if($('.bonuses').get(0).mobile == true) {
-			update_computer_slider('.bonuses > ul');
+			update_phone_slider('.bonuses > ul');
 		}
 	} else {
 		if($('.bonuses').get(0).mobile == true) {
 			$('.bonuses').get(0).mobile = false;
 			remove_elements_phone_bonuses();
-			delete_slider('.bonuses > ul');
+			delete_phone_slider('.bonuses > ul');
 			add_elements_computer_bonuses();
 		}
 	}

@@ -3,5 +3,5 @@ function init_gallery() {
 }
 
 function resize_gallery() {
-	update_computer_slider('.galery');
+	update_phone_slider('.galery');
 }
