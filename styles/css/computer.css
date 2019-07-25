@@ -169,7 +169,7 @@ main > .about {
       left: 0px;
       top: 0;
       z-index: 1;
-      background-image: url(http://localhost:8888/robx/icons/quote_mark.svg);
+      background-image: url(../../icons/quote_mark.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: top; }
@@ -439,7 +439,8 @@ main > .bonuses {
     -moz-justify-content: space-between;
     justify-content: space-between;
     padding-left: 1.5%;
-    padding-right: 1.5%; }
+    padding-right: 1.5%;
+    margin-bottom: 120px; }
     main > .bonuses > ul > li {
       display: flex;
       flex-direction: column;
@@ -447,19 +448,17 @@ main > .bonuses {
       position: relative;
       opacity: 0.5;
       width: 15%;
-      border-bottom: 2px solid white;
       padding-bottom: 2px;
-      margin-bottom: 120px; }
+      border-bottom: 2px dotted white; }
       main > .bonuses > ul > li:hover {
         opacity: 1;
-        border-bottom: 4px solid white;
-        padding-bottom: 0px; }
+        border-bottom: 4px solid white; }
         main > .bonuses > ul > li:hover .title {
           font-weight: bold; }
         main > .bonuses > ul > li:hover img {
           width: 130%;
-          margin-top: 5.8%;
-          margin-bottom: 5.8%; }
+          margin-top: 5%;
+          margin-bottom: 5%; }
         main > .bonuses > ul > li:hover .text {
           visibility: visible; }
       main > .bonuses > ul > li:nth-child(even) {
@@ -468,6 +467,8 @@ main > .bonuses {
           order: 2; }
         main > .bonuses > ul > li:nth-child(even) img {
           order: 1; }
+        main > .bonuses > ul > li:nth-child(even):hover {
+          margin-top: 68px; }
       main > .bonuses > ul > li:nth-child(odd) .title {
         order: 1; }
       main > .bonuses > ul > li:nth-child(odd) img {
