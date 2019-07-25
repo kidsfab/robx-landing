@@ -2,7 +2,6 @@ function init_blog() {
 	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.blog').get(0).mobile = true;
 		init_phone_slider('.blog > ul');
-        delete_phone_slider('.blog');
 	} else {
 		$('.blog').get(0).mobile = false;
 		init_computer_slider('.blog', 3);
@@ -14,7 +13,7 @@ function resize_blog() {
 		if($('.blog').get(0).mobile == false) {
 			$('.blog').get(0).mobile = true;
 			init_phone_slider('.blog > ul');
-            delete_phone_slider('.blog');
+            delete_phone_slider('.register > .background-images');
 		} else if($('.blog').get(0).mobile == true) {
 			update_phone_slider('.blog > ul');
 		}

@@ -111,5 +111,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     </div>
     <div class = "background-images">
         <img src = "photos/registration-photo-1.png"/>
+        <img src = "photos/registration-photo-2.png"/>
+        <img src = "photos/registration-photo-3.png"/>
     </div>
 </div>

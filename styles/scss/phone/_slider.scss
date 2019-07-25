@@ -18,17 +18,9 @@
 
 		position: relative;
 
-		width: 80vw;
 		height: 100%;
 
-		padding-left: 10vw;
-		padding-right: 10vw;
-
 		flex-shrink: 0;
-
-		&.additional {
-			visibility: hidden;
-		}
 	}
 
 	nav {

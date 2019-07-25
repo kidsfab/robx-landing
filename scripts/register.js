@@ -56,6 +56,13 @@ function focusoutDate() {
 }
 
 function init_register() {
+    if(window.matchMedia('(max-width: 800px)').matches) {
+		$('.register').get(0).mobile = true;
+		init_phone_slider('.register > .background-images');
+	} else {
+		$('.register').get(0).mobile = false;
+	}
+
 	$( ".form .required input" ).change(updateRequired).on('input', updateRequired);
 	$(".form .mobile-phone input").mask("+7 (999) 9999999");
 	$('.form .date input').focus(focusDate).focusout(focusoutDate);
@@ -106,4 +113,18 @@ function init_register() {
 }
 
 function resize_register() {
+
+    if(window.matchMedia('(max-width: 800px)').matches) {
+		if($('.register').get(0).mobile == false) {
+			$('.register').get(0).mobile = true;
+			init_phone_slider('.register > .background-images');
+		} else if($('.register').get(0).mobile == true) {
+			update_phone_slider('.register > .background-images');
+		}
+	} else {
+		if($('.register').get(0).mobile == true) {
+			$('.register').get(0).mobile = false;
+			delete_phone_slider('.register > .background-images');
+		}
+	}
 }
