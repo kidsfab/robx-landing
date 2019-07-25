@@ -5,6 +5,7 @@ $(function() {
 	init_gallery();
 	init_header();
     init_blog();
+    init_bonuses();
 	init_reviews();
 	init_register();
 });
@@ -16,6 +17,7 @@ $( window ).on('load', function() {
 	resize_gallery();
 	resize_header();
     resize_blog();
+    resize_bonuses();
 	resize_reviews();
 
 });
@@ -27,5 +29,6 @@ $( window ).resize(function() {
 	resize_gallery();
 	resize_header();
     resize_blog();
+    resize_bonuses();
 	resize_reviews();
 });

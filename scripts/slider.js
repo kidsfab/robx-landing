@@ -1,32 +1,21 @@
 function init_computer_slider(name) {
-	$(name).children('*:nth-child(1)')
-		.before($(name).children('*:nth-last-child(2)').clone().addClass('additional'))
-		.before($(name).children('*:nth-last-child(1)').clone().addClass('additional'));
-
-	$(name).children('*:nth-last-child(1)')
-		.after($(name).children('*:nth-child(4)').clone().addClass('additional'))
-		.after($(name).children('*:nth-child(3)').clone().addClass('additional'));
-
 	$(name).children().addClass('slide');
 
-	$(name).prepend('<a class = "left"></a>');
-	$(name).prepend('<a class = "right"></a>');
-
 	$(name).append('<nav></nav>');
-	for (var i = 2; i < $(name).children('.slide').length - 2; i++) {
+	for (var i = 0; i < $(name).children('.slide').length; i++) {
 		$(name).children('nav').append('<div number = "' + i + '"></div>');
 	}
 
 	$(name).find('> nav div:first-child').addClass('current');
 	// $(name).find('> nav').css('left', ($(name).width() - $(name).children('nav').width()) / 2);
 
-	$(name).attr('current_number', 2);
+	$(name).attr('current_number', 0);
 
 	$(name).children('.left').click(function() {
 		$(name).attr('current_number', parseInt($(name).attr('current_number')) - 1);
-		if (parseInt($(name).attr('current_number')) == 1) {
-			$(name).attr('current_number', $(name).children('.slide').length - 3);
-			go_to(name, $(name).children('.slide').length - 2, false);
+		if (parseInt($(name).attr('current_number')) == 0) {
+			$(name).attr('current_number', $(name).children('.slide').length - 1);
+			go_to(name, $(name).children('.slide').length - 1, false);
 		}
 		go_to(name, parseInt($(name).attr('current_number')), true);
 	});
@@ -77,9 +66,9 @@ function init_computer_slider(name) {
 				sum_width += $($(name).children('.slide')[i]).outerWidth(true);
 			}
 
-			if (this.movex > sum_width && parseInt($(name).attr('current_number')) < $(name).children('.slide').length - 3) {
+			if (this.movex > sum_width && parseInt($(name).attr('current_number')) < $(name).children('.slide').length - 1) {
 				$(name).attr('current_number', parseInt($(name).attr('current_number')) + 1);
-			} else if (this.movex < sum_width && parseInt($(name).attr('current_number')) > 2) {
+			} else if (this.movex < sum_width && parseInt($(name).attr('current_number')) > 0) {
 				$(name).attr('current_number', parseInt($(name).attr('current_number')) - 1);
 			}
 		}
@@ -87,7 +76,7 @@ function init_computer_slider(name) {
 
 	})
 
-	go_to(name, 2, false);
+	go_to(name, 0, false);
 }
 
 function go_to(name, num, animate) {
@@ -102,7 +91,7 @@ function go_to(name, num, animate) {
 	}
 
 	var width = $(name).width();
-	var shift = (width - $(name).children('.slide.current').outerWidth(true)) / 2 - sum_width;
+	var shift = -sum_width;
 	if (animate) {
 		left = parseInt($(name).children('.slide').css('left'));
 		$(name).children('.slide').animate({'left': '-='+ (left - shift)}, function() {});

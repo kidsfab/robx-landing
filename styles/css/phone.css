@@ -1,5 +1,5 @@
 @charset "UTF-8";
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -40,7 +40,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -65,7 +65,7 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
@@ -149,16 +149,16 @@ main > .about {
     main > .about .citation > .author > .position, main > .about .citation .from {
       font-size: 9pt; }
 
-main > .reviews ul, main > .videos .names, main > .blog ul {
+main > .bonuses ul, main > .reviews ul, main > .videos .names, main > .blog ul {
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   position: relative;
   width: 100%;
   padding-bottom: 40px; }
-  main > .reviews ul > *, main > .videos .names > *, main > .blog ul > * {
+  main > .bonuses ul > *, main > .reviews ul > *, main > .videos .names > *, main > .blog ul > * {
     visibility: hidden; }
-  main > .reviews ul .slide, main > .videos .names .slide, main > .blog ul .slide {
+  main > .bonuses ul .slide, main > .reviews ul .slide, main > .videos .names .slide, main > .blog ul .slide {
     visibility: visible;
     position: relative;
     width: 80vw;
@@ -166,14 +166,14 @@ main > .reviews ul, main > .videos .names, main > .blog ul {
     padding-left: 10vw;
     padding-right: 10vw;
     flex-shrink: 0; }
-    main > .reviews ul .slide.additional, main > .videos .names .slide.additional, main > .blog ul .slide.additional {
+    main > .bonuses ul .slide.additional, main > .reviews ul .slide.additional, main > .videos .names .slide.additional, main > .blog ul .slide.additional {
       visibility: hidden; }
-  main > .reviews ul nav, main > .videos .names nav, main > .blog ul nav {
+  main > .bonuses ul nav, main > .reviews ul nav, main > .videos .names nav, main > .blog ul nav {
     visibility: visible;
     bottom: 0;
     padding-left: 10vw;
     position: absolute; }
-    main > .reviews ul nav div, main > .videos .names nav div, main > .blog ul nav div {
+    main > .bonuses ul nav div, main > .reviews ul nav div, main > .videos .names nav div, main > .blog ul nav div {
       display: inline-block;
       vertical-align: middle;
       width: 8px;
@@ -185,10 +185,10 @@ main > .reviews ul, main > .videos .names, main > .blog ul {
       text-indent: -999em;
       border: 2px solid white;
       cursor: pointer; }
-      main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
+      main > .bonuses ul nav div.current, main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
         background-color: white; }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -229,7 +229,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -254,7 +254,7 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
@@ -294,10 +294,55 @@ main > .addresses > .list {
         color: white;
         cursor: pointer; }
 
-main > .bonuses {
-  display: none; }
+main > .bonuses h1 {
+  font-size: 20pt;
+  text-align: left;
+  padding-bottom: 40px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto; }
+main > .bonuses ul {
+  list-style-type: none; }
+  main > .bonuses ul li {
+    box-sizing: border-box;
+    width: 60vw !important;
+    padding-left: 0vw !important;
+    padding-right: 0vw !important; }
+    main > .bonuses ul li.current > .text:before {
+      border-top: 5px solid;
+      height: 1px;
+      margin-top: -3px; }
+    main > .bonuses ul li > .text:before {
+      content: "";
+      width: 100%;
+      display: flex;
+      margin-bottom: 30px; }
+    main > .bonuses ul li.current + li {
+      opacity: 0.5; }
+    main > .bonuses ul li:first-child > .text {
+      padding-left: 0 !important;
+      margin-left: 10vw; }
+    main > .bonuses ul li:last-of-type > .text {
+      padding-right: 0 !important; }
+    main > .bonuses ul li > .title {
+      font-size: 9pt;
+      font-weight: bold;
+      height: 80px;
+      padding-left: 10vw;
+      padding-right: 5vw; }
+    main > .bonuses ul li > img {
+      background-color: white;
+      border-radius: 150px;
+      margin-bottom: 30px;
+      margin-left: 10vw;
+      margin-right: 5vw; }
+    main > .bonuses ul li > .text {
+      font-size: 9pt;
+      padding-left: 10vw;
+      padding-right: 5vw;
+      border-top: 1px dashed white; }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -338,7 +383,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -363,11 +408,11 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -408,7 +453,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -433,7 +478,7 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
@@ -513,7 +558,7 @@ footer {
         footer > div.info > div:first-child {
           padding-bottom: 10px; }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -554,7 +599,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -579,7 +624,7 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
@@ -671,7 +716,7 @@ main {
     /*same height as header*/
     visibility: hidden; }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -712,7 +757,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -737,7 +782,7 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
@@ -810,7 +855,7 @@ main > .prices {
       display: inline;
       font-size: 10pt; }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -851,7 +896,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -876,7 +921,7 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
@@ -1013,16 +1058,16 @@ main > .register {
     main > .register > .background-images > img {
       width: 100%; }
 
-main > .reviews ul, main > .videos .names, main > .blog ul {
+main > .bonuses ul, main > .reviews ul, main > .videos .names, main > .blog ul {
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   position: relative;
   width: 100%;
   padding-bottom: 40px; }
-  main > .reviews ul > *, main > .videos .names > *, main > .blog ul > * {
+  main > .bonuses ul > *, main > .reviews ul > *, main > .videos .names > *, main > .blog ul > * {
     visibility: hidden; }
-  main > .reviews ul .slide, main > .videos .names .slide, main > .blog ul .slide {
+  main > .bonuses ul .slide, main > .reviews ul .slide, main > .videos .names .slide, main > .blog ul .slide {
     visibility: visible;
     position: relative;
     width: 80vw;
@@ -1030,14 +1075,14 @@ main > .reviews ul, main > .videos .names, main > .blog ul {
     padding-left: 10vw;
     padding-right: 10vw;
     flex-shrink: 0; }
-    main > .reviews ul .slide.additional, main > .videos .names .slide.additional, main > .blog ul .slide.additional {
+    main > .bonuses ul .slide.additional, main > .reviews ul .slide.additional, main > .videos .names .slide.additional, main > .blog ul .slide.additional {
       visibility: hidden; }
-  main > .reviews ul nav, main > .videos .names nav, main > .blog ul nav {
+  main > .bonuses ul nav, main > .reviews ul nav, main > .videos .names nav, main > .blog ul nav {
     visibility: visible;
     bottom: 0;
     padding-left: 10vw;
     position: absolute; }
-    main > .reviews ul nav div, main > .videos .names nav div, main > .blog ul nav div {
+    main > .bonuses ul nav div, main > .reviews ul nav div, main > .videos .names nav div, main > .blog ul nav div {
       display: inline-block;
       vertical-align: middle;
       width: 8px;
@@ -1049,10 +1094,10 @@ main > .reviews ul, main > .videos .names, main > .blog ul {
       text-indent: -999em;
       border: 2px solid white;
       cursor: pointer; }
-      main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
+      main > .bonuses ul nav div.current, main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
         background-color: white; }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1093,7 +1138,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -1118,7 +1163,7 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
@@ -1134,23 +1179,24 @@ main > .reviews ul {
   main > .reviews ul li {
     box-sizing: border-box;
     padding: 0 !important;
-    margin-left: 3vw;
-    margin-right: 3vw; }
+    width: 70vw !important;
+    margin-left: 10vw;
+    margin-right: 0vw; }
     main > .reviews ul li img:nth-child(2) {
-      width: 80vw; }
+      width: 100%; }
     main > .reviews ul li img:nth-child(1) {
       display: none; }
 
-main > .reviews ul, main > .videos .names, main > .blog ul {
+main > .bonuses ul, main > .reviews ul, main > .videos .names, main > .blog ul {
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   position: relative;
   width: 100%;
   padding-bottom: 40px; }
-  main > .reviews ul > *, main > .videos .names > *, main > .blog ul > * {
+  main > .bonuses ul > *, main > .reviews ul > *, main > .videos .names > *, main > .blog ul > * {
     visibility: hidden; }
-  main > .reviews ul .slide, main > .videos .names .slide, main > .blog ul .slide {
+  main > .bonuses ul .slide, main > .reviews ul .slide, main > .videos .names .slide, main > .blog ul .slide {
     visibility: visible;
     position: relative;
     width: 80vw;
@@ -1158,14 +1204,14 @@ main > .reviews ul, main > .videos .names, main > .blog ul {
     padding-left: 10vw;
     padding-right: 10vw;
     flex-shrink: 0; }
-    main > .reviews ul .slide.additional, main > .videos .names .slide.additional, main > .blog ul .slide.additional {
+    main > .bonuses ul .slide.additional, main > .reviews ul .slide.additional, main > .videos .names .slide.additional, main > .blog ul .slide.additional {
       visibility: hidden; }
-  main > .reviews ul nav, main > .videos .names nav, main > .blog ul nav {
+  main > .bonuses ul nav, main > .reviews ul nav, main > .videos .names nav, main > .blog ul nav {
     visibility: visible;
     bottom: 0;
     padding-left: 10vw;
     position: absolute; }
-    main > .reviews ul nav div, main > .videos .names nav div, main > .blog ul nav div {
+    main > .bonuses ul nav div, main > .reviews ul nav div, main > .videos .names nav div, main > .blog ul nav div {
       display: inline-block;
       vertical-align: middle;
       width: 8px;
@@ -1177,10 +1223,10 @@ main > .reviews ul, main > .videos .names, main > .blog ul {
       text-indent: -999em;
       border: 2px solid white;
       cursor: pointer; }
-      main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
+      main > .bonuses ul nav div.current, main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
         background-color: white; }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1221,7 +1267,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -1246,23 +1292,23 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
 main > .teachers {
   display: none; }
 
-main > .reviews ul, main > .videos .names, main > .blog ul {
+main > .bonuses ul, main > .reviews ul, main > .videos .names, main > .blog ul {
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   position: relative;
   width: 100%;
   padding-bottom: 40px; }
-  main > .reviews ul > *, main > .videos .names > *, main > .blog ul > * {
+  main > .bonuses ul > *, main > .reviews ul > *, main > .videos .names > *, main > .blog ul > * {
     visibility: hidden; }
-  main > .reviews ul .slide, main > .videos .names .slide, main > .blog ul .slide {
+  main > .bonuses ul .slide, main > .reviews ul .slide, main > .videos .names .slide, main > .blog ul .slide {
     visibility: visible;
     position: relative;
     width: 80vw;
@@ -1270,14 +1316,14 @@ main > .reviews ul, main > .videos .names, main > .blog ul {
     padding-left: 10vw;
     padding-right: 10vw;
     flex-shrink: 0; }
-    main > .reviews ul .slide.additional, main > .videos .names .slide.additional, main > .blog ul .slide.additional {
+    main > .bonuses ul .slide.additional, main > .reviews ul .slide.additional, main > .videos .names .slide.additional, main > .blog ul .slide.additional {
       visibility: hidden; }
-  main > .reviews ul nav, main > .videos .names nav, main > .blog ul nav {
+  main > .bonuses ul nav, main > .reviews ul nav, main > .videos .names nav, main > .blog ul nav {
     visibility: visible;
     bottom: 0;
     padding-left: 10vw;
     position: absolute; }
-    main > .reviews ul nav div, main > .videos .names nav div, main > .blog ul nav div {
+    main > .bonuses ul nav div, main > .reviews ul nav div, main > .videos .names nav div, main > .blog ul nav div {
       display: inline-block;
       vertical-align: middle;
       width: 8px;
@@ -1289,10 +1335,10 @@ main > .reviews ul, main > .videos .names, main > .blog ul {
       text-indent: -999em;
       border: 2px solid white;
       cursor: pointer; }
-      main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
+      main > .bonuses ul nav div.current, main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
         background-color: white; }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div .block > .intro > .information > *, main > .register > div .block > .footnote {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1333,7 +1379,7 @@ header > .logo, header > .burger, header.open > .cross, header.open > :nth-child
   main > .prices > h1, main > .prices > ul > li > div {
     font-size: 10pt; } }
 
-main > .about, main > .addresses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
+main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -1358,7 +1404,7 @@ main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
 
-header, main > .register > div .block, main > .reviews, main > .blog {
+main > .bonuses, header, main > .register > div .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
 
@@ -1387,12 +1433,13 @@ main > .blog ul {
   list-style-type: none; }
   main > .blog ul li {
     box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    width: 70vw !important;
+    margin-left: 10vw;
+    margin-right: 0vw;
     background-size: cover; }
     main > .blog ul li a:before {
       content: "Перейти";
