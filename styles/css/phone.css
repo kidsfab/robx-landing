@@ -929,12 +929,11 @@ main > .register {
     width: 100%;
     position: relative;
     z-index: 2;
-    margin-top: 20vw; }
+    margin-top: 30vw; }
     main > .register > div:first-child .block {
       width: 80vw;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 30px;
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 20px;
@@ -1051,11 +1050,12 @@ main > .register {
   main > .register > .background-images {
     position: absolute !important;
     top: 0;
-    z-index: 1; }
+    z-index: 1;
+    padding-bottom: 0 !important; }
     main > .register > .background-images > img {
       width: 100%; }
     main > .register > .background-images nav {
-      bottom: 25vw !important; }
+      bottom: 15vw !important; }
 
 main > .bonuses ul, main > .register > .background-images, main > .reviews ul, main > .videos .names, main > .blog ul {
   overflow-x: hidden;

@@ -18,14 +18,13 @@ main > .register {
         width: 100%;
         position: relative;
         z-index: 2;
-        margin-top: 20vw;
+        margin-top: 30vw;
 
         .block {
             width: 80vw;
 
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 30px;
 
             padding-left: 15px;
             padding-right: 15px;
@@ -190,12 +189,14 @@ main > .register {
         top: 0;
         z-index: 1;
 
+        padding-bottom: 0 !important;
+
         & > img {
             width: 100%;
         }
 
         nav {
-            bottom: 25vw !important;
+            bottom: 15vw !important;
         }
 
         @extend %slider;
