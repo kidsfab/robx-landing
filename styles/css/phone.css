@@ -1410,7 +1410,8 @@ main > .videos {
       main > .videos .names > div[link] > h2 {
         font-weight: bold; }
       main > .videos .names > div[link] > div {
-        padding-bottom: 15px; }
+        padding-bottom: 15px;
+        height: 85px; }
       main > .videos .names > div[link] > h2, main > .videos .names > div[link] > div {
         font-size: 9pt;
         width: 80vw;
