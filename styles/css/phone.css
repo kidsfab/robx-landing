@@ -327,7 +327,7 @@ main > .bonuses ul {
       padding-right: 5vw; }
     main > .bonuses ul li > img {
       background-color: white;
-      border-radius: 150px;
+      border-radius: 3000px;
       margin-bottom: 30px;
       margin-left: 10vw;
       margin-right: 5vw; }
@@ -929,7 +929,7 @@ main > .register {
     width: 100%;
     position: relative;
     z-index: 2;
-    margin-top: 30vw; }
+    margin-top: 20vw; }
     main > .register > div:first-child .block {
       width: 80vw;
       margin-left: auto;

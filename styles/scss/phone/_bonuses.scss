@@ -15,7 +15,7 @@ main > .bonuses {
             box-sizing: border-box;
             width: 60vw !important;
             padding-left: 0vw !important;
-            padding-right: 0vw !important;            
+            padding-right: 0vw !important;
 
             &.current > .text:before {
                 border-top: 5px solid;
@@ -58,7 +58,7 @@ main > .bonuses {
 
             & > img {
                 background-color: white;
-                border-radius: 150px;
+                border-radius: 3000px;
                 margin-bottom: 30px;
                 margin-left: 10vw;
                 margin-right: 5vw;
