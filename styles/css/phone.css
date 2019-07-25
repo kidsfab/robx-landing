@@ -1182,6 +1182,8 @@ main > .reviews ul {
     width: 70vw !important;
     margin-left: 10vw;
     margin-right: 0vw; }
+    main > .reviews ul li.current + li {
+      opacity: 0.5; }
     main > .reviews ul li img:nth-child(2) {
       width: 100%; }
     main > .reviews ul li img:nth-child(1) {
@@ -1441,6 +1443,8 @@ main > .blog ul {
     margin-left: 10vw;
     margin-right: 0vw;
     background-size: cover; }
+    main > .blog ul li.current + li {
+      opacity: 0.5; }
     main > .blog ul li a:before {
       content: "Перейти";
       display: inline-block;

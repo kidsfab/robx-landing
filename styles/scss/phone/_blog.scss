@@ -25,6 +25,10 @@ main > .blog {
 
             background-size: cover;
 
+            &.current + li {
+                opacity: 0.5;
+            }
+
             a:before {
                 content: "Перейти";
                 display: inline-block;

@@ -22,6 +22,10 @@ main > .reviews {
             margin-left: 10vw;
             margin-right: 0vw;
 
+            &.current + li {
+                opacity: 0.5;
+            }
+
 			img:nth-child(2) {
 				width: 100%;
 			}
