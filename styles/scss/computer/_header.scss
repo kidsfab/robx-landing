@@ -59,6 +59,21 @@ header {
 		}
 	}
 
+    & > .login:before {
+        display: inline-block;
+        content: "";
+
+        height: 100%;
+        width: 20px;
+
+        margin-right: 10px;
+
+        background-image: url(../../icons/sign_in.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
 	.logo {
 		@media all and (min-width: $large) {
 			width: 2 * $large / 12  - 3;

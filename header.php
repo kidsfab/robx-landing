@@ -13,10 +13,10 @@
 		<a href = "#addresses">Контакты</a>
 	</div>
 	<div>
-		<a href = "https://edu.robx.org" target='_blank'>База зананий</a>
+		<a href = "https://edu.robx.org">База зананий</a>
 	</div>
-	<div>
-		<a href = "https://lk.robx.org" target='_blank'>Вход</a>
+	<div class = "login">
+		<a href = "https://lk.robx.org">Вход</a>
 	</div>
     <div class = "register">
 		<a href = "#register" class = 'circled'>Записаться</a>

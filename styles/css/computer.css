@@ -880,6 +880,16 @@ header {
     header > div * {
       margin-bottom: auto;
       margin-top: auto; }
+  header > .login:before {
+    display: inline-block;
+    content: "";
+    height: 100%;
+    width: 20px;
+    margin-right: 10px;
+    background-image: url(../../icons/sign_in.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
   @media all and (min-width: 1080px) {
     header .logo {
       width: 177px; } }
