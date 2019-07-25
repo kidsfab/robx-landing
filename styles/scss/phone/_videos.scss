@@ -2,21 +2,44 @@
 @import 'common.scss';
 
 main > .videos {
-	h1 {
-		font-size: 20pt;
-		text-align: center;
-		padding-bottom: 40px;
-		width: 80vw;
-		margin-left: auto;
-		margin-right: auto;
-	}
+    padding-bottom: 0;
 
+    & > h1 {
+        font-size: 15pt;
+        padding-bottom: 30px;
+
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
 	.names {
-		iframe {
-			width: 60vw;
-			height: 60vw;
-			padding-bottom: 20px;
-		}
+        padding-bottom: 100vw;
+        & > div[link] {
+            overflow: visible;
+            padding-bottom: 0;
+            & > h2 {
+                font-weight: bold;
+            }
+            & > div {
+                padding-bottom: 15px;
+            }
+            & > h2, & > div {
+                font-size: 9pt;
+                width: 80vw;
+                margin-left: 10vw;
+                margin-right: 10vw;
+            }
+            iframe {
+                position: absolute;
+                bottom: calc(-100vw - 30px);
+                width: 100vw;
+                height: 100vw;
+            }
+        }
+
+        & > nav {
+            bottom: 100vw;
+        }
 
 		@extend %slider;
 	}
