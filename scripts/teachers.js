@@ -86,7 +86,7 @@ function init_teachers() {
 		$('.teachers').get(0).mobile = true;
 
 		add_elements_teachers();
-		init_computer_slider('.teachers .list');
+		init_phone_slider('.teachers .list');
 	} else {
 		$('.teachers').get(0).mobile = false;
         add_elements_computer_teachers();
@@ -99,14 +99,13 @@ function resize_teachers() {
 		if($('.teachers').get(0).mobile == false) {
 			$('.teachers').get(0).mobile = true;
 			add_elements_teachers();
-			init_computer_slider('.teachers .list');
+			init_phone_slider('.teachers .list');
 		} else if($('.teachers').get(0).mobile == true) {
 			update_computer_slider('.teachers .list');
 		}
 	} else {
 		if($('.teachers').get(0).mobile == true) {
 			$('.teachers').get(0).mobile = false;
-			remove_elements_teachers();
 			delete_slider('.teachers .list');
             add_elements_computer_reviews();
 		}

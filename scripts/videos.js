@@ -41,7 +41,7 @@ function init_videos() {
 	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.videos').get(0).mobile = true;
 		add_elements_phone_videos();
-		init_computer_slider('.videos .names');
+		init_phone_slider('.videos .names');
 	} else {
 		$('.videos').get(0).mobile = false;
 		add_elements_computer_videos();
@@ -54,7 +54,7 @@ function resize_videos() {
 			$('.videos').get(0).mobile = true;
 			remove_elements_computer_videos();
 			add_elements_phone_videos();
-			init_computer_slider('.videos .names');
+			init_phone_slider('.videos .names');
 		} else if($('.videos').get(0).mobile == true) {
 			update_computer_slider('.videos .names');
 		}

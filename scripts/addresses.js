@@ -33,7 +33,7 @@ function resize_addresses() {
 		if($('.addresses').get(0).mobile == false) {
 			$('.addresses').get(0).mobile = true;
 			add_elements_addresses();
-			init_computer_slider('.addresses ul');
+			init_phone_slider('.addresses ul');
 		} else if($('.addresses').get(0).mobile == true) {
 			update_computer_slider('.addresses ul');
 		}

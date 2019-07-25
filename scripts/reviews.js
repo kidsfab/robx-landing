@@ -92,7 +92,7 @@ function init_reviews() {
 	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.reviews').get(0).mobile = true;
 		add_elements_phone_reviews();
-		init_computer_slider('.reviews > ul');
+		init_phone_slider('.reviews > ul');
 	} else {
 		$('.reviews').get(0).mobile = false;
 		add_elements_computer_reviews();
@@ -106,7 +106,7 @@ function resize_reviews() {
 			$('.reviews').get(0).mobile = true;
 			remove_elements_computer_reviews();
 			add_elements_phone_reviews();
-			init_computer_slider('.reviews > ul');
+			init_phone_slider('.reviews > ul');
 		} else if($('.reviews').get(0).mobile == true) {
 			update_computer_slider('.reviews > ul');
 		}

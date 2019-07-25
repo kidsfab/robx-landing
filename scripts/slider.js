@@ -1,4 +1,4 @@
-function init_computer_slider(name) {
+function init_phone_slider(name) {
 	$(name).children().addClass('slide');
 
 	$(name).append('<nav></nav>');

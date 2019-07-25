@@ -92,7 +92,7 @@ function init_blog() {
 	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.blog').get(0).mobile = true;
 		add_elements_phone_blog();
-		init_computer_slider('.blog > ul');
+		init_phone_slider('.blog > ul');
 	} else {
 		$('.blog').get(0).mobile = false;
 		add_elements_computer_blog();
@@ -106,7 +106,7 @@ function resize_blog() {
 			$('.blog').get(0).mobile = true;
 			remove_elements_computer_blog();
 			add_elements_phone_blog();
-			init_computer_slider('.blog > ul');
+			init_phone_slider('.blog > ul');
 		} else if($('.blog').get(0).mobile == true) {
 			update_computer_slider('.blog > ul');
 		}

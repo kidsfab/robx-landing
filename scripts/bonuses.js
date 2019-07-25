@@ -19,7 +19,7 @@ function init_bonuses() {
 	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.bonuses').get(0).mobile = true;
 		add_elements_phone_bonuses();
-		init_computer_slider('.bonuses > ul');
+		init_phone_slider('.bonuses > ul');
 	}
 }
 
@@ -29,7 +29,7 @@ function resize_bonuses() {
 			$('.bonuses').get(0).mobile = true;
 			remove_elements_computer_bonuses();
 			add_elements_phone_bonuses();
-			init_computer_slider('.bonuses > ul');
+			init_phone_slider('.bonuses > ul');
 		} else if($('.bonuses').get(0).mobile == true) {
 			update_computer_slider('.bonuses > ul');
 		}
