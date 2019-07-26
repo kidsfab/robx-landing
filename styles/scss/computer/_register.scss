@@ -1,10 +1,16 @@
 @import 'common.scss';
 
 main > .register {
-    & > * {
+    position: relative;
+    background-color: $blue;
+
+    & > div:first-child {
         @extend %flexbox;
 		@include flex-direction(row);
         @include align-items(center);
+
+        position: relative;
+        z-index: 2;
 
         & > .block {
             width: 30%;
@@ -170,12 +176,51 @@ main > .register {
         }
     }
 
-    background-image: url(../../photos/registration-photo-1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
     & > .background-images {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: 1;
+
+        background-image: url(../../photos/registration-photo-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        & > * {
+            display: none;
+        }
+    }
+
+    & > nav {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        bottom: 30px;
+
+        & > div {
+            display: inline-block;
+            vertical-align: middle;
+            width: 8px;
+            height: 8px;
+            margin-right: 8px;
+            background: transparent;
+            border-radius: 8px;
+            overflow: hidden;
+            text-indent: -999em;
+            border: 2px solid white;
+            cursor: pointer;
+
+            &.current {
+                background-color: white;
+            }
+        }
     }
 
 	@extend %double-row;

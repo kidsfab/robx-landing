@@ -19,7 +19,7 @@ $( window ).on('load', function() {
     resize_blog();
     resize_bonuses();
 	resize_reviews();
-
+    resize_register();
 });
 
 $( window ).resize(function() {
@@ -31,4 +31,5 @@ $( window ).resize(function() {
     resize_blog();
     resize_bonuses();
 	resize_reviews();
+    resize_register();
 });

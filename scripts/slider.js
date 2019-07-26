@@ -29,7 +29,6 @@ function init_phone_slider(name) {
 	});
 
 	$(name).find('> nav > div').click(function() {
-        console.log(name);
 		num = $(this).attr('number');
 		if (parseInt($(name).attr('current_number')) != num) {
 			$(name).attr('current_number', num);
@@ -38,15 +37,15 @@ function init_phone_slider(name) {
 		return false;
 	});
 
-    console.log(name);
+
 
 	$(name).on('touchstart', function(event) {
-        console.log(name);
+
 		this.touchstartx =  event.originalEvent.touches[0].pageX;
 	});
 
 	$(name).on('touchmove', function(event) {
-        console.log(name);
+
 		this.longTouch = false;
 		setTimeout(function() {
 			$(name).get(0).longTouch = true;
@@ -62,7 +61,7 @@ function init_phone_slider(name) {
 	});
 
 	$(name).on('touchend', function(event) {
-        console.log(name);
+
 		var absMove = Math.abs(this.touchstartx - this.touchmovex);
 		if (absMove > 3 * $(name).outerWidth(true) / 4 || this.longTouch === false) {
 			var sum_width = 0;

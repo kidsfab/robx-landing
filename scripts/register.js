@@ -1,9 +1,52 @@
-function add_elements_register() {
+var backgroundImageInterval;
+var currentSlide = 1;
+var slidesNumber;
+function nextSlide() {
+    var imagePath;
+    if ($("main > .register > nav > .current").is(":last-child")) {
+        $("main > .register > nav > .current").removeClass("current");
+        imagePath = $("main > .register > nav > div:first-child").addClass("current").attr("src");
+    } else {
+        imagePath = $("main > .register > nav > .current").removeClass("current").next().addClass("current").attr("src");
+    }
+    $("main > .register > .background-images").stop().animate({opacity: 0.1},1000,function(){
+        $(this).css({'background-image': "url('" + imagePath + "')"})
+               .animate({opacity: 1},{duration:3000});
+    });
 }
 
+function init_computer_register() {
+    slidesNumber = $("main > .register > .background-images > img").length;
+    $("main > .register > .background-images").before('<nav></nav>');
+	for (var i = 0; i < $("main > .register > .background-images img").length; i++) {
+		$("main > .register > nav").append(
+            '<div src = "' +
+            $($("main > .register > .background-images > img")[i]).attr("src") +
+            '"></div>'
+        );
+	}
+    $("main > .register > nav > div:first-child").addClass("current");
 
-function remove_elements_register() {
+    $("main > .register > nav > div").click(function(){
+        $("main > .register > nav > .current").removeClass("current");
+        var imagePath = $( this ).addClass("current").attr("src");
+        $("main > .register > .background-images").stop().animate({opacity: 0.1}, 1000, function(){
+            $(this).css({'background-image': "url('" + imagePath + "')"})
+                   .animate({opacity: 1},{duration:3000});
+        });
+        clearInterval(backgroundImageInterval);
+        backgroundImageInterval = setInterval(nextSlide, 10000);
+    });
+
+    backgroundImageInterval = setInterval(nextSlide, 10000);
 }
+
+function delete_computer_register() {
+    $("main > .register > nav").remove();
+    $("main > .register > .background-images").attr("style", "");
+	clearInterval(backgroundImageInterval);
+}
+
 
 $.fn.serializeObject = function()
 {
@@ -56,11 +99,13 @@ function focusoutDate() {
 }
 
 function init_register() {
+
     if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.register').get(0).mobile = true;
 		init_phone_slider('.register > .background-images');
 	} else {
 		$('.register').get(0).mobile = false;
+        init_computer_register();
 	}
 
 	$( ".form .required input" ).change(updateRequired).on('input', updateRequired);
@@ -112,12 +157,12 @@ function init_register() {
    	});
 }
 
-function resize_register() {
-
+function resize_register() {    
     if(window.matchMedia('(max-width: 800px)').matches) {
 		if($('.register').get(0).mobile == false) {
 			$('.register').get(0).mobile = true;
 			init_phone_slider('.register > .background-images');
+            delete_computer_register();
 		} else if($('.register').get(0).mobile == true) {
 			update_phone_slider('.register > .background-images');
 		}
@@ -125,6 +170,7 @@ function resize_register() {
 		if($('.register').get(0).mobile == true) {
 			$('.register').get(0).mobile = false;
 			delete_phone_slider('.register > .background-images');
+            init_computer_register();
 		}
 	}
 }
