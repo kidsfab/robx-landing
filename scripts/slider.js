@@ -112,7 +112,8 @@ function delete_phone_slider(name) {
 	$(name).children('nav').remove();
 	$(name).children('.left').remove();
 	$(name).children('.right').remove();
-	$(name).children('.additional').remove();
+
+    $(name).children('slide').css('left', '');
 
 	$(name).children('').removeClass('slide');
 	$(name).children('').removeClass('current');
