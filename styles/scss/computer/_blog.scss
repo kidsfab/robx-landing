@@ -15,6 +15,10 @@ main > .blog {
 
     overflow: hidden;
 
+    min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
     & > h1 {
         @extend %flexbox;
         @include flex-direction(row);

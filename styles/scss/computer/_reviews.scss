@@ -19,6 +19,10 @@ main > .reviews {
 		padding-right: 2%;
 	}
 
+    min-height: 290px !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     & > h1 {
         @extend %flexbox;
         @include flex-direction(row);

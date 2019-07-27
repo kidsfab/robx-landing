@@ -1466,7 +1466,10 @@ main > .reviews {
   -moz-justify-content: center;
   justify-content: center;
   max-width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 290px !important;
+  padding-top: 30px;
+  padding-bottom: 30px; }
   @media all and (min-width: 1080px) {
     main > .reviews {
       padding-left: calc(50% -  540px);
@@ -1820,7 +1823,10 @@ main > .blog {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: auto;
+  padding-top: 30px;
+  padding-bottom: 50px; }
   @media all and (min-width: 1080px) {
     main > .blog {
       padding-left: calc(50% -  540px);
