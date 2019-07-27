@@ -835,6 +835,8 @@ main > .prices {
         border-top: 1px dashed gray; }
       main > .prices > ul > li > img {
         max-width: 40%; }
+        main > .prices > ul > li > img:last-of-type {
+          display: none; }
       main > .prices > ul > li > div {
         font-weight: bold;
         color: #4667FF;

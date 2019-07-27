@@ -16,6 +16,10 @@ main > .prices {
 		padding-right: 2%;
 	}
 
+    min-height: auto !important;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
 	h1 {
 		width: 30%;
 		padding: 0;
@@ -78,7 +82,7 @@ main > .prices {
                 z-index: 1;
 
                 width: 100%;
-                height: 50%;
+                height: 38%;
 
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -87,11 +91,22 @@ main > .prices {
 
             & > img {
                 position: relative;
-                border-bottom: 1px solid gray;
                 z-index: 2;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 10px;
+
+                &:first-of-type {
+                    display: none;
+                }
             }
 
             & > div {
+                margin-top: 20px;
+                padding-top: 20px;
+
+                border-top: 1px solid gray;
+
                 text-align: center;
 
                 color: $blue;

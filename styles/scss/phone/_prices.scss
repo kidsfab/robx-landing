@@ -67,6 +67,10 @@ main > .prices {
 
             & > img {
                 max-width: 40%;
+
+                &:last-of-type {
+                    display: none;
+                }
             }
 
             & > div {
