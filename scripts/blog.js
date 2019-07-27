@@ -13,7 +13,7 @@ function resize_blog() {
 		if($('.blog').get(0).mobile == false) {
 			$('.blog').get(0).mobile = true;
 			init_phone_slider('.blog > ul');
-            delete_phone_slider('.register > .background-images');
+            delete_computer_slider('.blog');
 		} else if($('.blog').get(0).mobile == true) {
 			update_phone_slider('.blog > ul');
 		}
