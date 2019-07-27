@@ -448,7 +448,7 @@ main > .bonuses {
       position: relative;
       opacity: 0.5;
       width: 15%;
-      padding-bottom: 2px;
+      padding-bottom: 20px;
       border-bottom: 2px dotted white; }
       main > .bonuses > ul > li:hover {
         opacity: 1;
@@ -462,20 +462,20 @@ main > .bonuses {
         main > .bonuses > ul > li:hover .text {
           visibility: visible; }
       main > .bonuses > ul > li:nth-child(even) {
-        margin-top: 70px; }
+        margin-top: 50px; }
         main > .bonuses > ul > li:nth-child(even) .title {
           order: 2; }
         main > .bonuses > ul > li:nth-child(even) img {
           order: 1; }
         main > .bonuses > ul > li:nth-child(even):hover {
-          margin-top: 68px; }
+          margin-top: 48px; }
       main > .bonuses > ul > li:nth-child(odd) .title {
         order: 1; }
       main > .bonuses > ul > li:nth-child(odd) img {
         order: 2; }
       main > .bonuses > ul > li > .title {
         text-align: center;
-        height: 70px;
+        height: 50px;
         font-size: 8pt; }
       main > .bonuses > ul > li > img {
         margin-top: 10%;
