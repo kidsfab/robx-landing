@@ -6,6 +6,10 @@ main > .teachers {
 
     overflow: hidden;
 
+    min-height: auto !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     & > h1 {
         @extend %flexbox;
         @include flex-direction(row);
@@ -75,6 +79,10 @@ main > .teachers {
 			& > .name {
 				@extend %flexbox;
 				@include flex-direction(column);
+
+                & > * {
+                    font-weight: bold;
+                }
 			}
 
             & > .bio {

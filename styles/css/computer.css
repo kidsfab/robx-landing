@@ -1622,7 +1622,10 @@ main > .teachers {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: auto !important;
+  padding-top: 30px;
+  padding-bottom: 30px; }
   main > .teachers > h1 {
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
@@ -1696,6 +1699,8 @@ main > .teachers {
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column; }
+        main > .teachers > ul > li > .name > * {
+          font-weight: bold; }
       main > .teachers > ul > li > .bio {
         width: calc(100% - 180px); }
 
