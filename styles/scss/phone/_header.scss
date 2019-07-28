@@ -33,7 +33,7 @@ header {
 		height: 70px;
 		width: 50%;
 
-        .logo a {
+        a {
             color: transparent !important;
             background-image: url(https://robx.org/icons/logo.svg);
             background-repeat: no-repeat;
@@ -103,6 +103,7 @@ header {
 
 
 			height: calc(25vh - 20px);
+            height: calc((var(--vh, 1vh) * 25) - 20px);
 			width: calc(50% - 1px);
 		}
 
@@ -112,6 +113,7 @@ header {
 
 		& > .phone {
 			border-right: 0 !important;
+            width: 100% !important;
 		}
 	}
 
