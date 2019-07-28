@@ -75,22 +75,20 @@ header {
     }
 
 	.logo {
+        & > a {
+            color: transparent !important;
+            background-image: url(https://robx.org/icons/logo.svg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;    
+        }
+
 		@media all and (min-width: $large) {
 			width: 2 * $large / 12  - 3;
 		}
 
 		@media all and (max-width: $large - 1) {
 			width: calc(16% - 2px);
-		}
-
-		img {
-			@media all and (min-width: $large) {
-				height: calc(12pt + 18px);
-			}
-
-			@media all and (max-width: $large - 1) {
-				height: calc(8pt + 18px);
-			}
 		}
 	}
 

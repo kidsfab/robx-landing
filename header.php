@@ -1,6 +1,6 @@
 <header>
 	<div class = "logo">
-		<img src = "icons/logo.svg">
+		<a>Кружок</a>
 	</div>
 
 	<a class = "burger"><img src = 'icons/burger.png'></a>
@@ -13,7 +13,7 @@
 		<a href = "#addresses">Контакты</a>
 	</div>
 	<div>
-		<a href = "https://edu.robx.org">База зананий</a>
+		<a href = "https://edu.robx.org">База знаний</a>
 	</div>
 	<div class = "login">
 		<a href = "https://lk.robx.org">Вход</a>

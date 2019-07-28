@@ -11,6 +11,7 @@ body {
 
 * {
 	font-family: 'Open Sans', sans-serif;
+    line-height: normal;
 
 	@media all and (min-width: $large) {
 		font-size: 11pt;

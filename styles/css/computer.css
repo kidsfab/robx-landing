@@ -12,6 +12,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -199,6 +200,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -337,6 +339,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -507,6 +510,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -592,6 +596,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -757,6 +762,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -890,18 +896,18 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
+  header .logo > a {
+    color: transparent !important;
+    background-image: url(https://robx.org/icons/logo.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; }
   @media all and (min-width: 1080px) {
     header .logo {
       width: 177px; } }
   @media all and (max-width: 1079px) {
     header .logo {
       width: calc(16% - 2px); } }
-  @media all and (min-width: 1080px) {
-    header .logo img {
-      height: calc(12pt + 18px); } }
-  @media all and (max-width: 1079px) {
-    header .logo img {
-      height: calc(8pt + 18px); } }
   header .phone {
     -webkit-box-ordinal-group: 101;
     -webkit-order: 100;
@@ -955,6 +961,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -1139,6 +1146,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -1391,6 +1399,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -1548,6 +1557,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
@@ -1727,6 +1737,7 @@ body {
 
 * {
   font-family: 'Open Sans', sans-serif;
+  line-height: normal;
   padding: 0;
   margin: 0; }
   @media all and (min-width: 1080px) {
