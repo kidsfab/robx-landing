@@ -2,5 +2,55 @@
 @import 'common.scss';
 
 main > .teachers {
-	display: none;
+    h1 {
+        font-size: 20pt;
+        text-align: left;
+        padding-bottom: 40px;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            box-sizing: border-box;
+            padding: 0 !important;
+            width: 70vw !important;
+
+            margin-left: 10vw;
+            margin-right: 0vw;
+
+            border-right: 1px dashed;
+
+            &:last-of-type {
+                border-right: 0;
+            }
+
+            &.current + li {
+                opacity: 0.5;
+            }
+
+            & > .bio {
+                display: none;
+            }
+
+            & > img {
+                width: 50%;
+            }
+
+            & > .name {
+                display: flex;
+                flex-direction: row;
+
+                & > div:first-child {
+                    margin-right: 7px;
+                }
+            }
+        }
+        @extend %slider;
+    }
+
+    @extend %row, %blue;
 }
