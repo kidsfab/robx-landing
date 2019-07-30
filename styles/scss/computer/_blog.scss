@@ -1,4 +1,6 @@
 main > .blog {
+    display: none;
+
     @include flex-direction(column);
     @include justify-content(center);
 

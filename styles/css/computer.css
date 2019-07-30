@@ -1839,6 +1839,7 @@ main > .videos .video {
     margin-bottom: auto; }
 
 main > .blog {
+  display: none;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
