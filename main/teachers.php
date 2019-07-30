@@ -1,6 +1,6 @@
 <div class = "teachers">
 	<h1>
-		Преподаватели
+		Сотрудники
 	</h1>
 	<ul>
 		<li class = "info">
