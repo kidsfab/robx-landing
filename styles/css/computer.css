@@ -479,7 +479,8 @@ main > .bonuses {
       main > .bonuses > ul > li > .title {
         text-align: center;
         height: 50px;
-        font-size: 8pt; }
+        font-size: 12pt;
+        width: 130%; }
       main > .bonuses > ul > li > img {
         margin-top: 10%;
         margin-bottom: 10%;
