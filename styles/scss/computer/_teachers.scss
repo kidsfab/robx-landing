@@ -54,11 +54,11 @@ main > .teachers {
 			@extend %flexbox;
             @include flex-direction(column);
 			@include flex-wrap(wrap);
-			@include justify-content(space-between);
+			@include justify-content(flex-start);
 
 			width: 45%;
             min-width: 48%;
-            height: 130px;
+            height: 160px;
             margin-right: 4%;
 
             border-right: 1px dotted white;
