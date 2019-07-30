@@ -689,6 +689,7 @@ header {
   header.open > .register {
     border: 0;
     width: 100% !important;
+    border-bottom: 2px solid white;
     background-color: #ee5930; }
   header.open > *:nth-child(n + 4) {
     -webkit-box-pack: center;
@@ -699,11 +700,10 @@ header {
     height: calc(25vh - 20px);
     height: calc((var(--vh, 1vh) * 25) - 20px);
     width: calc(50% - 1px); }
-  header.open > *:nth-child(2n + 4) {
+  header.open > *:nth-child(2n + 5) {
     border-right: 2px solid white !important; }
   header.open > .phone {
-    border-right: 0 !important;
-    width: 100% !important; }
+    border-right: 0 !important; }
   header.open ~ * {
     display: none; }
 

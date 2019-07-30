@@ -94,6 +94,7 @@ header {
 			border: 0;
 			width: 100% !important;
 
+            border-bottom: 2px solid white;
 			background-color: $red;
 		}
 
@@ -107,13 +108,12 @@ header {
 			width: calc(50% - 1px);
 		}
 
-		& > *:nth-child(2n + 4) {
+		& > *:nth-child(2n + 5) {
 			border-right: 2px solid white !important;
 		}
 
 		& > .phone {
 			border-right: 0 !important;
-            width: 100% !important;
 		}
 	}
 
