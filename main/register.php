@@ -113,5 +113,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         <img src = "photos/registration-photo-1.png"/>
         <img src = "photos/registration-photo-2.png"/>
         <img src = "photos/registration-photo-3.png"/>
+        <img src = "photos/registration-photo-4.jpg"/>
     </div>
 </div>
