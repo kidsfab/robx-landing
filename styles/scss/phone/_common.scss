@@ -48,14 +48,35 @@
 %red {
 	color: white;
 	background-color: $red;
+
+    & nav > div {
+        border-color: white;
+        &.current {
+            background-color: white;
+        }
+    }
 }
 
 %gray {
 	color: $black;
 	background-color: $gray;
+
+    & nav > div {
+        border-color: gray;
+        &.current {
+            background-color: $black;
+        }
+    }
 }
 
 %blue {
 	color: white;
 	background-color: $blue;
+
+    & nav > div {
+        border-color: white;
+        &.current {
+            background-color: white;
+        }
+    }
 }

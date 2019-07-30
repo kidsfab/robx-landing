@@ -60,14 +60,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 main > .about {
   width: 100%; }
@@ -178,10 +190,8 @@ main > .bonuses ul, main > .register > .background-images, main > .reviews ul, m
       border-radius: 8px;
       overflow: hidden;
       text-indent: -999em;
-      border: 2px solid white;
+      border: 2px solid;
       cursor: pointer; }
-      main > .bonuses ul nav div.current, main > .register > .background-images nav div.current, main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
-        background-color: white; }
 
 main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div:first-child .block > .intro > .information > *, main > .register > div:first-child .block > .footnote {
   display: -webkit-box;
@@ -244,14 +254,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 main > .addresses .map-wraper {
   display: none; }
@@ -398,14 +420,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div:first-child .block > .intro > .information > *, main > .register > div:first-child .block > .footnote {
   display: -webkit-box;
@@ -468,14 +502,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 footer {
   background-color: #dedede;
@@ -614,14 +660,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 header {
   position: fixed;
@@ -778,14 +836,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 main > .prices {
   -webkit-box-direction: normal;
@@ -919,14 +989,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 main > .register {
   width: 100%;
@@ -1094,10 +1176,8 @@ main > .bonuses ul, main > .register > .background-images, main > .reviews ul, m
       border-radius: 8px;
       overflow: hidden;
       text-indent: -999em;
-      border: 2px solid white;
+      border: 2px solid;
       cursor: pointer; }
-      main > .bonuses ul nav div.current, main > .register > .background-images nav div.current, main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
-        background-color: white; }
 
 main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div:first-child .block > .intro > .information > *, main > .register > div:first-child .block > .footnote {
   display: -webkit-box;
@@ -1160,14 +1240,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 main > .reviews h1 {
   font-size: 20pt;
@@ -1220,10 +1312,8 @@ main > .bonuses ul, main > .register > .background-images, main > .reviews ul, m
       border-radius: 8px;
       overflow: hidden;
       text-indent: -999em;
-      border: 2px solid white;
+      border: 2px solid;
       cursor: pointer; }
-      main > .bonuses ul nav div.current, main > .register > .background-images nav div.current, main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
-        background-color: white; }
 
 main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div:first-child .block > .intro > .information > *, main > .register > div:first-child .block > .footnote {
   display: -webkit-box;
@@ -1286,14 +1376,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 main > .teachers {
   display: none; }
@@ -1327,10 +1429,8 @@ main > .bonuses ul, main > .register > .background-images, main > .reviews ul, m
       border-radius: 8px;
       overflow: hidden;
       text-indent: -999em;
-      border: 2px solid white;
+      border: 2px solid;
       cursor: pointer; }
-      main > .bonuses ul nav div.current, main > .register > .background-images nav div.current, main > .reviews ul nav div.current, main > .videos .names nav div.current, main > .blog ul nav div.current {
-        background-color: white; }
 
 main > .about, main > .addresses, main > .bonuses, main > .prices, main > .register, main > .reviews, main > .videos, main > .blog, main > .about .steps > ul, main > .about .steps > ul > li, footer > div, footer > div.phone, footer > div.email, footer > div.phone div > img:first-child, footer > div.email div > img:first-child, main > .prices > ul > li, main > .register > div:first-child .block > .intro > .information > *, main > .register > div:first-child .block > .footnote {
   display: -webkit-box;
@@ -1393,14 +1493,26 @@ main > .about, main > .addresses, main > .bonuses, main > .prices, main > .regis
 main > .about, main > .addresses {
   color: white;
   background-color: #ee5930; }
+  main > .about nav > div, main > .addresses nav > div {
+    border-color: white; }
+    main > .about nav > div.current, main > .addresses nav > div.current {
+      background-color: white; }
 
 main > .prices, main > .register, main > .videos {
   color: #4F5252;
   background-color: #dedede; }
+  main > .prices nav > div, main > .register nav > div, main > .videos nav > div {
+    border-color: gray; }
+    main > .prices nav > div.current, main > .register nav > div.current, main > .videos nav > div.current {
+      background-color: #4F5252; }
 
 main > .bonuses, header, main > .register > div:first-child .block, main > .reviews, main > .blog {
   color: white;
   background-color: #4667FF; }
+  main > .bonuses nav > div, header nav > div, main > .register > div:first-child .block nav > div, main > .reviews nav > div, main > .blog nav > div {
+    border-color: white; }
+    main > .bonuses nav > div.current, header nav > div.current, main > .register > div:first-child .block nav > div.current, main > .reviews nav > div.current, main > .blog nav > div.current {
+      background-color: white; }
 
 main > .videos {
   padding-bottom: 0; }
@@ -1418,7 +1530,7 @@ main > .videos {
       main > .videos .names > div[link] > h2 {
         font-weight: bold; }
       main > .videos .names > div[link] > div {
-        padding-bottom: 15px;
+        padding-bottom: 30px;
         height: 85px; }
       main > .videos .names > div[link] > h2, main > .videos .names > div[link] > div {
         font-size: 9pt;

@@ -3,6 +3,12 @@ function update_video() {
 }
 
 function add_elements_computer_videos() {
+    var maxHeight = 0;
+    for (i = 0; i < $('.videos .names > div > div').length; i++) {
+        maxHeight = Math.max(maxHeight, $($('.videos .names > div > div')[i]).height());
+    }
+    $('.videos .names > div > div').css("height", maxHeight);
+
 	$('.videos > .names > div:first-of-type').addClass('current');
 
 	$('.videos > .names > div > h2').click(function() {
@@ -57,6 +63,12 @@ function resize_videos() {
 			init_phone_slider('.videos .names');
 		} else if($('.videos').get(0).mobile == true) {
 			update_phone_slider('.videos .names');
+            var i;
+            var maxHeight = 0;
+            for (i = 0; i < $('.videos .names > div > div').length; i++) {
+                maxHeight = Math.max(maxHeight, $($('.videos .names > div > div')[i]).height());
+            }
+            $('.videos .names > div > div').css("height", maxHeight);
 		}
 	} else {
 		if($('.videos').get(0).mobile == true) {
