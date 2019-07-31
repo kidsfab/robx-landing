@@ -11,11 +11,6 @@ function remove_elements_header() {
 }
 
 function init_header() {
-	$('header').each (function () {
-		var node = $(this);
-		node.html (node.find ('> *').detach ());
-	});
-
 	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('header').get(0).mobile = true;
 		add_elements_header();

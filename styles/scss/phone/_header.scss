@@ -7,6 +7,7 @@ header {
 	width: 100%;
 
 	z-index: 100;
+    font-size: 0;
 
 	background-color: $blue;
 
@@ -14,6 +15,7 @@ header {
 		text-decoration: none;
 		color: white;
 		cursor: pointer;
+        font-size: 12pt;
 	}
 
 	* {
