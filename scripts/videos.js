@@ -3,11 +3,6 @@ function update_video() {
 }
 
 function add_elements_computer_videos() {
-    var maxHeight = 0;
-    for (i = 0; i < $('.videos .names > div > div').length; i++) {
-        maxHeight = Math.max(maxHeight, $($('.videos .names > div > div')[i]).height());
-    }
-    $('.videos .names > div > div').css("height", maxHeight);
 
 	$('.videos > .names > div:first-of-type').addClass('current');
 
@@ -28,6 +23,11 @@ function remove_elements_computer_videos() {
 }
 
 function add_elements_phone_videos() {
+    var maxHeight = 0;
+    for (i = 0; i < $('.videos .names > div > div').length; i++) {
+        maxHeight = Math.max(maxHeight, $($('.videos .names > div > div')[i]).height());
+    }
+    $('.videos .names > div > div').css("height", maxHeight);
 	$('main > .videos > .names').before($('main > .videos > .names > h1'));
 
 	$('.videos > .names > div').prepend($('.videos > .video > iframe').clone());
@@ -76,6 +76,7 @@ function resize_videos() {
 			remove_elements_phone_videos();
 			delete_phone_slider('.videos .names');
 			add_elements_computer_videos();
+            $('.videos .names > div > div').css("height", "");
 		}
 	}
 
