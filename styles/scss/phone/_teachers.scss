@@ -20,9 +20,7 @@ main > .teachers {
             width: 70vw !important;
 
             margin-left: 10vw;
-            margin-right: 0vw;
-
-            border-right: 1px dashed;
+            margin-right: 0vw;            
 
             &:last-of-type {
                 border-right: 0;
@@ -33,7 +31,8 @@ main > .teachers {
             }
 
             & > .bio {
-                display: none;
+                font-size: 11pt;
+                margin-top: 10px;
             }
 
             & > img {

@@ -1411,14 +1411,14 @@ main > .teachers ul {
     padding: 0 !important;
     width: 70vw !important;
     margin-left: 10vw;
-    margin-right: 0vw;
-    border-right: 1px dashed; }
+    margin-right: 0vw; }
     main > .teachers ul li:last-of-type {
       border-right: 0; }
     main > .teachers ul li.current + li {
       opacity: 0.5; }
     main > .teachers ul li > .bio {
-      display: none; }
+      font-size: 11pt;
+      margin-top: 10px; }
     main > .teachers ul li > img {
       width: 50%; }
     main > .teachers ul li > .name {
