@@ -110,7 +110,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
     </div>
     <div class = "background-images">
-        <img src = "photos/registration-photo-1.jpg"/>
+        <img src = "photos/registration-photo-1.png"/>
         <img src = "photos/registration-photo-2.jpg"/>
         <img src = "photos/registration-photo-3.jpg"/>
         <img src = "photos/registration-photo-4.jpg"/>
