@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     $content_f = file_get_contents("blocked_users.txt");
     if ($content_f){
         $blocked = unserialize($content_f);
-    }else{
+    } else {
         $blocked = array();
     }
     $time_block = 60*60*24; // Время на которое блокируется пользователь
@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			)
 		);
 		$context  = stream_context_create($options);
-		$result = file_get_contents($url, false, $context);
+		$result = file_get_contents($url, false, $context);        
 		if ($result === FALSE) {
 			var_dump(http_response_code(500));
 		}
@@ -110,8 +110,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
     </div>
     <div class = "background-images">
-        <img src = "photos/registration-photo-1.png"/>
         <img src = "photos/registration-photo-2.jpg"/>
+        <img src = "photos/registration-photo-1.png"/>
         <img src = "photos/registration-photo-3.jpg"/>
         <img src = "photos/registration-photo-4.jpg"/>
     </div>

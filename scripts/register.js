@@ -142,14 +142,14 @@ function init_register() {
 			type: "POST",
 			dataType: 'xml',
 			statusCode: {
-				0: function (){
+				0: function() {
 					$('.form').addClass('sent');
-          $('.form .notification').text('Ошибка.');
-          console.log("Not sent");
+                    $('.form .notification').text('Ошибка.');
+                    console.log("Not sent");
 				},
-				200: function (){
+				200: function() {
 					$('.form').addClass('sent');
-          console.log("Sent");
+                    console.log("Sent");
  				}
 			}
 		});
@@ -157,7 +157,7 @@ function init_register() {
    	});
 }
 
-function resize_register() {    
+function resize_register() {
     if(window.matchMedia('(max-width: 800px)').matches) {
 		if($('.register').get(0).mobile == false) {
 			$('.register').get(0).mobile = true;
