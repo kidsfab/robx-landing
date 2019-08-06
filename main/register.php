@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			)
 		);
 		$context  = stream_context_create($options);
-		$result = file_get_contents($url, false, $context);        
+		$result = file_get_contents($url, false, $context);
 		if ($result === FALSE) {
 			var_dump(http_response_code(500));
 		}
@@ -95,7 +95,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     				<input type='submit' name='submit' class='submit'  value = 'Записаться' >
     			</form>
     			<div class = 'notification'>
-    				Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
+    				Спасибо! С Вами свяжется наш сотрудник для подтверждения времени.
     			</div>
     		</div>
             <div class = "footnote">
