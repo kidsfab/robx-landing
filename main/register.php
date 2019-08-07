@@ -71,7 +71,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
                             Ближайшие занятия:
                         </div>
     					<div>
-    						22 - 28 июля
+    						5 - 11 августа
     					</div>
     				</div>
     				<div class = "rest">
@@ -90,7 +90,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     				<div class = 'entry required mobile-phone'>
     					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
     				</div>
-
             		<div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" style="display: none"></div>
     				<input type='submit' name='submit' class='submit'  value = 'Записаться' >
     			</form>
