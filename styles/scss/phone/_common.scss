@@ -1,0 +1,82 @@
+@import '../colors.scss';
+@import '../flex.scss';
+
+* {
+    font-family: 'Open Sans', sans-serif;
+
+	padding: 0;
+	margin: 0;
+}
+
+%large-font {
+    @media all and (max-width: 800px) and (min-width: 700px) {
+		font-size: 40pt;
+	}
+    @media all and (max-width: 800px) and (min-width: 600px) {
+		font-size: 35pt;
+	}
+    @media all and (max-width: 600px) and (min-width: 500px) {
+		font-size: 30pt;
+	}
+    @media all and (max-width: 500px) and (min-width: 400px) {
+		font-size: 25pt;
+	}
+    @media all and (max-width: 400px) and (min-width: 300px) {
+		font-size: 20pt;
+	}
+	@media all and (max-width: 300px) and (min-width: 200px) {
+		font-size: 15pt;
+	}
+	@media all and (max-width: 200px) {
+		font-size: 10pt;
+	}
+}
+
+%row {
+	@extend %flexbox;
+	@include flex-direction(column);
+	@include justify-content(center);
+
+    width: 100%;
+
+	padding-top: 70px;
+	padding-bottom: 80px;
+
+	border-bottom: 3px solid white;
+}
+
+%red {
+	color: white;
+	background-color: $red;
+
+    & nav > div {
+        border-color: white;
+        &.current {
+            background-color: white;
+        }
+    }
+}
+
+%gray {
+	color: $black;
+	background-color: $gray;
+
+    & nav > div {
+        border-color: gray;
+        &.current {
+            background-color: $black;
+        }
+    }
+}
+
+%blue {
+	color: white;
+	background-color: $blue;
+
+    & nav > div {
+        border-color: white;
+        &.current {
+            background-color: white;
+        }
+    }
+}

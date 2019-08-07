@@ -1,0 +1,105 @@
+@import 'common.scss';
+
+main > .prices {
+
+    @extend %flexbox;
+    @include flex-direction(column);
+
+    & > * {
+        width: 80vw;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+	& > h1 {
+		font-size: 20pt;
+        order: 1;
+
+        @extend %large-font;
+	}
+
+    & > ul {
+        order: 2;
+
+        list-style-type: none;
+
+        padding: 0;
+
+        & > li {
+            @extend %flexbox;
+            @include flex-direction(row);
+            @include justify-content(space-between);
+
+            position: relative;
+
+            &.discount-10:before {
+                background-image: url(../../icons/prices/discount-10.svg);
+            }
+            &.discount-20:before {
+                background-image: url(../../icons/prices/discount-20.svg);
+            }
+
+            &.discount-10:before, &.discount-20:before {
+                content: "";
+                display: block;
+
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: 1;
+
+                width: 100%;
+                height: 60%;
+
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            border-bottom: 1px dashed gray;
+            &.price:first-child {
+                border-top: 1px dashed gray;
+            }
+
+            padding-bottom: 30px;
+            padding-top: 30px;
+
+            & > img {
+                max-width: 40%;
+
+                &:last-of-type {
+                    display: none;
+                }
+            }
+
+            & > div {
+                font-weight: bold;
+                color: $blue;
+                margin-top: auto;
+                margin-bottom: auto;
+
+                position: relative;
+                z-index: 2;
+
+                @extend %large-font;
+            }
+        }
+    }
+
+    & > div {
+        padding-top: 50px;
+
+        order: 3;
+        font-size: 10pt;
+
+
+        & > h2 {
+            display: inline;
+            font-size: 10pt;
+        }
+    }
+
+
+	@extend %row, %gray;
+}

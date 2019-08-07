@@ -1,0 +1,1939 @@
+@charset "UTF-8";
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .about {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+  main > .about > * {
+    box-sizing: border-box; }
+  @media all and (min-width: 1080px) {
+    main > .about {
+      padding-left: calc(50% -  540px);
+      padding-right: calc(50% - 540px); } }
+  @media all and (max-width: 1079px) {
+    main > .about {
+      padding-left: 2%;
+      padding-right: 2%; } }
+  main > .about > .steps {
+    width: 75%;
+    margin-top: 60px;
+    margin-bottom: 10px; }
+    main > .about > .steps > h2 {
+      font-size: 22pt;
+      font-weight: normal;
+      padding-bottom: 20px; }
+      main > .about > .steps > h2:before {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        margin-top: -0.3em; }
+    main > .about > .steps > ul {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      justify-content: flex-start;
+      list-style-type: none; }
+      main > .about > .steps > ul > li {
+        width: 20%;
+        border-right: 1px solid white;
+        padding-left: 10px;
+        padding-right: 30px; }
+        main > .about > .steps > ul > li:last-child {
+          border-right: 0; }
+        main > .about > .steps > ul > li > img {
+          height: 60px; }
+  main > .about > .moto {
+    width: 25%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 4px solid white;
+    text-align: left;
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase; }
+  main > .about > .citation {
+    padding-left: 130px;
+    display: block;
+    position: relative; }
+    main > .about > .citation:before {
+      content: "";
+      display: inline-block;
+      height: 150px;
+      width: 150px;
+      position: absolute;
+      left: 0px;
+      top: 0;
+      z-index: 1;
+      background-image: url(../../icons/quote_mark.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top; }
+    main > .about > .citation > * {
+      position: relative;
+      z-index: 2; }
+    main > .about > .citation > .text {
+      font-weight: bold;
+      font-size: 13pt; }
+    main > .about > .citation > .author:before {
+      content: " - "; }
+    main > .about > .citation > .author > .name, main > .about > .citation > .author > .position {
+      display: inline-block; }
+    main > .about > .citation > .author > .name {
+      font-weight: bold; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .addresses .list h2 {
+  font-size: 22pt;
+  font-weight: lighter;
+  padding-bottom: 15px;
+  padding-top: 40px; }
+main > .addresses .list > ul > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+  list-style: none; }
+  main > .addresses .list > ul > li:before {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px;
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 3px solid white;
+    content: ""; }
+  main > .addresses .list > ul > li > div:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3em; }
+  main > .addresses .list > ul > li > div > div:nth-child(1) {
+    line-height: 1;
+    display: inline-block; }
+  main > .addresses .list > ul > li > div > div:nth-child(2) {
+    display: inline-block; }
+    @media all and (min-width: 1080px) {
+      main > .addresses .list > ul > li > div > div:nth-child(2) {
+        font-size: 9pt; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses .list > ul > li > div > div:nth-child(2) {
+        font-size: 6pt; } }
+  @media all and (min-width: 1080px) {
+    main > .addresses .list > ul > li > div > div:nth-child(3) {
+      font-size: 9pt; } }
+  @media all and (max-width: 1079px) {
+    main > .addresses .list > ul > li > div > div:nth-child(3) {
+      font-size: 6pt; } }
+main > .addresses .map-wraper {
+  min-height: 500px; }
+  main > .addresses .map-wraper #map {
+    min-height: 500px;
+    width: 100%;
+    height: 100%; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .bonuses {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media all and (min-width: 1080px) {
+    main > .bonuses {
+      padding-left: calc(50% -  540px);
+      padding-right: calc(50% - 540px); } }
+  @media all and (max-width: 1079px) {
+    main > .bonuses {
+      padding-left: 2%;
+      padding-right: 2%; } }
+  main > .bonuses h1 {
+    margin-top: 60px; }
+  main > .bonuses > ul {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    margin-bottom: 190px; }
+    main > .bonuses > ul > li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      opacity: 0.5;
+      width: 15%;
+      padding-bottom: 20px;
+      border-bottom: 2px dotted white; }
+      main > .bonuses > ul > li:hover {
+        opacity: 1;
+        border-bottom: 4px solid white; }
+        main > .bonuses > ul > li:hover .title {
+          font-weight: bold; }
+        main > .bonuses > ul > li:hover img {
+          width: 130%;
+          margin-top: 5%;
+          margin-bottom: 5%; }
+        main > .bonuses > ul > li:hover .text {
+          visibility: visible; }
+      main > .bonuses > ul > li:nth-child(even) {
+        margin-top: 50px; }
+        main > .bonuses > ul > li:nth-child(even) .title {
+          order: 2; }
+        main > .bonuses > ul > li:nth-child(even) img {
+          order: 1; }
+        main > .bonuses > ul > li:nth-child(even):hover {
+          margin-top: 48px; }
+      main > .bonuses > ul > li:nth-child(odd) .title {
+        order: 1; }
+      main > .bonuses > ul > li:nth-child(odd) img {
+        order: 2; }
+      main > .bonuses > ul > li > .title {
+        text-align: center;
+        height: 50px;
+        font-size: 12pt;
+        width: 130%; }
+      main > .bonuses > ul > li > img {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 120%;
+        background-color: white;
+        border-radius: 150px; }
+      main > .bonuses > ul > li > .text {
+        visibility: hidden;
+        position: absolute;
+        top: calc(100% + 20px);
+        width: 300%;
+        height: 70px; }
+      main > .bonuses > ul > li:nth-child(-n+4) > .text {
+        left: 0; }
+      main > .bonuses > ul > li:nth-child(n+5) > .text {
+        right: 0; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+footer {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  background-color: #f0f0f0; }
+  footer > div {
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-right: 2px solid white;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    @media all and (min-width: 1080px) {
+      footer > div {
+        width: 268px; } }
+    @media all and (max-width: 1079px) {
+      footer > div {
+        width: calc(24% - 2px); } }
+    footer > div:last-child {
+      border: 0; }
+    footer > div.vk-widget {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px; }
+      @media all and (min-width: 1080px) {
+        footer > div.vk-widget {
+          width: 248px; } }
+      @media all and (max-width: 1079px) {
+        footer > div.vk-widget {
+          width: calc(24% - 22px); } }
+      footer > div.vk-widget > div {
+        padding-top: 10px; }
+    footer > div * {
+      margin-left: auto;
+      margin-right: auto; }
+    footer > div.info > div {
+      margin-left: 15px;
+      margin-right: 15px;
+      font-size: 12px;
+      color: #939291;
+      font-weight: lighter;
+      line-height: 1.5; }
+    footer > div.phone > div:first-child, footer > div.email > div:first-child {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      width: 40%;
+      height: 40%; }
+      footer > div.phone > div:first-child img, footer > div.email > div:first-child img {
+        height: 100%;
+        width: 100%; }
+    footer > div.phone div, footer > div.email div {
+      text-align: center; }
+    footer > div.phone a, footer > div.email a {
+      text-decoration: none;
+      color: black;
+      cursor: pointer; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  background-color: #4667FF;
+  font-size: 12pt;
+  color: white;
+  border-bottom: 2px solid white;
+  z-index: 100; }
+  header a:hover {
+    opacity: 0.5; }
+  header > div {
+    border-right: 2px solid white;
+    padding: 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+    @media all and (min-width: 1080px) {
+      header > div {
+        width: 88px; } }
+    @media all and (max-width: 1079px) {
+      header > div {
+        width: calc(14% - 2px); } }
+    header > div a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer; }
+    header > div:first-child {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      justify-content: flex-start; }
+    header > div.phone {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      justify-content: flex-end;
+      border-right: 0; }
+    header > div * {
+      margin-bottom: auto;
+      margin-top: auto; }
+  header > .login:before {
+    display: inline-block;
+    content: "";
+    height: 100%;
+    width: 20px;
+    margin-right: 10px;
+    background-image: url(../../icons/sign_in.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  header .logo > a {
+    color: transparent !important;
+    background-image: url(https://robx.org/icons/logo.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; }
+  @media all and (min-width: 1080px) {
+    header .logo {
+      width: 177px; } }
+  @media all and (max-width: 1079px) {
+    header .logo {
+      width: calc(16% - 2px); } }
+  header .phone {
+    -webkit-box-ordinal-group: 101;
+    -webkit-order: 100;
+    -moz-order: 100;
+    -ms-flex-order: 100;
+    order: 100; }
+    @media all and (min-width: 1080px) {
+      header .phone {
+        width: 180px; } }
+    @media all and (max-width: 1079px) {
+      header .phone {
+        width: 16%; } }
+  header .register {
+    background-color: #ee5930; }
+    @media all and (min-width: 1080px) {
+      header .register {
+        width: 178px; } }
+    @media all and (max-width: 1079px) {
+      header .register {
+        width: calc(16% - 2px); } }
+  header .circled {
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 5px 7px; }
+  header .vk a {
+    font-size: 9pt;
+    font-weight: 900; }
+  header .burger, header .cross {
+    display: none; }
+
+main {
+  margin-top: 76px; }
+  main > a {
+    display: block;
+    height: 76px;
+    /*same height as header*/
+    margin-top: -76px;
+    /*same height as header*/
+    visibility: hidden; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .prices {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: auto !important;
+  padding-bottom: 60px;
+  padding-top: 60px; }
+  @media all and (min-width: 1080px) {
+    main > .prices {
+      padding-left: calc(50% -  540px);
+      padding-right: calc(50% - 540px); } }
+  @media all and (max-width: 1079px) {
+    main > .prices {
+      padding-left: 2%;
+      padding-right: 2%; } }
+  main > .prices h1 {
+    width: 30%;
+    padding: 0;
+    margin-top: auto;
+    font-size: 22pt;
+    font-weight: lighter;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px; }
+  main > .prices .offer {
+    width: 70%;
+    margin-top: auto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px; }
+    main > .prices .offer h2 {
+      display: inline-block;
+      font-weight: bold; }
+  main > .prices > ul {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: auto;
+    list-style-type: none; }
+    main > .prices > ul > li {
+      width: 31%;
+      padding-top: 70px;
+      position: relative; }
+      main > .prices > ul > li.discount-10:before {
+        background-image: url(../../icons/prices/discount-10.svg); }
+      main > .prices > ul > li.discount-20:before {
+        background-image: url(../../icons/prices/discount-20.svg); }
+      main > .prices > ul > li.discount-10:before, main > .prices > ul > li.discount-20:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        width: 100%;
+        height: 38%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right; }
+      main > .prices > ul > li > img {
+        position: relative;
+        z-index: 2;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10px; }
+        main > .prices > ul > li > img:first-of-type {
+          display: none; }
+      main > .prices > ul > li > div {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid gray;
+        text-align: center;
+        color: #4667FF;
+        font-size: 20pt;
+        font-weight: bold; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .register {
+  position: relative;
+  background-color: #4667FF; }
+  main > .register > div:first-child {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    position: relative;
+    z-index: 2; }
+    main > .register > div:first-child > .block {
+      width: 30%; }
+      main > .register > div:first-child > .block > * {
+        margin-left: 15px;
+        margin-right: 15px; }
+        main > .register > div:first-child > .block > *:first-child {
+          padding-top: 20px; }
+        main > .register > div:first-child > .block > *:last-child {
+          padding-bottom: 20px; }
+      main > .register > div:first-child > .block > .intro > *:first-child {
+        font-size: 14pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px dashed white;
+        padding-bottom: 15px; }
+      main > .register > div:first-child > .block > .intro > .information {
+        padding-bottom: 40px;
+        padding-top: 10px; }
+        main > .register > div:first-child > .block > .intro > .information > * {
+          -webkit-box-direction: normal;
+          -webkit-box-orient: horizontal;
+          -webkit-flex-direction: row;
+          -moz-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+          -moz-justify-content: space-between;
+          justify-content: space-between; }
+      main > .register > div:first-child > .block > .form {
+        padding-bottom: 20px; }
+        main > .register > div:first-child > .block > .form .notification {
+          display: none; }
+        main > .register > div:first-child > .block > .form.sent > form {
+          display: none; }
+        main > .register > div:first-child > .block > .form.sent > .notification {
+          display: block;
+          border: 5px solid #ee5930;
+          font-size: 20pt;
+          text-align: center;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          padding: 5%; }
+        main > .register > div:first-child > .block > .form span {
+          display: none; }
+        main > .register > div:first-child > .block > .form input[type=text], main > .register > div:first-child > .block > .form input[type=date], main > .register > div:first-child > .block > .form input[type=email] {
+          width: 100%;
+          background-color: #4667FF;
+          color: white;
+          border: 0;
+          border-bottom: 1px solid white;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          margin-bottom: 20px; }
+          main > .register > div:first-child > .block > .form input[type=text]:focus, main > .register > div:first-child > .block > .form input[type=date]:focus, main > .register > div:first-child > .block > .form input[type=email]:focus {
+            border: 0;
+            border-bottom: 1px solid white; }
+          main > .register > div:first-child > .block > .form input[type=text]::-webkit-input-placeholder, main > .register > div:first-child > .block > .form input[type=date]::-webkit-input-placeholder, main > .register > div:first-child > .block > .form input[type=email]::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: white; }
+          main > .register > div:first-child > .block > .form input[type=text]::-moz-placeholder, main > .register > div:first-child > .block > .form input[type=date]::-moz-placeholder, main > .register > div:first-child > .block > .form input[type=email]::-moz-placeholder {
+            /* Firefox 19+ */
+            color: white; }
+          main > .register > div:first-child > .block > .form input[type=text]:-ms-input-placeholder, main > .register > div:first-child > .block > .form input[type=date]:-ms-input-placeholder, main > .register > div:first-child > .block > .form input[type=email]:-ms-input-placeholder {
+            /* IE 10+ */
+            color: white; }
+          main > .register > div:first-child > .block > .form input[type=text]:-moz-placeholder, main > .register > div:first-child > .block > .form input[type=date]:-moz-placeholder, main > .register > div:first-child > .block > .form input[type=email]:-moz-placeholder {
+            /* Firefox 18- */
+            color: white; }
+        main > .register > div:first-child > .block > .form .entry.required {
+          position: relative; }
+          main > .register > div:first-child > .block > .form .entry.required::after {
+            display: block;
+            content: "●";
+            font-family: monospace;
+            font-size: 22px;
+            line-height: 43px;
+            position: absolute;
+            right: 0px;
+            bottom: 16px;
+            color: #ee5930;
+            z-index: 0; }
+        main > .register > div:first-child > .block > .form input[type=submit] {
+          opacity: 0.5;
+          font-size: 15pt;
+          font-weight: bold;
+          background-color: #ee5930;
+          color: white;
+          border: 0;
+          border-radius: 60px;
+          padding: 10px 20px;
+          display: block; }
+      main > .register > div:first-child > .block > .footnote {
+        -webkit-box-direction: normal;
+        -webkit-box-orient: horizontal;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 75%; }
+        main > .register > div:first-child > .block > .footnote:before {
+          content: "";
+          display: inline-block;
+          background-image: url(../../icons/star.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          height: 20px;
+          width: 20px;
+          margin-right: 10px; }
+        main > .register > div:first-child > .block > .footnote > div {
+          font-size: 6pt; }
+  main > .register > .background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(../../photos/registration-photo-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    main > .register > .background-images > * {
+      display: none; }
+  main > .register > nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    bottom: 30px; }
+    main > .register > nav > div {
+      display: inline-block;
+      vertical-align: middle;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      background: transparent;
+      border-radius: 8px;
+      overflow: hidden;
+      text-indent: -999em;
+      border: 2px solid white;
+      cursor: pointer; }
+      main > .register > nav > div.current {
+        background-color: white; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .reviews {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+  min-height: 290px !important;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media all and (min-width: 1080px) {
+    main > .reviews {
+      padding-left: calc(50% -  540px);
+      padding-right: calc(50% - 540px); } }
+  @media all and (max-width: 1079px) {
+    main > .reviews {
+      padding-left: 2%;
+      padding-right: 2%; } }
+  main > .reviews > h1 {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    main > .reviews > h1 > div {
+      visibility: hidden; }
+      main > .reviews > h1 > div > .left, main > .reviews > h1 > div > .right {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat; }
+      main > .reviews > h1 > div > .left {
+        margin-right: 20px;
+        background-image: url(../../icons/arrow-left.svg); }
+      main > .reviews > h1 > div > .right {
+        margin-right: 10px;
+        background-image: url(../../icons/arrow-right.svg); }
+      main > .reviews > h1 > div > .left:active, main > .reviews > h1 > div > .right:active {
+        opacity: 0.5; }
+  main > .reviews > ul {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    position: relative;
+    visibility: hidden; }
+    main > .reviews > ul > li {
+      min-width: 32%;
+      padding-right: 2%;
+      position: relative; }
+      main > .reviews > ul > li > img:first-child {
+        width: 100%; }
+      main > .reviews > ul > li > img:last-child {
+        display: none; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .teachers {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: auto !important;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  main > .teachers > h1 {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    main > .teachers > h1 > div {
+      visibility: hidden; }
+      main > .teachers > h1 > div > .left, main > .teachers > h1 > div > .right {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat; }
+      main > .teachers > h1 > div > .left {
+        margin-right: 20px;
+        background-image: url(../../icons/arrow-left.svg); }
+      main > .teachers > h1 > div > .right {
+        margin-right: 10px;
+        background-image: url(../../icons/arrow-right.svg); }
+      main > .teachers > h1 > div > .left:active, main > .teachers > h1 > div > .right:active {
+        opacity: 0.5; }
+  main > .teachers > ul {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    position: relative;
+    visibility: hidden; }
+    main > .teachers > ul > li {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      justify-content: flex-start;
+      width: 45%;
+      min-width: 48%;
+      height: 160px;
+      margin-right: 4%;
+      border-right: 1px dotted white;
+      position: relative; }
+      main > .teachers > ul > li:last-child {
+        border-right: 0; }
+      main > .teachers > ul > li > img {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin-bottom: 10px; }
+      main > .teachers > ul > li > .name {
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        main > .teachers > ul > li > .name > * {
+          font-weight: bold; }
+      main > .teachers > ul > li > .bio {
+        width: calc(100% - 180px); }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog, main > .addresses > :first-child, main > .videos > :first-child, main > .addresses > :nth-child(2), main > .videos > :nth-child(2), main > .about > .steps > ul, main > .bonuses > ul, footer, footer > div, footer > div.vk-widget, footer > div.phone > div:first-child, footer > div.email > div:first-child, header, header > div, main > .prices > ul, main > .register > div:first-child, main > .register > div:first-child > .block > .intro > .information > *, main > .register > div:first-child > .block > .footnote, main > .reviews > h1, main > .reviews > ul, main > .teachers > h1, main > .teachers > ul, main > .teachers > ul > li, main > .teachers > ul > li > .name, main > .blog > h1, main > .blog > ul, main > .blog > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  padding: 0;
+  margin: 0; }
+  @media all and (min-width: 1080px) {
+    * {
+      font-size: 11pt; } }
+  @media all and (max-width: 1079px) and (min-width: 800px) {
+    * {
+      font-size: 8pt; } }
+  @media all and (max-width: 800px) {
+    * {
+      font-size: 12pt; } }
+
+main > .prices, main > .videos {
+  color: #4F5252;
+  background-color: #dedede; }
+
+main > .about, main > .addresses {
+  color: white;
+  background-color: #ee5930; }
+
+main > .bonuses, main > .register > div:first-child > .block, main > .reviews, main > .teachers, main > .blog {
+  color: white;
+  background-color: #4667FF; }
+
+main > .register, main > .teachers, main > .addresses, main > .videos, main > .about, main > .bonuses, main > .prices, main > .reviews, main > .blog {
+  min-height: 500px;
+  border-bottom: 2px solid white; }
+  main > .register h1, main > .teachers h1, main > .addresses h1, main > .videos h1, main > .about h1, main > .bonuses h1, main > .prices h1, main > .reviews h1, main > .blog h1 {
+    font-size: 22pt;
+    font-weight: lighter;
+    padding-bottom: 20px; }
+
+main > .register > *, main > .teachers > * {
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 1080px) {
+    main > .register > *, main > .teachers > * {
+      width: 1080px; } }
+  @media all and (max-width: 1079px) {
+    main > .register > *, main > .teachers > * {
+      width: 96%; } }
+
+main > .addresses, main > .videos {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+  main > .addresses > *:first-child, main > .videos > *:first-child {
+    padding-right: 30px;
+    border-right: 2px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media all and (min-width: 1080px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: 509px; } }
+    @media all and (max-width: 1079px) {
+      main > .addresses > *:first-child, main > .videos > *:first-child {
+        width: calc(48% - 31px); } }
+  main > .addresses > *:nth-child(2), main > .videos > *:nth-child(2) {
+    width: calc(50% - 1px); }
+
+main > .videos .names div {
+  border-top: 2px solid white; }
+  main > .videos .names div:first-of-type {
+    border-top: 0; }
+  main > .videos .names div h2 {
+    font-weight: bold;
+    font-size: 13pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer; }
+  main > .videos .names div div {
+    font-weight: lighter;
+    padding-bottom: 10px;
+    display: none; }
+  main > .videos .names div.current > div {
+    display: block; }
+main > .videos .names nav {
+  display: none; }
+main > .videos .video {
+  height: 1px;
+  min-height: 500px; }
+  main > .videos .video iframe {
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: auto;
+    margin-bottom: auto; }
+
+main > .blog {
+  display: none;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: auto;
+  padding-top: 30px;
+  padding-bottom: 50px; }
+  @media all and (min-width: 1080px) {
+    main > .blog {
+      padding-left: calc(50% -  540px);
+      padding-right: calc(50% - 540px); } }
+  @media all and (max-width: 1079px) {
+    main > .blog {
+      padding-left: 2%;
+      padding-right: 2%; } }
+  main > .blog > h1 {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    main > .blog > h1 > div {
+      visibility: hidden; }
+      main > .blog > h1 > div > .left, main > .blog > h1 > div > .right {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat; }
+      main > .blog > h1 > div > .left {
+        margin-right: 20px;
+        background-image: url(../../icons/arrow-left.svg); }
+      main > .blog > h1 > div > .right {
+        margin-right: 10px;
+        background-image: url(../../icons/arrow-right.svg); }
+      main > .blog > h1 > div > .left:active, main > .blog > h1 > div > .right:active {
+        opacity: 0.5; }
+  main > .blog > ul {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    position: relative;
+    visibility: hidden; }
+    main > .blog > ul > li {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      justify-content: flex-end;
+      min-width: 32%;
+      width: 32%;
+      height: 230px;
+      margin-right: 2%;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom; }
+      main > .blog > ul > li > * {
+        margin-left: 15px;
+        margin-right: 15px; }
+      main > .blog > ul > li > a {
+        margin-top: 15px;
+        margin-bottom: 30px; }
+      main > .blog > ul > li a:before {
+        content: "Перейти";
+        display: inline-block;
+        border: 1px solid white;
+        border-radius: 30px;
+        color: white;
+        padding: 5px;
+        margin-top: 10px; }
+
+/*# sourceMappingURL=computer.css.map */

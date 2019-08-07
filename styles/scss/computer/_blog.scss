@@ -1,0 +1,106 @@
+main > .blog {
+    display: none;
+
+    @include flex-direction(column);
+    @include justify-content(center);
+
+    @media all and (min-width: $large) {
+        padding-left: calc(50% -  540px);
+        padding-right: calc(50% - 540px);
+
+    }
+
+    @media all and (max-width: $large - 1) {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    overflow: hidden;
+
+    min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    & > h1 {
+        @extend %flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+
+        & > div {
+            visibility: hidden;
+
+            & > .left, & > .right {
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                background-repeat: no-repeat;
+            }
+
+            & > .left {
+                margin-right: 20px;
+                background-image: url(../../icons/arrow-left.svg);
+            }
+
+            & > .right {
+                margin-right: 10px;
+                background-image: url(../../icons/arrow-right.svg);
+            }
+
+            & > .left:active, & > .right:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    & > ul {
+        @extend %flexbox;
+        @include flex-direction(row);
+        width: 100%;
+
+        list-style-type: none;
+
+        position: relative;
+        visibility: hidden;
+
+        & > li {
+            @extend %flexbox;
+            @include flex-direction(column);
+            @include justify-content(flex-end);
+
+            min-width: 32%;
+            width: 32%;
+            height: 230px;
+
+            margin-right: 2%;
+
+            position: relative;
+
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+
+            & > * {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            & > a {
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+
+            a:before {
+                content: "Перейти";
+                display: inline-block;
+                border: 1px solid white;
+                border-radius: 30px;
+                color: white;
+                padding: 5px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    @extend %blue, %row;
+}

@@ -1,0 +1,106 @@
+@import '../colors.scss';
+@import '../flex.scss';
+
+$large: 1080px;
+$small: 800px;
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+    line-height: normal;
+
+	@media all and (min-width: $large) {
+		font-size: 11pt;
+	}
+	@media all and (max-width: $large - 1) and (min-width: $small) {
+		font-size: 8pt;
+	}
+	@media all and (max-width: $small) {
+		font-size: 12pt;
+	}
+
+
+	padding: 0;
+	margin: 0;
+}
+
+%gray {
+	color: $black;
+	background-color: $gray;
+}
+
+%red {
+	color: white;
+	background-color: $red;
+}
+
+%blue {
+	color: white;
+	background-color: $blue;
+}
+
+%row {
+	min-height: 500px;
+
+	@extend %flexbox;
+
+	border-bottom: 2px solid white;
+
+	h1 {
+		font-size: 22pt;
+		font-weight: lighter;
+
+		padding-bottom: 20px;
+
+	}
+}
+
+%double-row {
+	& > * {
+		@media all and (min-width: $large) {
+			width: $large;
+		}
+
+		@media all and (max-width: $large - 1) {
+			width: 96%;
+		}
+
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@extend %row;
+}
+
+%single-row {
+	@include justify-content(flex-end);
+	padding: 0;
+
+	& > *:first-child {
+		@media all and (min-width: $large) {
+			width: $large / 2 - 31px;
+		}
+
+		@media all and (max-width: $large - 1) {
+			width: calc(48% - 31px);
+		}
+
+		padding-right: 30px;
+		border-right: 2px solid white;
+
+		@extend %flexbox;
+		@include justify-content(center);
+		@include flex-direction(column);
+	}
+
+	& > *:nth-child(2) {
+		width: calc(50% - 1px);
+		@extend %flexbox;
+	}
+
+	@extend %row;
+}

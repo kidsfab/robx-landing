@@ -1,0 +1,109 @@
+@import '_common.scss';
+
+main > .about {
+    width: 100%;
+
+    .steps {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+
+        & > ul {
+            @extend %flexbox;
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            @include justify-content(space-between);
+
+            list-style-type: none;
+
+            & > li {
+                @extend %flexbox;
+                @include flex-direction(column);
+
+                font-size: 9pt;
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+                & > img {
+                    width: 50%;
+                }
+
+                &:nth-child(2n + 1) {
+                    width: 40%;
+                    padding-right: 7.1%;
+                }
+
+                &:nth-child(2n) {
+                    width: 40%;
+                    border-left: 1px dotted white;
+                    padding-left: 12.5%;
+                }
+
+                &:nth-child(4n + 1), &:nth-child(4n + 2) {
+                    border-bottom: 1px dotted white;
+                }
+            }
+        }
+    }
+
+    .moto {
+        width: 80vw;
+
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        margin-top: 30px;
+
+        text-align: left;
+
+        border-bottom: 4px solid;
+        border-top: 4px solid;
+
+        font-size: 15pt;
+    }
+
+    .citation {
+        width: 80vw;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45px;
+        padding-top: 15px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+        background-image: url(../../icons/quote_mark.svg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+
+        & > .text {
+            font-weight: bold;
+        }
+
+        & > .author {
+            &:before {
+                content: "-";
+                display: inline-block;
+            }
+
+            margin-top: 15px;
+
+            & > .position, .name {
+                display: inline-block;
+            }
+
+            & > .name {
+                font-weight: bold;
+            }
+        }
+
+        & > .author > .position, .from {
+            font-size: 9pt;
+        }
+    }
+
+    @extend %red, %row;
+}

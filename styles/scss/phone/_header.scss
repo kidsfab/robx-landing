@@ -1,0 +1,129 @@
+@import 'common.scss';
+
+header {
+	position: fixed;
+	top: 0px;
+
+	width: 100%;
+
+	z-index: 100;
+    font-size: 0;
+
+	background-color: $blue;
+
+	a {
+		text-decoration: none;
+		color: white;
+		cursor: pointer;
+        font-size: 12pt;
+	}
+
+	* {
+		vertical-align: top;
+	}
+
+
+	& > * {
+		display: none;
+		border-bottom: 2px solid white;
+	}
+
+	& > .logo {
+		@extend %inline-flex;
+		@include justify-content(flex-start);
+
+		height: 70px;
+		width: 50%;
+
+        a {
+            color: transparent !important;
+            background-image: url(https://robx.org/icons/logo.svg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 30px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 35px;
+        }
+	}
+
+	& > .burger {
+		@extend %inline-flex;
+		@include justify-content(flex-end);
+
+		height: 70px;
+		width: 50%;
+
+		& > img {
+			height: 19px;
+			margin-top: auto;
+			margin-bottom: auto;
+
+			padding-right: 35px;
+		}
+	}
+
+	&.open {
+		& > * {
+			* {
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+		}
+
+
+		& > .cross {
+			@extend %inline-flex;
+			@include justify-content(flex-end);
+
+			height: 70px;
+			width: 50%;
+
+			& > img {
+				height: 19px;
+				margin-top: auto;
+				margin-bottom: auto;
+
+				padding-right: 35px;
+			}
+		}
+
+		& > .burger, & > .vk {
+			display: none;
+		}
+
+		& > .register {
+			border: 0;
+			width: 100% !important;
+
+            border-bottom: 2px solid white;
+			background-color: $red;
+		}
+
+		& > *:nth-child(n + 4) {
+			@extend %inline-flex;
+			@include justify-content(center);
+
+
+			height: calc(25vh - 20px);
+            height: calc((var(--vh, 1vh) * 25) - 20px);
+			width: calc(50% - 1px);
+		}
+
+		& > *:nth-child(2n + 5) {
+			border-right: 2px solid white !important;
+		}
+
+		& > .phone {
+			border-right: 0 !important;
+		}
+	}
+
+	&.open ~ * {
+		display: none;
+	}
+
+
+
+	@extend %blue;
+}

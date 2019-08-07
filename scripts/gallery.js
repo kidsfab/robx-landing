@@ -1,7 +1,7 @@
 function init_gallery() {
-	init_computer_slider('.galery');
+	init_phone_slider('.galery');
 }
 
 function resize_gallery() {
-	update_computer_slider('.galery');
+	update_phone_slider('.galery');
 }

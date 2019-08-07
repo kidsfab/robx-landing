@@ -1,5 +1,5 @@
 @import 'slider.scss';
-@import 'phone-common.scss';
+@import 'phone/common.scss';
 
 main > .camp {
 
@@ -17,7 +17,7 @@ main > .camp {
 			margin-right: auto;
 			padding-bottom: 60px;
 
-			
+
 			text-align: center;
 			font-size: 17pt;
 			font-weight: bold;
@@ -86,7 +86,7 @@ main > .camp {
 
 					img {
 						width: 60%;
-						margin-bottom: 20px;	
+						margin-bottom: 20px;
 					}
 				}
 			}
@@ -264,5 +264,3 @@ main > .camp-map {
 
 	@extend %yellow, %row;
 }
-
-

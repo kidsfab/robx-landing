@@ -1,0 +1,80 @@
+main > .bonuses {
+    h1 {
+		font-size: 20pt;
+		text-align: left;
+		padding-bottom: 40px;
+		width: 80vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	ul {
+        list-style-type: none;
+
+		li {
+            box-sizing: border-box;
+            width: 60vw !important;
+            padding-left: 0vw !important;
+            padding-right: 0vw !important;
+
+            &.current > .text:before {
+                border-top: 5px solid;
+                height: 1px;
+                margin-top: -3px;
+            }
+
+            & > .text:before {
+                content: "";
+                width: 100%;
+                display: flex;
+                margin-bottom: 30px;
+            }
+
+            &.current + li {
+                opacity: 0.5;
+            }
+
+            &:first-child {
+                & > .text {
+                    padding-left: 0 !important;
+                    margin-left: 10vw;
+                }
+            }
+
+            &:last-of-type {
+                & > .text {
+                    padding-right: 0 !important;
+                }
+            }
+
+
+            & > .title {
+                font-size: 9pt;
+                font-weight: bold;
+                height: 80px;
+                padding-left: 10vw;
+                padding-right: 5vw;
+            }
+
+            & > img {
+                background-color: white;
+                border-radius: 3000px;
+                margin-bottom: 30px;
+                margin-left: 10vw;
+                margin-right: 5vw;
+            }
+
+            & > .text {
+                font-size: 9pt;
+                padding-left: 10vw;
+                padding-right: 5vw;
+
+                border-top: 1px dashed white;
+            }
+
+		}
+		@extend %slider;
+	}
+
+	@extend %row, %blue;
+}

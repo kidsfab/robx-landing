@@ -1,0 +1,47 @@
+%slider {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	display: flex;
+
+	position: relative;
+
+	width: 100%;
+
+	padding-bottom: 40px;
+
+	& > * {
+		visibility: hidden;
+	}
+
+	.slide {
+		visibility: visible;
+
+		position: relative;
+
+		height: 100%;
+
+		flex-shrink: 0;
+	}
+
+	nav {
+		visibility: visible;
+
+		bottom: 0;
+        padding-left: 10vw;
+        position: absolute;
+
+		div {
+			display: inline-block;
+			vertical-align: middle;
+			width: 8px;
+			height: 8px;
+			margin-right: 8px;
+			background: transparent;
+			border-radius: 8px;
+			overflow: hidden;
+			text-indent: -999em;
+			border: 2px solid;
+			cursor: pointer;			
+		}
+	}
+}

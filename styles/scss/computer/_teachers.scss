@@ -1,0 +1,95 @@
+@import 'common.scss';
+
+main > .teachers {
+	@include flex-direction(column);
+	@include justify-content(center);
+
+    overflow: hidden;
+
+    min-height: auto !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    & > h1 {
+        @extend %flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+
+        & > div {
+            visibility: hidden;
+
+            & > .left, & > .right {
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                background-repeat: no-repeat;
+            }
+
+            & > .left {
+                margin-right: 20px;
+                background-image: url(../../icons/arrow-left.svg);
+            }
+
+            & > .right {
+                margin-right: 10px;
+                background-image: url(../../icons/arrow-right.svg);
+            }
+
+            & > .left:active, & > .right:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
+	& > ul {
+		@extend %flexbox;
+		@include justify-content(space-between);
+		padding-bottom: 20px;
+		padding-top: 10px;
+
+        position: relative;
+        visibility: hidden;
+
+		& > li {
+			@extend %flexbox;
+            @include flex-direction(column);
+			@include flex-wrap(wrap);
+			@include justify-content(flex-start);
+
+			width: 45%;
+            min-width: 48%;
+            height: 160px;
+            margin-right: 4%;
+
+            border-right: 1px dotted white;
+
+            position: relative;
+
+            &:last-child {
+                border-right: 0;
+            }
+
+			& > img {
+				width: 80px;
+				height: 80px;
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			& > .name {
+				@extend %flexbox;
+				@include flex-direction(column);
+
+                & > * {
+                    font-weight: bold;
+                }
+			}
+
+            & > .bio {
+                width: calc(100% - 180px);                
+            }
+		}
+	}
+
+	@extend %blue, %double-row;
+}

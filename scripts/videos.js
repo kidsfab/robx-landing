@@ -3,6 +3,7 @@ function update_video() {
 }
 
 function add_elements_computer_videos() {
+
 	$('.videos > .names > div:first-of-type').addClass('current');
 
 	$('.videos > .names > div > h2').click(function() {
@@ -22,6 +23,11 @@ function remove_elements_computer_videos() {
 }
 
 function add_elements_phone_videos() {
+    var maxHeight = 0;
+    for (i = 0; i < $('.videos .names > div > div').length; i++) {
+        maxHeight = Math.max(maxHeight, $($('.videos .names > div > div')[i]).height());
+    }
+    $('.videos .names > div > div').css("height", maxHeight);
 	$('main > .videos > .names').before($('main > .videos > .names > h1'));
 
 	$('.videos > .names > div').prepend($('.videos > .video > iframe').clone());
@@ -32,16 +38,16 @@ function add_elements_phone_videos() {
 
 
 function remove_elements_phone_videos() {
-	delete_slider('.videos .names');
+	delete_phone_slider('.videos .names');
 	$('main > .videos > .names').prepend($('main > .videos > h1'));
 	$('.videos > .names > div > iframe').remove();
 }
 
 function init_videos() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		$('.videos').get(0).mobile = true;
 		add_elements_phone_videos();
-		init_computer_slider('.videos .names');
+		init_phone_slider('.videos .names');
 	} else {
 		$('.videos').get(0).mobile = false;
 		add_elements_computer_videos();
@@ -49,21 +55,28 @@ function init_videos() {
 }
 
 function resize_videos() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
+	if(window.matchMedia('(max-width: 800px)').matches) {
 		if($('.videos').get(0).mobile == false) {
 			$('.videos').get(0).mobile = true;
 			remove_elements_computer_videos();
 			add_elements_phone_videos();
-			init_computer_slider('.videos .names');
+			init_phone_slider('.videos .names');
 		} else if($('.videos').get(0).mobile == true) {
-			update_computer_slider('.videos .names');
+			update_phone_slider('.videos .names');
+            var i;
+            var maxHeight = 0;
+            for (i = 0; i < $('.videos .names > div > div').length; i++) {
+                maxHeight = Math.max(maxHeight, $($('.videos .names > div > div')[i]).height());
+            }
+            $('.videos .names > div > div').css("height", maxHeight);
 		}
 	} else {
 		if($('.videos').get(0).mobile == true) {
 			$('.videos').get(0).mobile = false;
 			remove_elements_phone_videos();
-			delete_slider('.videos .names');
+			delete_phone_slider('.videos .names');
 			add_elements_computer_videos();
+            $('.videos .names > div > div').css("height", "");
 		}
 	}
 

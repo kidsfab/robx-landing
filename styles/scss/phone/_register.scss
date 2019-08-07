@@ -1,0 +1,204 @@
+@import 'common.scss';
+
+main > .register {
+
+    @extend %flexbox;
+    @extend %flexbox;
+
+    width: 100%;
+
+    position: relative;
+
+    padding-top: 0px !important;
+    padding-bottom: 30px !important;
+
+    @extend %gray, %row;
+
+    & > div:first-child {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        margin-top: 30vw;
+
+        .block {
+            width: 80vw;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            @extend  %blue;
+
+            & > .intro {
+                & > *:first-child {
+                    font-size: 14pt;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    border-bottom: 1px dashed white;
+                    padding-bottom: 15px;
+                }
+
+                & > .information {
+                    padding-bottom: 40px;
+                    padding-top: 10px;
+                    & > * {
+                        @extend %flexbox;
+                		@include flex-direction(row);
+                        @include justify-content(space-between);
+
+                        & > *:last-child {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+
+
+            & > .form  {
+                padding-bottom: 20px;
+
+                .notification {
+                    display: none;
+                }
+
+                &.sent > form {
+                    display: none;
+                }
+
+                &.sent > .notification {
+                    display: block;
+
+                    border: 5px solid $red;
+                    font-size: 20pt;
+
+                    text-align: center;
+
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+
+                    width: 100%;
+                    height: 100%;
+                    padding: 5%;
+                }
+
+                span {
+                    display: none;
+                }
+
+                input[type=text], input[type=date], input[type=email] {
+
+                    width: 100%;
+
+                    background-color: $blue;
+                    color: white;
+
+                    border: 0;
+                    border-bottom: 1px solid white;
+
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+
+                    margin-bottom: 20px;
+
+                    &:focus {
+                        border: 0;
+                        border-bottom: 1px solid white;
+                    }
+
+                    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                        color: white;
+                    }
+                    &::-moz-placeholder { /* Firefox 19+ */
+                        color: white;
+                    }
+                    &:-ms-input-placeholder { /* IE 10+ */
+                        color: white;
+                    }
+                    &:-moz-placeholder { /* Firefox 18- */
+                        color: white;
+                    }
+
+                }
+
+                .entry.required {
+                    position: relative;
+
+                    &::after {
+                        display: block;
+                        content: "●";
+                        font-family: monospace;
+                        font-size: 22px;
+                        line-height: 43px;
+                        position: absolute;
+                        right: 0px;
+                        bottom: 16px;
+                        color: $red;
+                        z-index: 0;
+                    }
+                }
+
+                input[type=submit] {
+                    opacity: 0.5;
+
+                    font-size: 15pt;
+                    font-weight: bold;
+
+                    background-color: $red;
+                    color: white;
+
+                    border: 0;
+                    border-radius: 60px;
+                    padding: 10px 20px;
+                    display: block;
+                }
+            }
+
+            & > .footnote {
+                @extend %flexbox;
+                @include flex-direction(row);
+
+                width: 75%;
+
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    background-image: url(../../icons/star.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 5px;
+                }
+
+                & > div {
+                    font-size: 6pt;
+                }
+            }
+        }
+    }
+
+    & > .background-images {
+        position: absolute !important;
+        top: 0;
+        z-index: 1;
+
+        padding-bottom: 0 !important;
+
+        & > img {
+            width: 100%;
+        }
+
+        nav {
+            bottom: 15vw !important;
+        }
+
+        @extend %slider;
+    }
+}

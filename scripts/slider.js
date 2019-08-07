@@ -1,32 +1,20 @@
-function init_computer_slider(name) {
-	$(name).children('*:nth-child(1)')
-		.before($(name).children('*:nth-last-child(2)').clone().addClass('additional'))
-		.before($(name).children('*:nth-last-child(1)').clone().addClass('additional'));
-
-	$(name).children('*:nth-last-child(1)')
-		.after($(name).children('*:nth-child(4)').clone().addClass('additional'))
-		.after($(name).children('*:nth-child(3)').clone().addClass('additional'));
-
+function init_phone_slider(name) {
 	$(name).children().addClass('slide');
 
-	$(name).prepend('<a class = "left"></a>');
-	$(name).prepend('<a class = "right"></a>');
-
 	$(name).append('<nav></nav>');
-	for (var i = 2; i < $(name).children('.slide').length - 2; i++) {
+	for (var i = 0; i < $(name).children('.slide').length; i++) {
 		$(name).children('nav').append('<div number = "' + i + '"></div>');
 	}
 
 	$(name).find('> nav div:first-child').addClass('current');
-	$(name).find('> nav').css('left', ($(name).width() - $(name).children('nav').width()) / 2);
 
-	$(name).attr('current_number', 2);
+	$(name).attr('current_number', 0);
 
 	$(name).children('.left').click(function() {
 		$(name).attr('current_number', parseInt($(name).attr('current_number')) - 1);
-		if (parseInt($(name).attr('current_number')) == 1) {
-			$(name).attr('current_number', $(name).children('.slide').length - 3);
-			go_to(name, $(name).children('.slide').length - 2, false);
+		if (parseInt($(name).attr('current_number')) == 0) {
+			$(name).attr('current_number', $(name).children('.slide').length - 1);
+			go_to(name, $(name).children('.slide').length - 1, false);
 		}
 		go_to(name, parseInt($(name).attr('current_number')), true);
 	});
@@ -45,16 +33,19 @@ function init_computer_slider(name) {
 		if (parseInt($(name).attr('current_number')) != num) {
 			$(name).attr('current_number', num);
 			go_to(name, num, true);
-		}	
+		}
 		return false;
-	}); 
+	});
+
+
 
 	$(name).on('touchstart', function(event) {
-		this.touchstartx =  event.originalEvent.touches[0].pageX;	
-		this.touchstartx =  event.originalEvent.touches[0].pageX;	
+
+		this.touchstartx =  event.originalEvent.touches[0].pageX;
 	});
 
 	$(name).on('touchmove', function(event) {
+
 		this.longTouch = false;
 		setTimeout(function() {
 			$(name).get(0).longTouch = true;
@@ -63,23 +54,24 @@ function init_computer_slider(name) {
 		this.touchmovex =  event.originalEvent.touches[0].pageX;
 		var sum_width = 0;
 		for(var i = 0; i < parseInt($(name).attr('current_number')); i++) {
-			sum_width += $($(name).children('.slide')[i]).outerWidth();
+			sum_width += $($(name).children('.slide')[i]).outerWidth(true);
 		}
 		this.movex = sum_width + (this.touchstartx - this.touchmovex);
 		$(name).children('.slide').css('left', -this.movex);
 	});
 
 	$(name).on('touchend', function(event) {
+
 		var absMove = Math.abs(this.touchstartx - this.touchmovex);
-		if (absMove > 3 * $(name).outerWidth() / 4 || this.longTouch === false) {
+		if (absMove > 3 * $(name).outerWidth(true) / 4 || this.longTouch === false) {
 			var sum_width = 0;
 			for(var i = 0; i < parseInt($(name).attr('current_number')); i++) {
-				sum_width += $($(name).children('.slide')[i]).outerWidth();
+				sum_width += $($(name).children('.slide')[i]).outerWidth(true);
 			}
 
-			if (this.movex > sum_width && parseInt($(name).attr('current_number')) < $(name).children('.slide').length - 3) {
+			if (this.movex > sum_width && parseInt($(name).attr('current_number')) < $(name).children('.slide').length - 1) {
 				$(name).attr('current_number', parseInt($(name).attr('current_number')) + 1);
-			} else if (this.movex < sum_width && parseInt($(name).attr('current_number')) > 2) {
+			} else if (this.movex < sum_width && parseInt($(name).attr('current_number')) > 0) {
 				$(name).attr('current_number', parseInt($(name).attr('current_number')) - 1);
 			}
 		}
@@ -87,7 +79,7 @@ function init_computer_slider(name) {
 
 	})
 
-	go_to(name, 2, false);
+	go_to(name, 0, false);
 }
 
 function go_to(name, num, animate) {
@@ -98,11 +90,11 @@ function go_to(name, num, animate) {
 
 	var sum_width = 0;
 	for (var i = 0; i < num; i++) {
-		sum_width += $($(name).children('.slide')[i]).outerWidth();
+		sum_width += $($(name).children('.slide')[i]).outerWidth(true);
 	}
 
 	var width = $(name).width();
-	var shift = (width - $(name).children('.slide.current').outerWidth()) / 2 - sum_width;
+	var shift = -sum_width;
 	if (animate) {
 		left = parseInt($(name).children('.slide').css('left'));
 		$(name).children('.slide').animate({'left': '-='+ (left - shift)}, function() {});
@@ -111,18 +103,98 @@ function go_to(name, num, animate) {
 	}
 }
 
-
-function update_computer_slider(name) {
+function update_phone_slider(name) {
 	go_to(name, $(name).attr('current_number'), false);
-	$(name).find('> nav').css('left', ($(name).width() - $(name).children('nav').width()) / 2);
 }
 
-function delete_slider(name) {
+function delete_phone_slider(name) {
 	$(name).children('nav').remove();
 	$(name).children('.left').remove();
 	$(name).children('.right').remove();
-	$(name).children('.additional').remove();
+
+    $(name).children('slide').css('left', '');
 
 	$(name).children('').removeClass('slide');
 	$(name).children('').removeClass('current');
+}
+
+function init_computer_slider(name, num) {
+    $(name + ' > ul > li:first-child').addClass('current');
+
+    var current = $(name + ' > ul > li:first-child');
+    for (var i = 0; i < num; i++) {
+        current = current.next();
+    }
+    current.css("opacity", 0.5);
+
+	$(name + ' > h1').append('<div>' +
+        '<a class = "left"></a><a class = "right"></a>' +
+        '</div>');
+
+	if($(name + ' > ul > li.current').nextAll().length < num) {
+        $(name + ' > h1 a.right').css("opacity", "0.5");
+	}
+
+	if($(name + ' > ul > li.current').prevAll().length < num) {
+		$(name + ' > h1 a.left').css("opacity", "0.5");
+	}
+
+
+	$(name + ' > h1 a.right').click(function() {
+        if($(name + ' > ul > li.current').nextAll().length >= num) {
+
+            $(name + ' > ul > li').css("opacity", 1);
+
+            var current = $(name + ' > ul > li.current');
+            for (var i = 0; i < num; i++) {
+                current = current.next();
+            }
+            $(name + ' > ul > li.current').removeClass('current');
+    		current.addClass('current');
+            current.prev().css("opacity", 0.5);
+            for (var i = 0; i < num; i++) {
+                current = current.next();
+            }
+            current.css("opacity", 0.5);
+    		$(name + ' > ul li').css('left', "-=100%");
+
+    		if($(name + ' > ul > li.current').nextAll().length < num) {
+    			$(name + ' > h1 a.right').css("opacity", "0.5");
+    		}
+
+    		$(name + ' > h1 a.left').css("opacity", "1");
+        }
+	});
+
+    $(name + ' > h1 a.left').click(function() {
+        if($(name + ' > ul > li.current').prevAll().length >= num) {
+
+            $(name + ' > ul > li').css("opacity", 1);
+
+            var current = $(name + ' > ul > li.current');
+            for (var i = 0; i < num; i++) {
+                current = current.prev();
+            }
+            $(name + ' > ul > li.current').removeClass('current');
+    		current.addClass('current');
+            current.prev().css("opacity", 0.5);
+            for (var i = 0; i < num; i++) {
+                current = current.next();
+            }
+            current.css("opacity", 0.5);
+    		$(name + ' > ul li').css('left', "+=100%");
+
+    		if($(name + ' > ul > li.current').prevAll().length < num) {
+    			$(name + ' > h1 a.left').css("opacity", "0.5");
+    		}
+
+    		$(name + ' > h1 a.right').css("opacity", "1");
+        }
+	});
+
+    $(name + ' > ul, ' + name + ' > h1 div').css("visibility", "visible");
+}
+
+function delete_computer_slider(name) {
+    $(name + ' > h1 > div').remove();
 }

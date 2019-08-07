@@ -1,0 +1,87 @@
+@import 'common.scss';
+
+main > .reviews {
+	@include flex-direction(column);
+	@include justify-content(center);
+
+    max-width: 100%;
+
+    overflow: hidden;
+
+    @media all and (min-width: $large) {
+		padding-left: calc(50% -  540px);
+		padding-right: calc(50% - 540px);
+
+	}
+
+	@media all and (max-width: $large - 1) {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+
+    min-height: 290px !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    & > h1 {
+        @extend %flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+
+        & > div {
+            visibility: hidden;
+
+            & > .left, & > .right {
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                background-repeat: no-repeat;
+            }
+
+            & > .left {
+                margin-right: 20px;
+                background-image: url(../../icons/arrow-left.svg);
+            }
+
+            & > .right {
+                margin-right: 10px;
+                background-image: url(../../icons/arrow-right.svg);
+            }
+
+            & > .left:active, & > .right:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    & > ul {
+        @extend %flexbox;
+        @include flex-direction(row);
+        width: 100%;
+
+        list-style-type: none;
+
+        position: relative;
+
+        visibility: hidden;
+
+        & > li {
+            min-width: 32%;
+            padding-right: 2%;
+
+            position: relative;
+
+
+        	& > img:first-child {
+        		width: 100%;
+        	}
+
+        	& > img:last-child {
+        		display: none;
+        	}
+        }
+    }
+
+	@extend %blue, %row;
+
+}

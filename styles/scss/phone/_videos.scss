@@ -1,0 +1,53 @@
+@import 'slider.scss';
+@import 'common.scss';
+
+main > .videos {
+    padding-bottom: 0;
+
+    & > h1 {
+        font-size: 15pt;
+        padding-bottom: 30px;
+
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+	.names {
+        padding-bottom: 100vw;
+        & > div[link] {
+            overflow: visible;
+            padding-bottom: 0;
+            & > h2 {
+                font-weight: bold;
+            }
+            & > div {
+                padding-bottom: 30px;
+                height: 85px;
+            }
+            & > h2, & > div {
+                font-size: 9pt;
+                width: 80vw;
+                margin-left: 10vw;
+                margin-right: 10vw;
+            }
+            iframe {
+                position: absolute;
+                bottom: calc(-100vw - 30px);
+                width: 100vw;
+                height: 100vw;
+            }
+        }
+
+        & > nav {
+            bottom: 100vw;
+        }
+
+		@extend %slider;
+	}
+
+	.video {
+		display: none;
+	}
+
+	@extend %row, %gray;
+}
