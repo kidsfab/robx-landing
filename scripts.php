@@ -17,3 +17,4 @@
 <script src="scripts/vk.js"></script>
 <script src="https://vk.com/js/api/openapi.js?159"></script>
 <script src="scripts/vk_widget.js" defer></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146792432-1"></script>
