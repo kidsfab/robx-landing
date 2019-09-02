@@ -19,7 +19,7 @@
 		<a href = 'https://edu.robx.org/pay/'>Оплата</a>
 	</div>
 	<div>
-		<a href = "https://edu.robx.org/contacts/">Контакты</a>
+		<a href = "https://edu.robx.org/cnt/">Контакты</a>
 	</div>
 	<div class = "login">
 		<a href = "https://lk.robx.org">Вход</a>
