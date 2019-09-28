@@ -83,7 +83,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     			</div>
     		</div>
     		<div class = "form">
-    			<form action="https://robx.org/" target="_self" method='post' onsubmit="yaCounter39897755.reachGoal('ORDER');">
+    			<form action="https://robx.org/" target="_self" method='post' onsubmit="ga('send', 'event', 'form', 'submit'); yaCounter39897755.reachGoal('ORDER');">
     				<div class = 'entry required'>
     					<input name = 'name' type = 'text' placeholder="Как к Вам обращаться?" required>
     				</div>
@@ -100,7 +100,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class = "footnote">
 		        <div>
                     Мы уважаем вашу конфиденциальность, введенная в форму информация не будет передаваться третьим лицам.
-                </div>                
+                </div>
             </div>
         </div>
     </div>

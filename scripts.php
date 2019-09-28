@@ -1,3 +1,4 @@
+<script src="scripts/ga.js"></script>
 <script src="scripts/jquery.js"></script>
 <script src="scripts/maskedinput.js"></script>
 <script src="scripts/slider.js"></script>
