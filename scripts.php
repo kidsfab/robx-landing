@@ -1,5 +1,5 @@
 <script src="scripts/ga.js" async></script>
-<script src="scripts/jquery.js" async></script>
+<script src="scripts/jquery.js"></script>
 <script src="scripts/maskedinput.js" async></script>
 <script src="scripts/slider.js" async></script>
 <script src="scripts/header.js" async></script>
