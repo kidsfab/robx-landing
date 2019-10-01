@@ -41,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			'first_name' => $_POST['name'],
 			'phone_mobile' => $_POST['phone'],
 			'type_client_c' => 'ЛИД',
-      "source" => "school_site",
+      "source_contact_list" => "school_site",
       "utm_source" => "robx.org",
 		);
 
