@@ -1,5 +1,10 @@
 <?php
 
+function echo_if_isset($foo) {
+    if (isset($foo))
+       echo $foo;
+}
+
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $content_f = file_get_contents("blocked_users.txt");
@@ -42,7 +47,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 			'phone_mobile' => $_POST['phone'],
 			'type_client_c' => 'ЛИД',
       "source" => "site",
-      "utm_source" => "robx.org",
+      "utm_source" => $_POST['utm_source'],
+      "utm_medium" => $_POST['utm_medium'],
+      "utm_campaign" => $_POST['utm_campaign'],
 		);
 
 		include_once("tallanto.php");
@@ -93,7 +100,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
     				</div>
             		<div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" style="display: none"></div>
-    				<input type='submit' name='submit' class='submit'  value = 'Записаться' >
+            <input type="hidden" name="utm_source" value="<?php echo_if_isset($_GET['utm_source'])?>">
+            <input type="hidden" name="utm_medium" value="<?php echo_if_isset($_GET['utm_medium'])?>">
+            <input type="hidden" name="utm_campaign" value="<?php echo_if_isset($_GET['utm_campaign'])?>">
+            <input type='submit' name='submit' class='submit'  value = 'Записаться' >
     			</form>
     			<div class = 'notification'>
     				Спасибо! С Вами свяжется наш сотрудник для подтверждения времени.
