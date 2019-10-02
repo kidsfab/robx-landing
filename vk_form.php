@@ -30,17 +30,17 @@ switch ($data->type) {
                 switch ($data->object->form_id) {
                   case 1:
                   //основная форма записи на МК
-                    senderToTallanto('Contact', array("first_name" => $first_name, "phone_mobile" => $phone_number, "utm_medium" => "Social",  "utm_source" => "VK", "utm_campaign" => "Main", "LBL_CONTACT_SOURCE" => "VK Tagrget"));
+                    senderToTallanto('Contact', array("first_name" => $first_name, "phone_mobile" => $phone_number, "utm_medium" => "Social",  "utm_source" => "VK", "source" => "VK target", "LBL_CONTACT_SOURCE" => "VK Tagrget"));
                     echo 'ok';
                   break;
                   case 5:
                   //тестовая форма записи на МК
-                    senderToTallanto('Contact', array("first_name" => $first_name, "phone_mobile" => $phone_number, "utm_medium" => "Social",  "utm_source" => "VK", "utm_campaign" => "Test", "LBL_CONTACT_SOURCE" => "VK Tagrget"));
+                    senderToTallanto('Contact', array("first_name" => $first_name, "phone_mobile" => $phone_number, "utm_medium" => "Social",  "utm_source" => "VK", "source" => "vk_target_test", "LBL_CONTACT_SOURCE" => "VK Tagrget"));
                     echo 'ok';
                   break;
                   case 13:
                   //форма из виджета записи на МК
-                    senderToTallanto('Contact', array("first_name" => $first_name, "phone_mobile" => $phone_number, "utm_medium" => "Social",  "utm_source" => "VK", "utm_campaign" => "Widget", "LBL_CONTACT_SOURCE" => "VK Tagrget"));
+                    senderToTallanto('Contact', array("first_name" => $first_name, "phone_mobile" => $phone_number, "utm_medium" => "Social",  "utm_source" => "VK", "source" => "VK widget", "LBL_CONTACT_SOURCE" => "VK Tagrget"));
                     echo 'ok';
                   break;
 
