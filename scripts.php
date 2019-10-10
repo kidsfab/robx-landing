@@ -1,4 +1,10 @@
 <script src="scripts/ga.js" async></script>
+<script src="scripts/facebook.js" async></script>
+<noscript>
+ <img height="1" width="1"
+src="https://www.facebook.com/tr?id=526213851512882&ev=PageView
+&noscript=1"/>
+</noscript>
 <script src="scripts/jquery.js"></script>
 <script src="scripts/maskedinput.js" async></script>
 <script src="scripts/slider.js" async></script>
