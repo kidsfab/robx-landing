@@ -22,6 +22,7 @@ src="https://www.facebook.com/tr?id=526213851512882&ev=PageView
 <script src="scripts/mango.js" async></script>
 <script src="scripts/yandex_metrika.js" async></script>
 <script src="scripts/vk.js" async></script>
+<noscript><img src="https://vk.com/rtrg?p=VK-RTRG-423751-aXvPm" style="position:fixed; left:-999px;" alt=""/></noscript>
 <script src="https://vk.com/js/api/openapi.js?159" async></script>
 <script src="scripts/vk_widget.js" defer></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146792432-1"></script>

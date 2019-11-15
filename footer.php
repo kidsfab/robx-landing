@@ -37,6 +37,8 @@
 			Тел.: <a class="mgo-number-12398" href="tel:+78123177074">+7 (812) 317-70-74</a> ,
 			<br>
 			ИНН 7804455018, ОГРН 1117847052289
+			<br>
+			<a href="https://docs.google.com/document/d/1bn1Z13IpLW2m6mcKqdP87zYbrI0d3tKsbvRKvWDuFUw/edit">Политика конфиденциальности</a>
 		</div>
 	</div>
 </footer>
