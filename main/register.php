@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         unset($blocked[$_SERVER['REMOTE_ADDR']]);
 	}
 
-    if (!empty($_POST) && !( empty($_POST['name']) || empty($_POST['phone']) ) )
+    if (!empty($_POST) && !( empty($_POST['u_name']) || empty($_POST['phone']) ) )
     {
 
         $blocked[ $_SERVER['REMOTE_ADDR'] ] = time();
@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
 				'method'  => 'POST',
 				'content' => http_build_query(array(
-					'entry_598421956' => $_POST['name'],
+					'entry_598421956' => $_POST['u_name'],
 					'entry_706895143' => $_POST['phone'],
 					'entry_30508999' => $_POST['date'],
 				))
@@ -43,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 		}
 
 		$data = array(
-			'first_name' => $_POST['name'],
+			'first_name' => $_POST['u_name'],
 			'phone_mobile' => $_POST['phone'],
 			'type_client_c' => 'ЛИД',
       "source" => "site",
@@ -94,7 +94,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     		<div class = "form">
     			<form action="https://robx.org/" target="_self" method='post' onsubmit="fbq('track', 'Lead'); ga('send', 'event', 'form', 'submit'); yaCounter39897755.reachGoal('ORDER');">
     				<div class = 'entry required'>
-    					<input name = 'name' type = 'text' placeholder="Как к Вам обращаться?" required>
+    					<input name = 'u_name' type = 'text' placeholder="Как к Вам обращаться?" required>
     				</div>
     				<div class = 'entry required mobile-phone'>
     					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
