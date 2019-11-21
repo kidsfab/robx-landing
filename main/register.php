@@ -1,10 +1,5 @@
 <?php
 
-function echo_if_isset($foo) {
-    if (isset($foo))
-       echo $foo;
-}
-
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $content_f = file_get_contents("blocked_users.txt");
@@ -80,7 +75,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
                             Ближайшие занятия:
                         </div>
     					<div>
-    						18 - 24 ноября
+    						11 - 17 ноября
     					</div>
     				</div>
     				<div class = "rest">
